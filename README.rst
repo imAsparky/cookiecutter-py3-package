@@ -160,3 +160,8 @@ make my own packaging experience better.
 .. _github comparison view: https://github.com/tony/cookiecutter-pypackage-pythonic/compare/audreyr:master...master
 .. _`network`: https://github.com/audreyr/cookiecutter-pypackage/network
 .. _`family tree`: https://github.com/audreyr/cookiecutter-pypackage/network/members
+
+
+.. image:: https://api.codacy.com/project/badge/Grade/8be58e4c4d234fd38de7dc1731fbebc8
+   :alt: Codacy Badge
+   :target: https://app.codacy.com/gh/imAsparky/cookiecutter-py3-package?utm_source=github.com&utm_medium=referral&utm_content=imAsparky/cookiecutter-py3-package&utm_campaign=Badge_Grade_Settings
