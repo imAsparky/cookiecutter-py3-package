@@ -1,24 +1,32 @@
-======================
-Cookiecutter PyPackage
-======================
+========================
+Cookiecutter Py3-Package
+========================
 
-.. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
-    :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
-    :alt: Updates
+**A fork of** cookiecutter-pypackage_
 
-.. image:: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage.svg?branch=master
-    :target: https://travis-ci.org/github/audreyfeldroy/cookiecutter-pypackage
-    :alt: Build Status
+**Currently, this is being updated to meet my specific needs**
 
-.. image:: https://readthedocs.org/projects/cookiecutter-pypackage/badge/?version=latest
-    :target: https://cookiecutter-pypackage.readthedocs.io/en/latest/?badge=latest
+.. .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
+..     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
+..     :alt: Updates
+
+.. .. image:: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage.svg?branch=master
+..     :target: https://travis-ci.org/github/audreyfeldroy/cookiecutter-pypackage
+..     :alt: Build Status
+
+.. image:: https://readthedocs.org/projects/cookiecutter-py3-package/badge/?version=latest
+    :target: https://cookiecutter-py3-package.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
 Cookiecutter_ template for a Python package.
 
-* GitHub repo: https://github.com/audreyfeldroy/cookiecutter-pypackage/
-* Documentation: https://cookiecutter-pypackage.readthedocs.io/
+* GitHub repo: https://github.com/imAsparky/cookiecutter-pypackage/
+* Documentation: https://cookiecutter-py3-package.readthedocs.io/
 * Free software: BSD license
+
+
+**The information below relates to the original package and has not been
+updated yet**
 
 Features
 --------
@@ -32,21 +40,22 @@ Features
 * Command line interface using Click (optional)
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
+.. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
 
 Build Status
 -------------
 
 Linux:
 
-.. image:: https://img.shields.io/travis/audreyfeldroy/cookiecutter-pypackage.svg
-    :target: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage
-    :alt: Linux build status on Travis CI
+.. .. image:: https://img.shields.io/travis/audreyfeldroy/cookiecutter-pypackage.svg
+..     :target: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage
+..     :alt: Linux build status on Travis CI
 
-Windows:
+.. Windows:
 
-.. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true
-    :target: https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master
-    :alt: Windows build status on Appveyor
+.. .. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true
+..     :target: https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master
+..     :alt: Windows build status on Appveyor
 
 Quickstart
 ----------
@@ -58,7 +67,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyfeldroy/cookiecutter-pypackage.git
+    cookiecutter https://github.com/imAsparky/cookiecutter-pypackage.git
 
 Then:
 
