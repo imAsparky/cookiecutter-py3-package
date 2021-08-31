@@ -14,6 +14,10 @@ Cookiecutter Py3-Package
 ..     :target: https://travis-ci.org/github/audreyfeldroy/cookiecutter-pypackage
 ..     :alt: Build Status
 
+.. image:: https://app.codacy.com/project/badge/Grade/4c115acc2b3d4d13b998cdcbdb3cea64
+    :target: https://www.codacy.com/gh/imAsparky/cookiecutter-py3-package/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imAsparky/cookiecutter-py3-package&amp;utm_campaign=Badge_Grade
+    :alt: Code Quality
+
 .. image:: https://readthedocs.org/projects/cookiecutter-py3-package/badge/?version=latest
     :target: https://cookiecutter-py3-package.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
@@ -67,7 +71,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/imAsparky/cookiecutter-pypackage.git
+    cookiecutter https://github.com/imAsparky/cookiecutter-py3-package.git
 
 Then:
 
