@@ -7,6 +7,7 @@ Changes unreleased.
 ### Chore
 
 - test:
+  - Rename workflow #10 ([d4a709b](https://github.com/imAsparky/cookiecutter-py3-package/commit/d4a709bcc6f8a431363b1837c3e78a6718f0ec44))
   - Fix typo in jobs:name:  #10 ([38f6a89](https://github.com/imAsparky/cookiecutter-py3-package/commit/38f6a89d02b3512f143b6e74b775b8cdbaa2882a))
   - Add test coverage Py39 Py3-10 #7 ([a7a9219](https://github.com/imAsparky/cookiecutter-py3-package/commit/a7a921961c2d439ac0724fc539249520f73c6c72))
 
