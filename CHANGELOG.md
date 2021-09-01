@@ -11,6 +11,9 @@ Changes unreleased.
 
 ### Feature
 
+- test:
+  - Add GH action to test all contribs #10 ([9f0787d](https://github.com/imAsparky/cookiecutter-py3-package/commit/9f0787d7403429186948a38e4b33a1ea8c66ab71))
+
 - docs:
   - Add automatic changelog #8 ([d14487a](https://github.com/imAsparky/cookiecutter-py3-package/commit/d14487aa3f3c190a1720884e1c875bdca055cb7d))
   - Add automatic changelog #8 ([0160b52](https://github.com/imAsparky/cookiecutter-py3-package/commit/0160b52a0a623cc48c8400a5700b1a7460cb6812))
