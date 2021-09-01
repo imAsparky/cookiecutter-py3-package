@@ -7,6 +7,7 @@ Changes unreleased.
 ### Chore
 
 - test:
+  - Fix typo in jobs:name:  #10 ([38f6a89](https://github.com/imAsparky/cookiecutter-py3-package/commit/38f6a89d02b3512f143b6e74b775b8cdbaa2882a))
   - Add test coverage Py39 Py3-10 #7 ([a7a9219](https://github.com/imAsparky/cookiecutter-py3-package/commit/a7a921961c2d439ac0724fc539249520f73c6c72))
 
 ### Feature
