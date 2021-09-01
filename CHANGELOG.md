@@ -6,6 +6,9 @@ Changes unreleased.
 
 ### Chore
 
+- docs:
+  - Comment on:push out for CHANGELOG ([ce7b075](https://github.com/imAsparky/cookiecutter-py3-package/commit/ce7b075187b060ca036e34a65f7f8e52a4ab1f0d))
+
 - test:
   - Rename workflow #10 ([d4a709b](https://github.com/imAsparky/cookiecutter-py3-package/commit/d4a709bcc6f8a431363b1837c3e78a6718f0ec44))
   - Fix typo in jobs:name:  #10 ([38f6a89](https://github.com/imAsparky/cookiecutter-py3-package/commit/38f6a89d02b3512f143b6e74b775b8cdbaa2882a))
