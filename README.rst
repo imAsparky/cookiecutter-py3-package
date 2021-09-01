@@ -38,6 +38,11 @@ Cookiecutter_ template for a Python package.
 **The information below relates to the original package and has not been
 updated yet**
 
+**Notable Fork changes from the Original project so far.**
+
+#. Links from the original fork have been updated to point to this repository.
+#. Support for Travis has been removed.
+
 Features
 --------
 
@@ -116,7 +121,7 @@ Similar Cookiecutter Templates
 
 * `zillionare/cookiecutter-pypackage`_: A template containing Poetry_, Mkdocs_, Github CI and many more. It's a template and a package also (can be installed with `pip`)
 
-* Also see the `network`_ and `family tree`_ for this repo. (If you find
+* Also see the `network`_ and `family tree`_ for the original repo. (If you find
   anything that should be listed here, please add it and send a pull request!)
 
 Fork This / Create Your Own

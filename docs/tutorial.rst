@@ -62,11 +62,15 @@ If you don't know what to enter, stick with the defaults.
 Step 3: Create a GitHub Repo
 ----------------------------
 
-Go to your GitHub account and create a new repo named ``mypackage``, where ``mypackage`` matches the ``[project_slug]`` from your answers to running cookiecutter. This is so that Travis CI and pyup.io can find it when we get to Step 5.
+Go to your GitHub account and create a new repo named ``mypackage``, where
+``mypackage`` matches the ``[project_slug]`` from your answers to running
+cookiecutter. This is so that pyup.io can find it when we get to Step 5.
 
-``If your virtualenv folder is within your project folder, be sure to add the virtualenv folder name to your .gitignore file.``
+``If your virtualenv folder is within your project folder, be sure to add the
+virtualenv folder name to your .gitignore file.``
 
-You will find one folder named after the ``[project_slug]``. Move into this folder, and then setup git to use your GitHub repo and upload the code:
+You will find one folder named after the ``[project_slug]``. Move into this f
+older, and then setup git to use your GitHub repo and upload the code:
 
 .. code-block:: bash
 
@@ -90,39 +94,41 @@ Step 4: Install Dev Requirements
 
 You should still be in the folder containing the ``requirements_dev.txt`` file.
 
-Your virtualenv should still be activated. If it isn't, activate it now. Install the new project's local development requirements:
+Your virtualenv should still be activated. If it isn't, activate it now.
+Install the new project's local development requirements:
 
 .. code-block:: bash
 
     pip install -r requirements_dev.txt
 
 
-Step 5: Set Up Travis CI
-------------------------
+.. TODO: Change this to Codacy Step. See Issue 22
+.. Step 5: Set Up Travis CI
+.. ------------------------
 
-`Travis CI com`_ is a continuous integration tool used to prevent integration problems. Every commit to the master branch will trigger automated builds of the application.
+.. `Travis CI com`_ is a continuous integration tool used to prevent integration problems. Every commit to the master branch will trigger automated builds of the application.
 
-Login using your Github credentials. It may take a few minutes for Travis CI to load up a list of all your GitHub repos. They will be listed with boxes to the left of the repo name, where the boxes have an ``X`` in them, meaning it is not connected to Travis CI.
+.. Login using your Github credentials. It may take a few minutes for Travis CI to load up a list of all your GitHub repos. They will be listed with boxes to the left of the repo name, where the boxes have an ``X`` in them, meaning it is not connected to Travis CI.
 
-Add the public repo to your Travis CI account by clicking the ``X`` to switch it "on" in the box next to the ``mypackage`` repo. Do not try to follow the other instructions, that will be taken care of next.
+.. Add the public repo to your Travis CI account by clicking the ``X`` to switch it "on" in the box next to the ``mypackage`` repo. Do not try to follow the other instructions, that will be taken care of next.
 
-In your terminal, your virtualenv should still be activated. If it isn't, activate it now. Run the Travis CLI tool to do your Travis CI setup:
+.. In your terminal, your virtualenv should still be activated. If it isn't, activate it now. Run the Travis CLI tool to do your Travis CI setup:
 
-.. code-block:: bash
+.. .. code-block:: bash
 
-    travis encrypt --add deploy.password
+..     travis encrypt --add deploy.password
 
-This will:
+.. This will:
 
-* Encrypt your PyPI password in your Travis config.
-* Activate automated deployment on PyPI when you push a new tag to master branch.
+.. * Encrypt your PyPI password in your Travis config.
+.. * Activate automated deployment on PyPI when you push a new tag to master branch.
 
-See :ref:`travis-pypi-setup` for more information.
+.. See :ref:`travis-pypi-setup` for more information.
 
-.. _`Travis CI com`: https://travis-ci.com/
+.. .. _`Travis CI com`: https://travis-ci.com/
 
 
-Step 6: Set Up Read the Docs
+Step 5: Set Up Read the Docs
 --------------------------
 
 `Read the Docs`_ hosts documentation for the open source community. Think of it as Continuous Documentation.
@@ -135,7 +141,7 @@ Now your documentation will get rebuilt when you make documentation changes to y
 
 .. _`Read the Docs`: https://readthedocs.org/
 
-Step 7: Set Up pyup.io
+Step 6: Set Up pyup.io
 ----------------------
 
 `pyup.io`_ is a service that helps you to keep your requirements files up to date. It sends you automated
@@ -150,7 +156,7 @@ Once your repo is set up correctly, the pyup.io badge will show your current upd
 
 .. _`pyup.io`: https://pyup.io/
 
-Step 8: Release on PyPI
+Step 7: Release on PyPI
 -----------------------
 
 The Python Package Index or `PyPI`_ is the official third-party software repository for the Python programming language. Python developers intend it to be a comprehensive catalog of all open source Python packages.
