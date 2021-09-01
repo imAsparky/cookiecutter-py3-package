@@ -6,6 +6,10 @@ Changes unreleased.
 
 ### Chore
 
+- Travis:
+  - Remove support for Travis #18 ([ade1959](https://github.com/imAsparky/cookiecutter-py3-package/commit/ade1959381459abb179df2b3a7c1e25ae695f3db)) ([#23](https://github.com/imAsparky/cookiecutter-py3-package/pull/23))
+  - Remove support #18 ([aa463f4](https://github.com/imAsparky/cookiecutter-py3-package/commit/aa463f412f26a03a9c1cc278b9bca56e54f114a2)) ([#21](https://github.com/imAsparky/cookiecutter-py3-package/pull/21))
+
 - README:
   - Remove stale Similar Templates #11 ([2b62df5](https://github.com/imAsparky/cookiecutter-py3-package/commit/2b62df5f7cf28f6b10fcc17ecebc6dec6dd550e2))
 
@@ -35,6 +39,9 @@ Changes unreleased.
   - Add additional issue templates #1 ([6f5c9da](https://github.com/imAsparky/cookiecutter-py3-package/commit/6f5c9da926b158d2116db2cee3f1bf3ac459c86b))
 
 ### Documentation
+
+- fork:
+  - Update to indicate this fork #20 ([f287b06](https://github.com/imAsparky/cookiecutter-py3-package/commit/f287b06c8bf40262728bfe2dfe5d542200d0b2ba))
 
 - README:
   - Remove support for Travis CI #18 ([0dd88fa](https://github.com/imAsparky/cookiecutter-py3-package/commit/0dd88fa56d5646caddd54828a2640fa96379d0af))
