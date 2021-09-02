@@ -1,3 +1,10 @@
+# Local Files and Folders
+
+# vscode
+workspace.code-workspace
+.vscode/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -33,6 +40,7 @@ Temporary Items
 # Distribution / packaging
 .Python
 env/
+venv/
 build/
 develop-eggs/
 dist/
@@ -79,6 +87,7 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+docs/source/_build/
 
 # IntelliJ Idea family of suites
 .idea
