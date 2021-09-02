@@ -2,11 +2,7 @@ name: Test Contributions
 
 on:
     pull_request:
-        branches:
-            - main
-
-    tags:
-        - dev-*
+        branches: [main]
 
     workflow_dispatch:
 
