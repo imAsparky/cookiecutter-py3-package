@@ -1,11 +1,8 @@
 name: Test Contributions
 
 on:
-    push:
+    pull_request:
         branches: [main]
-
-        tags:
-            - dev-*
 
     workflow_dispatch:
 
