@@ -1,23 +1,21 @@
 name: Test Contributions
 
 on:
-
     pull_request:
         branches: [main]
 
     push:
-      branches: [main]
+        branches: [main]
 
     workflow_dispatch:
 
 jobs:
     test_contribs:
-
         strategy:
-          matrix:
-            python-version: ['3.6', '3.7', '3.8', '3.9', '3.10', 'py38 pypy']
-            os: [macos-latest, ubuntu-latest, windows-latest]
-
+            matrix:
+                python-version:
+                    ["3.6", "3.7", "3.8", "3.9", "3.10", "py38 pypy"]
+                os: [macos-latest, ubuntu-latest, windows-latest]
 
         runs-on: ${{ matrix.os }}
         steps:
@@ -28,12 +26,12 @@ jobs:
             - name: Set up Python ${{ matrix.python-version }}
               uses: actions/setup-python@v2
               with:
-                python-version: ${{ matrix.python-version }}
+                  python-version: ${{ matrix.python-version }}
 
             - name: Install dependencies
-                run: |
+              run: |
                   python -m pip install --upgrade pip
                   pip install tox tox-gh-actions
 
             - name: Test with tox
-                run: tox
+              run: tox
