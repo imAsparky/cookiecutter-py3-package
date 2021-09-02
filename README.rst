@@ -10,7 +10,7 @@ Cookiecutter Py3-Package
 
 **Checkout the** Projects_ **page to see what is planned.**
 
-**We are aiming for Continuos Deployment, and Keeping it simple>**
+**We are aiming for Continuos Deployment, and Keeping it simple.**
 
 .. .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
 ..     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
@@ -30,7 +30,7 @@ Cookiecutter Py3-Package
 
 Cookiecutter_ template for a Python package.
 
-* GitHub repo: https://github.com/imAsparky/cookiecutter-pypackage/
+* GitHub repo: https://github.com/imAsparky/cookiecutter-py3-package/
 * Documentation: https://cookiecutter-py3-package.readthedocs.io/
 * Free software: BSD license
 
@@ -42,6 +42,7 @@ updated yet**
 
 #. Links from the original fork have been updated to point to this repository.
 #. Support for Travis has been removed.
+#. Stale Similar Cookiecutter Templates have been removed.
 
 Features
 --------
@@ -61,8 +62,8 @@ Features
 .. _Test-PyPi: https://test.pypi.org/
 
 
-Build Status
--------------
+.. Build Status
+.. -------------
 
 Linux:
 
@@ -90,8 +91,8 @@ Generate a Python package project::
 
 Then:
 
-* Create a repo and put it there. This project will be geared towards Github
-  with heavy use of Github Actions.
+* Create a repo and put it there.
+    This project will be aimed towards Github with use of Github Actions.
 * Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``)
 * Register_ your project with PyPI.
 * Add the repo to your `Read the Docs`_ account + turn on the Read the Docs service hook.
