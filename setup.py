@@ -1,5 +1,5 @@
 # !/usr/bin/env python
-"""Setup for cookiecutter-py3-package"""
+"""Setup for cookiecutter-py3-package."""
 
 from setuptools import find_packages, setup
 
