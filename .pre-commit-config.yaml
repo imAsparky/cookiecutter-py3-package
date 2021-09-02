@@ -1,5 +1,6 @@
 default_stages: [commit]
 fail_fast: true
+exclude: "conf.py"
 
 ci:
     autofix_commit_msg: |
