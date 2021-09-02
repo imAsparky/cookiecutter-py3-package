@@ -6,6 +6,9 @@ Changes unreleased.
 
 ### Chore
 
+- setup:
+  - Update to setuptools #27 ([c0d3b0d](https://github.com/imAsparky/cookiecutter-py3-package/commit/c0d3b0dc18a58a947a2d9eea5123a31ae39e843c)) ([#33](https://github.com/imAsparky/cookiecutter-py3-package/pull/33))
+
 - Travis:
   - Remove support for Travis #18 ([ade1959](https://github.com/imAsparky/cookiecutter-py3-package/commit/ade1959381459abb179df2b3a7c1e25ae695f3db)) ([#23](https://github.com/imAsparky/cookiecutter-py3-package/pull/23))
   - Remove support #18 ([aa463f4](https://github.com/imAsparky/cookiecutter-py3-package/commit/aa463f412f26a03a9c1cc278b9bca56e54f114a2)) ([#21](https://github.com/imAsparky/cookiecutter-py3-package/pull/21))
@@ -22,6 +25,9 @@ Changes unreleased.
   - Add test coverage Py39 Py3-10 #7 ([a7a9219](https://github.com/imAsparky/cookiecutter-py3-package/commit/a7a921961c2d439ac0724fc539249520f73c6c72))
 
 ### Feature
+
+- pre-commit:
+  - Add to pre-commit to GH #31 ([bf25e6c](https://github.com/imAsparky/cookiecutter-py3-package/commit/bf25e6cf327670a6e7a38e1464de74a25e447205)) ([#32](https://github.com/imAsparky/cookiecutter-py3-package/pull/32))
 
 - test:
   - Add GH action to test all contribs #10 ([9f0787d](https://github.com/imAsparky/cookiecutter-py3-package/commit/9f0787d7403429186948a38e4b33a1ea8c66ab71))
@@ -44,6 +50,9 @@ Changes unreleased.
   - Remove test for py3.10 #26 ([e5fdef2](https://github.com/imAsparky/cookiecutter-py3-package/commit/e5fdef216b7adf4c0759d85fc2b90a733d2f4426))
 
 ### Documentation
+
+- structure:
+  - Update to newer sphinx style #34 ([6f76c4e](https://github.com/imAsparky/cookiecutter-py3-package/commit/6f76c4ead0bb70be7f9630a0fb12ab8f6297bf7d)) ([#35](https://github.com/imAsparky/cookiecutter-py3-package/pull/35))
 
 - README:
   - Add to list of notable changes (#24) ([5db0139](https://github.com/imAsparky/cookiecutter-py3-package/commit/5db0139e3c21190b3d2085d3c4947beeac2fea25)) ([#24](https://github.com/imAsparky/cookiecutter-py3-package/pull/24))
