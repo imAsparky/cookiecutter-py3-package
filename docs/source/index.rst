@@ -29,6 +29,18 @@ Advanced Features
    console_script_setup
 
 
+Changelog
+---------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   CHANGELOG-docs.md
+
+
+
+
 Todo List to improve cookiecutter-py3-package docs.
 ---------------------------------------------------
 
