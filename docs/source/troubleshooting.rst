@@ -1,13 +1,12 @@
-.. _troubleshooting:
-
-===============
-Troubleshooting
-===============
+================
+Trouble Shooting
+================
 
 .. note:: Can you help improve this file? `Edit this file`_
           and submit a pull request with your improvements!
 
-.. _`Edit this file`: https://github.com/imAsparky/cookiecutter-pypackage/blob/main/docs/troubleshooting.rst
+
+.. _`Edit this file`: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/docs/troubleshooting.rst
 
 
 Windows Issues

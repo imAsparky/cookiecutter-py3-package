@@ -16,7 +16,14 @@ Before Your First Release
 For Every Release
 -------------------
 
+.. todo::
+    An automatic CHANGELOG now handles history—another small tutorial
+    describing how-to create a release is required.
+
+    See `Issue 36 <https://github.com/imAsparky/cookiecutter-py3-package/issues/36>`__.
+
 #. Update HISTORY.rst
+
 
 #. Commit the changes:
 

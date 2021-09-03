@@ -1,6 +1,6 @@
-==================================================
-Welcome to cookiecutter-pypackage's documentation!
-==================================================
+====================================================
+Welcome to cookiecutter-py3-package's documentation!
+====================================================
 
 Getting Started
 ---------------
@@ -27,6 +27,12 @@ Advanced Features
    :maxdepth: 2
 
    console_script_setup
+
+
+Todo List to improve cookiecutter-py3-package docs.
+---------------------------------------------------
+
+.. todolist::
 
 
 Indices and tables

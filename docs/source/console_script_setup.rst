@@ -1,5 +1,3 @@
-.. _console-script-setup:
-
 ====================
 Console Script Setup
 ====================
