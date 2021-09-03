@@ -1,6 +1,13 @@
-========================
-Cookiecutter Py3-Package
-========================
+============================
+**Cookiecutter Py3-Package**
+============================
+
+|
+
+.. image:: ./docs/source/_static/imgs/logo/logo-cookiecutter-py3-package-1280x640.png
+   :alt: cookiecutter-py3-package
+
+|
 
 **A fork of** cookiecutter-pypackage_
 
