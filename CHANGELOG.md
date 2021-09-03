@@ -6,6 +6,10 @@ Changes unreleased.
 
 ### Chore
 
+- git:
+  - Add vscode workspace folder .gitignore ([c000227](https://github.com/imAsparky/cookiecutter-py3-package/commit/c00022746f83c123ec441bdd010fdd06e8f34b58))
+  - Add project folders to .gitignore ([4847e57](https://github.com/imAsparky/cookiecutter-py3-package/commit/4847e574c6b978a3aab14313b12a74d1c879dcd6))
+
 - setup:
   - Update to setuptools #27 ([c0d3b0d](https://github.com/imAsparky/cookiecutter-py3-package/commit/c0d3b0dc18a58a947a2d9eea5123a31ae39e843c)) ([#33](https://github.com/imAsparky/cookiecutter-py3-package/pull/33))
 
@@ -47,9 +51,19 @@ Changes unreleased.
 ### Bug Fixes
 
 - git:
+  - Comment out on:push:main  #44 (#45) ([3631126](https://github.com/imAsparky/cookiecutter-py3-package/commit/3631126832b3724859a2cfb58a834205c5948567)) ([#45](https://github.com/imAsparky/cookiecutter-py3-package/pull/45))
   - Remove test for py3.10 #26 ([e5fdef2](https://github.com/imAsparky/cookiecutter-py3-package/commit/e5fdef216b7adf4c0759d85fc2b90a733d2f4426))
 
+- docs:
+  - Add readthedocs.yaml config file #40 (#42) ([bc14391](https://github.com/imAsparky/cookiecutter-py3-package/commit/bc14391f508c585aa8a29f00150c75e4823bc4a0)) ([#42](https://github.com/imAsparky/cookiecutter-py3-package/pull/42))
+
 ### Documentation
+
+- logo:
+  - Create and add logo to README #38 (#41) ([0ca1adb](https://github.com/imAsparky/cookiecutter-py3-package/commit/0ca1adb6181138de7b6ccf06fa5984d2c693a169)) ([#41](https://github.com/imAsparky/cookiecutter-py3-package/pull/41))
+
+- update:
+  - Links->cookiecutter-py3-package #20 (#39) ([7522aa4](https://github.com/imAsparky/cookiecutter-py3-package/commit/7522aa4014eda677ec28bbd8154906f69afa8811)) ([#39](https://github.com/imAsparky/cookiecutter-py3-package/pull/39))
 
 - structure:
   - Update to newer sphinx style #34 ([6f76c4e](https://github.com/imAsparky/cookiecutter-py3-package/commit/6f76c4ead0bb70be7f9630a0fb12ab8f6297bf7d)) ([#35](https://github.com/imAsparky/cookiecutter-py3-package/pull/35))
