@@ -5,7 +5,7 @@ Tutorial
 .. note:: Did you find any of these instructions confusing? `Edit this file`_
           and submit a pull request with your improvements!
 
-.. _`Edit this file`: https://github.com/imAsparky/cookiecutter-pypackage/blob/main/docs/tutorial.rst
+.. _`Edit this file`: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/docs/tutorial.rst
 
 To start with, you will need a `GitHub account`_ and an account on `PyPI`_.
 Create these before you get started on this tutorial. If you are new to Git and
@@ -13,7 +13,6 @@ GitHub, you should probably spend a few minutes on some of the tutorials at the
 top of the page at `GitHub Help`_.
 
 .. _`GitHub account`: https://github.com/
-.. _`PyPI`: https://pypi.python.org/pypi
 .. _`GitHub Help`: https://help.github.com/
 
 
@@ -55,11 +54,11 @@ Step 2: Generate Your Package
 
 Now it's time to generate your Python package.
 
-Use cookiecutter, pointing it at the cookiecutter-pypackage repo:
+Use cookiecutter, pointing it at the cookiecutter-py3-package repo:
 
 .. code-block:: bash
 
-    cookiecutter https://github.com/imAsparky/cookiecutter-pypackage.git
+    cookiecutter https://github.com/imAsparky/cookiecutter-py3-package.git
 
 You'll be asked to enter a bunch of values to set the package up.
 If you don't know what to enter, stick with the defaults.
@@ -109,42 +108,46 @@ Install the new project's local development requirements:
 
     pip install -r requirements_dev.txt
 
+.. todo::
+    Add a how-to for Codacy integration to replace previous step 5 Travis setup.
 
-Step 5: Set Up Travis CI
-------------------------
+    See `Issue 22 <https://github.com/imAsparky/cookiecutter-py3-package/issues/22>`__.
 
-`Travis CI com`_ is a continuous integration tool used to prevent
-integration problems. Every commit to the main branch will trigger automated
-builds of the application.
+.. Step 5: Set Up Travis CI
+.. ------------------------
 
-Login using your Github credentials. It may take a few minutes for Travis CI
-to load up a list of all your GitHub repos. They will be listed with boxes to
-the left of the repo name, where the boxes have an ``X`` in them, meaning it is
-not connected to Travis CI.
+.. `Travis CI com`_ is a continuous integration tool used to prevent
+.. integration problems. Every commit to the main branch will trigger automated
+.. builds of the application.
 
-Add the public repo to your Travis CI account by clicking the ``X`` to switch
-it "on" in the box next to the ``mypackage`` repo. Do not try to follow the
-other instructions, that will be taken care of next.
+.. Login using your Github credentials. It may take a few minutes for Travis CI
+.. to load up a list of all your GitHub repos. They will be listed with boxes to
+.. the left of the repo name, where the boxes have an ``X`` in them, meaning it is
+.. not connected to Travis CI.
 
-In your terminal, your virtualenv should still be activated. If it isn't,
-activate it now. Run the Travis CLI tool to do your Travis CI setup:
+.. Add the public repo to your Travis CI account by clicking the ``X`` to switch
+.. it "on" in the box next to the ``mypackage`` repo. Do not try to follow the
+.. other instructions, that will be taken care of next.
 
-.. code-block:: bash
+.. In your terminal, your virtualenv should still be activated. If it isn't,
+.. activate it now. Run the Travis CLI tool to do your Travis CI setup:
 
-    travis encrypt --add deploy.password
+.. .. code-block:: bash
 
-This will:
+..     travis encrypt --add deploy.password
 
-* Encrypt your PyPI password in your Travis config.
-* Activate automated deployment on PyPI when you push a new tag to main branch.
+.. This will:
 
-See :ref:`travis-pypi-setup` for more information.
+.. * Encrypt your PyPI password in your Travis config.
+.. * Activate automated deployment on PyPI when you push a new tag to main branch.
 
-.. _`Travis CI com`: https://travis-ci.com/
+.. See :ref:`travis-pypi-setup` for more information.
+
+.. .. _`Travis CI com`: https://travis-ci.com/
 
 
-Step 6: Set Up Read the Docs
---------------------------
+Step 5: Set Up Read the Docs
+----------------------------
 
 `Read the Docs`_ hosts documentation for the open source community. Think of it
 as Continuous Documentation.
@@ -161,7 +164,7 @@ your package.
 
 .. _`Read the Docs`: https://readthedocs.org/
 
-Step 7: Set Up pyup.io
+Step 6: Set Up pyup.io
 ----------------------
 
 `pyup.io`_ is a service that helps you to keep your requirements files up to
@@ -179,7 +182,7 @@ update status.
 
 .. _`pyup.io`: https://pyup.io/
 
-Step 8: Release on PyPI
+Step 7: Release on PyPI
 -----------------------
 
 The Python Package Index or `PyPI`_ is the official third-party software
@@ -190,8 +193,13 @@ When you are ready, release your package the standard Python way.
 
 See `PyPI Help`_ for more information about submitting a package.
 
+.. todo:: Fix this broken *release-checklist* link and also update the original repository
+    https://github.com/audreyfeldroy/cookiecutter-pypackage
+
+    See `Issue 37 <https://github.com/imAsparky/cookiecutter-py3-package/issues/37>`__
+
 Here's a release checklist you can use:
-https://github.com/imAsparky/cookiecutter-pypackage-CD/blob/main/docs/source/pypi_release_checklist.rst
+https://github.com/imAsparky/cookiecutter-py3-package-CD/blob/main/docs/source/pypi_release_checklist.rst
 
 .. _`PyPI`: https://pypi.python.org/pypi
 .. _`PyPI Help`: https://pypi.org/help/#publishing
@@ -203,4 +211,4 @@ Having problems?
 Visit our :ref:`troubleshooting` page for help. If that doesn't help, go to our
 `Issues`_ page and create a new Issue. Be sure to give as much information as possible.
 
-.. _`Issues`: https://github.com/imAsparky/cookiecutter-pypackage/issues
+.. _`Issues`: https://github.com/imAsparky/cookiecutter-py3-package/issues

@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath("."))
 # -- Project information -----------------------------------------------------
 
 project = "cookiecutter-py3-package"
-# copyright = "2015, Audrey Roy Greenfeld"  W0622: Redefining built-in 'copyright'
+copyright = "2015, Audrey Roy Greenfeld"
 author = "Audrey Roy Greenfeld"
 
 
