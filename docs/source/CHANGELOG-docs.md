@@ -50,6 +50,9 @@ Changes unreleased.
 
 ### Bug Fixes
 
+- CHANGELOG:
+  - Fix tox.ini and conf.py #43 (#47) ([c7ead74](https://github.com/imAsparky/cookiecutter-py3-package/commit/c7ead747409c6b1997e2524fefd261f7259d0274)) ([#47](https://github.com/imAsparky/cookiecutter-py3-package/pull/47))
+
 - git:
   - Comment out on:push:main  #44 (#45) ([3631126](https://github.com/imAsparky/cookiecutter-py3-package/commit/3631126832b3724859a2cfb58a834205c5948567)) ([#45](https://github.com/imAsparky/cookiecutter-py3-package/pull/45))
   - Remove test for py3.10 #26 ([e5fdef2](https://github.com/imAsparky/cookiecutter-py3-package/commit/e5fdef216b7adf4c0759d85fc2b90a733d2f4426))
