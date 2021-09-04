@@ -193,13 +193,9 @@ When you are ready, release your package the standard Python way.
 
 See `PyPI Help`_ for more information about submitting a package.
 
-.. todo:: Fix this broken *release-checklist* link and also update the original repository
-    https://github.com/audreyfeldroy/cookiecutter-pypackage
-
-    See `Issue 37 <https://github.com/imAsparky/cookiecutter-py3-package/issues/37>`__
 
 Here's a release checklist you can use:
-https://github.com/imAsparky/cookiecutter-py3-package-CD/blob/main/docs/source/pypi_release_checklist.rst
+https://github.com/imAsparky/cookiecutter-py3-package/blob/main/docs/source/pypi_release_checklist.rst
 
 .. _`PyPI`: https://pypi.python.org/pypi
 .. _`PyPI Help`: https://pypi.org/help/#publishing
