@@ -17,7 +17,8 @@ repos:
     # - repo: https://github.com/Lucas-C/pre-commit-hooks
     #   rev: v1.1.9
     #   hooks:
-    #       - id: forbid-crlf
+    #       - id: python-safety-dependencies-check
+    # #       - id: forbid-crlf
     #       - id: remove-crlf
 
     - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
