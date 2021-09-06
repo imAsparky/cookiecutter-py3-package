@@ -356,8 +356,8 @@ def test_bake_with_console_script_cli(cookies):
 
 
 def test_bake_with_argparse_console_script_cli(cookies):
-    """Test cookiecutter created the package with argparse console
-    script files.
+    """
+    Test cookiecutter created the package with argparse console script files.
     """
     context = {'command_line_interface': 'argparse'}
     result = cookies.bake(extra_context=context)
@@ -381,7 +381,9 @@ def test_bake_with_argparse_console_script_cli(cookies):
 
 @pytest.mark.parametrize("use_black,expected", [("y", True), ("n", False)])
 def test_black(cookies, use_black, expected):
-    """Test cookiecutter created the package with black configured."""
+    """
+    Test cookiecutter created the package with black configured.
+    """
     with bake_in_temp_dir(
         cookies,
         extra_context={'use_black': use_black}
