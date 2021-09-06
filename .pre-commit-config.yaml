@@ -1,6 +1,8 @@
 default_stages: [commit]
 fail_fast: true
-exclude: "conf.py"
+exclude: ".conf.py|^tests/|^{{cookiecutter.project_slug}}/"
+# {{cookiecutter.project_slug}} has been excluded until I start adapting
+# that area.
 
 ci:
     autofix_commit_msg: |
@@ -20,10 +22,10 @@ repos:
     #       - id: forbid-crlf
     #       - id: remove-crlf
 
-    # - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-    #   rev: v1.2.1
-    #   hooks:
-    #       - id: python-safety-dependencies-check
+    - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+      rev: v1.2.1
+      hooks:
+          - id: python-safety-dependencies-check
 
     - repo: https://github.com/pre-commit/pre-commit-hooks
       rev: v4.0.1
