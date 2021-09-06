@@ -14,7 +14,8 @@ from cookiecutter.utils import rmtree
 
 @contextmanager
 def inside_dir(dirpath):
-    """Execute code from inside the given directory.
+    """
+    Execute code from inside the given directory.
 
     :param dirpath: String, path of the directory the command is being run.
     """
@@ -28,7 +29,8 @@ def inside_dir(dirpath):
 
 @contextmanager
 def bake_in_temp_dir(cookies, *args, **kwargs):
-    """Delete the temporal directory that is created when executing the tests.
+    """
+    Delete the temporal directory that is created when executing the tests.
 
     :param cookies: pytest_cookies.Cookies,
         cookie to be baked and its temporal files will be removed
@@ -41,7 +43,8 @@ def bake_in_temp_dir(cookies, *args, **kwargs):
 
 
 def run_inside_dir(command, dirpath):
-    """Run a command from inside a given directory, returning the exit status.
+    """
+    Run a command from inside a given directory, returning the exit status.
 
     :param command: Command that will be executed
     :param dirpath: String, path of the directory the command is being run.
@@ -51,13 +54,17 @@ def run_inside_dir(command, dirpath):
 
 
 def check_output_inside_dir(command, dirpath):
-    "Run a command from inside a given directory, returning the command output."
+    """
+    Run a command from inside a given directory, returning the command output.
+    """
     with inside_dir(dirpath):
         return subprocess.check_output(shlex.split(command))
 
 
 def test_year_compute_in_license_file(cookies):
-    """Check year exists in package license file"""
+    """
+    Check year exists in package license file.
+    """
     with bake_in_temp_dir(cookies) as result:
         license_file_path = result.project.join('LICENSE')
         now = datetime.datetime.now()
@@ -65,7 +72,9 @@ def test_year_compute_in_license_file(cookies):
 
 
 def project_info(result):
-    """Get toplevel dir, project_slug, and project dir from baked cookies."""
+    """
+    Get toplevel dir, project_slug, and project dir from baked cookies.
+    """
     project_path = str(result.project)
     project_slug = os.path.split(project_path)[-1]
     project_dir = os.path.join(project_path, project_slug)
@@ -73,7 +82,9 @@ def project_info(result):
 
 
 def test_bake_with_defaults(cookies):
-    """Test cookiecutter created the package with default settings."""
+    """
+    Test cookiecutter created the package with default settings.
+    """
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
         assert result.exit_code == 0
@@ -90,7 +101,8 @@ def test_bake_with_defaults(cookies):
 
 
 def test_bake_and_run_tests(cookies):
-    """Test package is set up and run tests
+    """
+    Test the package is set up correctly as a directory.
 
     .. note::
      A reminder if anything stops working. These lines are commented out due to
@@ -100,12 +112,13 @@ def test_bake_and_run_tests(cookies):
     """
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
-        # run_inside_dir('python setup.py test', str(result.project)) == 0
+        # run_inside_dir('python setup.py test', str(result.project)) == 3
         # print("test_bake_and_run_tests path", str(result.project))
 
 
 def test_bake_withspecialchars_and_run_tests(cookies):
-    """Ensure that a `full_name` with double quotes does not break setup.py.
+    """
+    Ensure that a `full_name` with double quotes does not break setup.py.
 
     .. note::
      A reminder if anything stops working. This line is commented out due to
@@ -122,7 +135,8 @@ def test_bake_withspecialchars_and_run_tests(cookies):
 
 
 def test_bake_with_apostrophe_and_run_tests(cookies):
-    """Ensure that a `full_name` with apostrophes does not break setup.py.
+    """
+    Ensure that a `full_name` with apostrophes does not break setup.py.
 
     .. note::
      A reminder if anything stops working. This line is commented out due to
@@ -139,7 +153,9 @@ def test_bake_with_apostrophe_and_run_tests(cookies):
 
 
 def test_bake_without_author_file(cookies):
-    """Test cookiecutter created the package without an author file."""
+    """
+    Test cookiecutter created the package without an author file.
+    """
     with bake_in_temp_dir(
         cookies,
         extra_context={'create_author_file': 'n'}
@@ -161,7 +177,9 @@ def test_bake_without_author_file(cookies):
 
 
 def test_make_help(cookies):
-    """Test make help."""
+    """
+    Test make help.
+    """
     with bake_in_temp_dir(cookies) as result:
         # The supplied Makefile does not support win32
         if sys.platform != "win32":
@@ -174,7 +192,9 @@ def test_make_help(cookies):
 
 
 def test_bake_selecting_license(cookies):
-    """Test cookiecutter created the package with the correct license."""
+    """
+    Test cookiecutter created the package with the correct license.
+    """
     license_strings = {
         'MIT license': 'MIT ',
         'BSD license': 'Redistributions of source code must retain the ' +
@@ -194,7 +214,9 @@ def test_bake_selecting_license(cookies):
 
 
 def test_bake_not_open_source(cookies):
-    """Test cookiecutter created the package as not open source."""
+    """
+    Test cookiecutter created the package as not open source.
+    """
     with bake_in_temp_dir(
         cookies,
         extra_context={'open_source_license': 'Not open source'}
@@ -206,7 +228,8 @@ def test_bake_not_open_source(cookies):
 
 
 def test_using_pytest(cookies):
-    """Test cookiecutter created the package using pytest.
+    """
+    Test cookiecutter created the package using pytest.
 
     .. note::
      A reminder if anything stops working. This line is commented out due to
@@ -229,7 +252,9 @@ def test_using_pytest(cookies):
 
 
 def test_not_using_pytest(cookies):
-    """Test cookiecutter created the package without using pytest."""
+    """
+    Test cookiecutter created the package without using pytest.
+    """
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
         test_file_path = result.project.join(
@@ -262,7 +287,9 @@ def test_not_using_pytest(cookies):
 
 
 def test_bake_with_no_console_script(cookies):
-    """Test cookiecutter created the package without console script files."""
+    """
+    Test cookiecutter created the package without console script files.
+    """
     context = {'command_line_interface': "No command-line interface"}
     result = cookies.bake(extra_context=context)
     project_path, project_slug, project_dir = project_info(result)
@@ -275,7 +302,9 @@ def test_bake_with_no_console_script(cookies):
 
 
 def test_bake_with_console_script_files(cookies):
-    """Test cookiecutter created the package with console script files."""
+    """
+    Test cookiecutter created the package with console script files.
+    """
     context = {'command_line_interface': 'click'}
     result = cookies.bake(extra_context=context)
     project_path, project_slug, project_dir = project_info(result)
@@ -288,8 +317,8 @@ def test_bake_with_console_script_files(cookies):
 
 
 def test_bake_with_argparse_console_script_files(cookies):
-    """Test cookiecutter created the package with argparse console script
-    files.
+    """
+    Test cookiecutter created the package with argparse console script files.
     """
     context = {'command_line_interface': 'argparse'}
     result = cookies.bake(extra_context=context)
@@ -303,7 +332,9 @@ def test_bake_with_argparse_console_script_files(cookies):
 
 
 def test_bake_with_console_script_cli(cookies):
-    """Test cookiecutter created the package with console script cli files."""
+    """
+    Test cookiecutter created the package with console script cli files.
+    """
     context = {'command_line_interface': 'click'}
     result = cookies.bake(extra_context=context)
     project_path, project_slug, project_dir = project_info(result)
