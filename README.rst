@@ -17,7 +17,8 @@
 
 **Checkout the** Projects_ **page to see what is planned.**
 
-**We are aiming for Continuos Deployment, and Keeping it simple.**
+**We are aiming for Continuous Delivery, also,
+Keeping it automated and straightforward.**
 
 .. .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
 ..     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
@@ -30,6 +31,11 @@
 .. image:: https://app.codacy.com/project/badge/Grade/4c115acc2b3d4d13b998cdcbdb3cea64
     :target: https://www.codacy.com/gh/imAsparky/cookiecutter-py3-package/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imAsparky/cookiecutter-py3-package&amp;utm_campaign=Badge_Grade
     :alt: Code Quality
+
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+
 
 .. image:: https://readthedocs.org/projects/cookiecutter-py3-package/badge/?version=latest
     :target: https://cookiecutter-py3-package.readthedocs.io/en/latest/?badge=latest
@@ -54,13 +60,13 @@ updated yet**
 Features
 --------
 
-* Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
-* Tox_ testing: Setup to easily test for Python 3.6, 3.7, 3.8
-* Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_
-* bump2version_: Pre-configured version bumping with a single command
-* Auto-release to PyPI_ when you push a new tag to master (optional)
+* Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``.
+* Tox_ testing: Setup to easily test for Python 3.6, 3.7, 3.8.
+* Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
+* bump2version_: Pre-configured version bumping with a single command.
+* Auto-release to PyPI_ when you push a new tag to master (optional).
 * Use commit tags to release to Test-PyPi_. Coming soon.
-* Command line interface using Click (optional)
+* Command line interface using Click (optional).
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
@@ -100,7 +106,7 @@ Then:
 
 * Create a repo and put it there.
     This project will be aimed towards Github with use of Github Actions.
-* Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``)
+* Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``).
 * Register_ your project with PyPI.
 * Add the repo to your `Read the Docs`_ account + turn on the Read the Docs service hook.
 * Release your package by pushing a new tag to main.
