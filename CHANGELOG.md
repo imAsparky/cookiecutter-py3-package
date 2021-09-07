@@ -6,6 +6,9 @@ Changes unreleased.
 
 ### Chore
 
+- pre-commit:
+  - Weekly pre-commit autoupdate (#52) ([1cec5ce](https://github.com/imAsparky/cookiecutter-py3-package/commit/1cec5ce9c4db54a2945690906ead6a3f4fd1f420)) ([#52](https://github.com/imAsparky/cookiecutter-py3-package/pull/52))
+
 - git:
   - Add vscode workspace folder .gitignore ([c000227](https://github.com/imAsparky/cookiecutter-py3-package/commit/c00022746f83c123ec441bdd010fdd06e8f34b58))
   - Add project folders to .gitignore ([4847e57](https://github.com/imAsparky/cookiecutter-py3-package/commit/4847e574c6b978a3aab14313b12a74d1c879dcd6))
@@ -65,6 +68,18 @@ Changes unreleased.
 
 ### Documentation
 
+- codes:
+  - Add code of conduct #56 (#58) ([b69c126](https://github.com/imAsparky/cookiecutter-py3-package/commit/b69c1269178d77cee55983992b5a22737197d8b9)) ([#58](https://github.com/imAsparky/cookiecutter-py3-package/pull/58))
+
+- README:
+  - Add pre-commit badge #54 (#55) ([08450af](https://github.com/imAsparky/cookiecutter-py3-package/commit/08450af653d7b175a0327f51e5aaac7643f422c0)) ([#55](https://github.com/imAsparky/cookiecutter-py3-package/pull/55))
+  - Add to list of notable changes (#24) ([5db0139](https://github.com/imAsparky/cookiecutter-py3-package/commit/5db0139e3c21190b3d2085d3c4947beeac2fea25)) ([#24](https://github.com/imAsparky/cookiecutter-py3-package/pull/24))
+  - Remove support for Travis CI #18 ([0dd88fa](https://github.com/imAsparky/cookiecutter-py3-package/commit/0dd88fa56d5646caddd54828a2640fa96379d0af))
+  - Update to reflect this fork #4 ([e592c57](https://github.com/imAsparky/cookiecutter-py3-package/commit/e592c5750e36aff5b8486e0324e8778510498d7c))
+
+- tutorial:
+  - Fix broken pypi checklist link #37 (#53) ([f6ec351](https://github.com/imAsparky/cookiecutter-py3-package/commit/f6ec3518368078b34d25293494b3332027ccb37b)) ([#53](https://github.com/imAsparky/cookiecutter-py3-package/pull/53))
+
 - logo:
   - Create and add logo to README #38 (#41) ([0ca1adb](https://github.com/imAsparky/cookiecutter-py3-package/commit/0ca1adb6181138de7b6ccf06fa5984d2c693a169)) ([#41](https://github.com/imAsparky/cookiecutter-py3-package/pull/41))
 
@@ -73,11 +88,6 @@ Changes unreleased.
 
 - structure:
   - Update to newer sphinx style #34 ([6f76c4e](https://github.com/imAsparky/cookiecutter-py3-package/commit/6f76c4ead0bb70be7f9630a0fb12ab8f6297bf7d)) ([#35](https://github.com/imAsparky/cookiecutter-py3-package/pull/35))
-
-- README:
-  - Add to list of notable changes (#24) ([5db0139](https://github.com/imAsparky/cookiecutter-py3-package/commit/5db0139e3c21190b3d2085d3c4947beeac2fea25)) ([#24](https://github.com/imAsparky/cookiecutter-py3-package/pull/24))
-  - Remove support for Travis CI #18 ([0dd88fa](https://github.com/imAsparky/cookiecutter-py3-package/commit/0dd88fa56d5646caddd54828a2640fa96379d0af))
-  - Update to reflect this fork #4 ([e592c57](https://github.com/imAsparky/cookiecutter-py3-package/commit/e592c5750e36aff5b8486e0324e8778510498d7c))
 
 - fork:
   - Update to indicate this fork #20 ([f287b06](https://github.com/imAsparky/cookiecutter-py3-package/commit/f287b06c8bf40262728bfe2dfe5d542200d0b2ba))
