@@ -22,3 +22,6 @@ if __name__ == "__main__":
 
     if "Not open source" == "{{ cookiecutter.open_source_license }}":
         remove_file("LICENSE")
+
+    if "{{ cookiecutter.create_conventional_commits_edit_message }}" != "y":
+        remove_file(".github/.git-commit-template.txt")
