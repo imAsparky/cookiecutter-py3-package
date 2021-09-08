@@ -30,7 +30,7 @@ project_slug
 ~~~~~~~~~~~~
 The namespace of your Python package. This should be Python import-friendly.
 Typically, it is the slugified version of project_name. Note: your PyPi
-project and Travis links will use project_slug, so change those in the
+project will use project_slug, so change those in the
 README afterwards.
 
 project_short_description
@@ -52,20 +52,35 @@ Options
 The following package configuration options set up different features for your
 project.
 
-use_pytest
-    Whether to use `pytest <https://docs.pytest.org/en/latest/>`_
+**use_pytest**
+    Whether to use `pytest <https://docs.pytest.org/en/latest/>`_.
 
-add_pyup_badge
-    Whether to include a `pyup <https://github.com/pyupio/pyup>`_ badge
+**add_pyup_badge**
+    Whether to include a `pyup <https://github.com/pyupio/pyup>`_ badge.
 
-command_line_interface
+**command_line_interface**
     Whether to create a console script using Click. Console script entry point
-    will match the project_slug. Options: ['Click', 'Argparse', 'No command-line interface']
+    will match the project_slug.
+    Options: ['Click', 'Argparse', 'No command-line interface']
 
-create_author_file
-    Whether to create an authors file
+**create_author_file**
+    Whether to create an authors file.
 
-open_source_license
+**create_conventional_commits_edit_message**
+    Whether to use a commit message that helps you adhere to the
+    `Conventional Commits <https://www.conventionalcommits.org/en/v1.0.0/>`_
+    specification.
+
+.. important::
+
+    If you choose yes, don't forget to run the following command after
+    initiating git to let git know you are using a custom template.
+
+    .. code-block:: bash
+
+        git config --local commit.template .github/.git-commit-template.txt
+
+**open_source_license**
     Choose a `license <https://choosealicense.com/>`_. Options:
 
     1. MIT License,
@@ -73,4 +88,4 @@ open_source_license
     3. ISC license,
     4. Apache Software License 2.0,
     5. GNU General Public License v3,
-    6. Not open source]
+    6. Not open source

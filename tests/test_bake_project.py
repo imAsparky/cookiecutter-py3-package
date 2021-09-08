@@ -393,3 +393,14 @@ def test_black(cookies, use_black, expected):
         assert ("black" in requirements_path.read()) is expected
         makefile_path = result.project.join('Makefile')
         assert ("black --check" in makefile_path.read()) is expected
+
+def test_bake_without_conventional_commits_message(cookies):
+    with bake_in_temp_dir(
+        cookies, extra_context={"create_conventional_commits_edit_message": "n"}
+    ) as result:
+
+        git_files = [f.basename for f in result.project.join(".github").listdir()]
+        print("git files ", git_files)
+        assert ".git-commit-template.txt" not in git_files
+
+
