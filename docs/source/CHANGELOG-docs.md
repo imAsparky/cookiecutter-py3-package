@@ -33,6 +33,9 @@ Changes unreleased.
 
 ### Feature
 
+- package:
+  - Add Conventional commits msg #15 (#59) ([9ce47dc](https://github.com/imAsparky/cookiecutter-py3-package/commit/9ce47dc73327bdb39d49e5e2074f1320e71d2285)) ([#59](https://github.com/imAsparky/cookiecutter-py3-package/pull/59))
+
 - pre-commit:
   - Add to pre-commit to GH #31 ([bf25e6c](https://github.com/imAsparky/cookiecutter-py3-package/commit/bf25e6cf327670a6e7a38e1464de74a25e447205)) ([#32](https://github.com/imAsparky/cookiecutter-py3-package/pull/32))
 
