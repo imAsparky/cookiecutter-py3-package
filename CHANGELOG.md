@@ -86,6 +86,7 @@ Changes unreleased.
 ### Bug Fixes
 
 - version:
+  - Del manual job & fix concurrency #60  (#66) ([6e1c1ca](https://github.com/imAsparky/cookiecutter-py3-package/commit/6e1c1cadbe20755efb1911768343e6050a293469)) ([#66](https://github.com/imAsparky/cookiecutter-py3-package/pull/66))
   - change to chk_bld_stat false #60 (#63) ([cc63fa9](https://github.com/imAsparky/cookiecutter-py3-package/commit/cc63fa996a00e52c4c91ffcc55eb3056fe1c678f)) ([#63](https://github.com/imAsparky/cookiecutter-py3-package/pull/63))
   - Change to python-semantic-release #60  (#62) ([83d8d06](https://github.com/imAsparky/cookiecutter-py3-package/commit/83d8d06ef0f0bee22dc90e4abd32e26ba21bcba6)) ([#62](https://github.com/imAsparky/cookiecutter-py3-package/pull/62))
   - Change to python-semantic-release #60 (#61) ([88c55f3](https://github.com/imAsparky/cookiecutter-py3-package/commit/88c55f3755993a9a2a459d9ae367fa39b81fea50)) ([#61](https://github.com/imAsparky/cookiecutter-py3-package/pull/61))
