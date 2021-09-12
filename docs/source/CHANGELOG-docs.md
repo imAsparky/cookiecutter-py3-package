@@ -6,6 +6,9 @@ Changes unreleased.
 
 ### Chore
 
+- version:
+  - Add workflow_dispatch #60  (#64) ([1df725e](https://github.com/imAsparky/cookiecutter-py3-package/commit/1df725ed6073cf5e690f8b70749a30baede92dd1)) ([#64](https://github.com/imAsparky/cookiecutter-py3-package/pull/64))
+
 - pre-commit:
   - Weekly pre-commit autoupdate (#52) ([1cec5ce](https://github.com/imAsparky/cookiecutter-py3-package/commit/1cec5ce9c4db54a2945690906ead6a3f4fd1f420)) ([#52](https://github.com/imAsparky/cookiecutter-py3-package/pull/52))
 
@@ -30,44 +33,6 @@ Changes unreleased.
   - Rename workflow #10 ([d4a709b](https://github.com/imAsparky/cookiecutter-py3-package/commit/d4a709bcc6f8a431363b1837c3e78a6718f0ec44))
   - Fix typo in jobs:name:  #10 ([38f6a89](https://github.com/imAsparky/cookiecutter-py3-package/commit/38f6a89d02b3512f143b6e74b775b8cdbaa2882a))
   - Add test coverage Py39 Py3-10 #7 ([a7a9219](https://github.com/imAsparky/cookiecutter-py3-package/commit/a7a921961c2d439ac0724fc539249520f73c6c72))
-
-### Feature
-
-- package:
-  - Add Conventional commits msg #15 (#59) ([9ce47dc](https://github.com/imAsparky/cookiecutter-py3-package/commit/9ce47dc73327bdb39d49e5e2074f1320e71d2285)) ([#59](https://github.com/imAsparky/cookiecutter-py3-package/pull/59))
-
-- pre-commit:
-  - Add to pre-commit to GH #31 ([bf25e6c](https://github.com/imAsparky/cookiecutter-py3-package/commit/bf25e6cf327670a6e7a38e1464de74a25e447205)) ([#32](https://github.com/imAsparky/cookiecutter-py3-package/pull/32))
-
-- test:
-  - Add GH action to test all contribs #10 ([9f0787d](https://github.com/imAsparky/cookiecutter-py3-package/commit/9f0787d7403429186948a38e4b33a1ea8c66ab71))
-
-- docs:
-  - Add automatic changelog #8 ([d14487a](https://github.com/imAsparky/cookiecutter-py3-package/commit/d14487aa3f3c190a1720884e1c875bdca055cb7d))
-  - Add automatic changelog #8 ([0160b52](https://github.com/imAsparky/cookiecutter-py3-package/commit/0160b52a0a623cc48c8400a5700b1a7460cb6812))
-
-- quality:
-  - Add code quality scan and badge #5 ([fb8fe81](https://github.com/imAsparky/cookiecutter-py3-package/commit/fb8fe81f4d9439e78a33b00babfa2ab3a7ae380b))
-
-- git:
-  - Add pre-commit and sane tests #3 ([83a8804](https://github.com/imAsparky/cookiecutter-py3-package/commit/83a88044bfb0ce44e54eb05943f2eb2c4282d195))
-  - Add conventional commits template #2 ([d808d8e](https://github.com/imAsparky/cookiecutter-py3-package/commit/d808d8ef08ca158f98bf5a302062f13ab503ab31))
-  - Add additional issue templates #1 ([6f5c9da](https://github.com/imAsparky/cookiecutter-py3-package/commit/6f5c9da926b158d2116db2cee3f1bf3ac459c86b))
-
-### Bug Fixes
-
-- pre-com:
-  - Fix pre-commit errors #50  (#51) ([9360c7f](https://github.com/imAsparky/cookiecutter-py3-package/commit/9360c7fe47a3e79ae421c5e43ce330414203b2b1)) ([#51](https://github.com/imAsparky/cookiecutter-py3-package/pull/51))
-
-- CHANGELOG:
-  - Fix tox.ini and conf.py #43 (#47) ([c7ead74](https://github.com/imAsparky/cookiecutter-py3-package/commit/c7ead747409c6b1997e2524fefd261f7259d0274)) ([#47](https://github.com/imAsparky/cookiecutter-py3-package/pull/47))
-
-- git:
-  - Comment out on:push:main  #44 (#45) ([3631126](https://github.com/imAsparky/cookiecutter-py3-package/commit/3631126832b3724859a2cfb58a834205c5948567)) ([#45](https://github.com/imAsparky/cookiecutter-py3-package/pull/45))
-  - Remove test for py3.10 #26 ([e5fdef2](https://github.com/imAsparky/cookiecutter-py3-package/commit/e5fdef216b7adf4c0759d85fc2b90a733d2f4426))
-
-- docs:
-  - Add readthedocs.yaml config file #40 (#42) ([bc14391](https://github.com/imAsparky/cookiecutter-py3-package/commit/bc14391f508c585aa8a29f00150c75e4823bc4a0)) ([#42](https://github.com/imAsparky/cookiecutter-py3-package/pull/42))
 
 ### Documentation
 
@@ -94,5 +59,49 @@ Changes unreleased.
 
 - fork:
   - Update to indicate this fork #20 ([f287b06](https://github.com/imAsparky/cookiecutter-py3-package/commit/f287b06c8bf40262728bfe2dfe5d542200d0b2ba))
+
+### Feature
+
+- package:
+  - Add Conventional commits msg #15 (#59) ([9ce47dc](https://github.com/imAsparky/cookiecutter-py3-package/commit/9ce47dc73327bdb39d49e5e2074f1320e71d2285)) ([#59](https://github.com/imAsparky/cookiecutter-py3-package/pull/59))
+
+- pre-commit:
+  - Add to pre-commit to GH #31 ([bf25e6c](https://github.com/imAsparky/cookiecutter-py3-package/commit/bf25e6cf327670a6e7a38e1464de74a25e447205)) ([#32](https://github.com/imAsparky/cookiecutter-py3-package/pull/32))
+
+- test:
+  - Add GH action to test all contribs #10 ([9f0787d](https://github.com/imAsparky/cookiecutter-py3-package/commit/9f0787d7403429186948a38e4b33a1ea8c66ab71))
+
+- docs:
+  - Add automatic changelog #8 ([d14487a](https://github.com/imAsparky/cookiecutter-py3-package/commit/d14487aa3f3c190a1720884e1c875bdca055cb7d))
+  - Add automatic changelog #8 ([0160b52](https://github.com/imAsparky/cookiecutter-py3-package/commit/0160b52a0a623cc48c8400a5700b1a7460cb6812))
+
+- quality:
+  - Add code quality scan and badge #5 ([fb8fe81](https://github.com/imAsparky/cookiecutter-py3-package/commit/fb8fe81f4d9439e78a33b00babfa2ab3a7ae380b))
+
+- git:
+  - Add pre-commit and sane tests #3 ([83a8804](https://github.com/imAsparky/cookiecutter-py3-package/commit/83a88044bfb0ce44e54eb05943f2eb2c4282d195))
+  - Add conventional commits template #2 ([d808d8e](https://github.com/imAsparky/cookiecutter-py3-package/commit/d808d8ef08ca158f98bf5a302062f13ab503ab31))
+  - Add additional issue templates #1 ([6f5c9da](https://github.com/imAsparky/cookiecutter-py3-package/commit/6f5c9da926b158d2116db2cee3f1bf3ac459c86b))
+
+### Bug Fixes
+
+- version:
+  - Del manual job & fix concurrency #60  (#66) ([6e1c1ca](https://github.com/imAsparky/cookiecutter-py3-package/commit/6e1c1cadbe20755efb1911768343e6050a293469)) ([#66](https://github.com/imAsparky/cookiecutter-py3-package/pull/66))
+  - change to chk_bld_stat false #60 (#63) ([cc63fa9](https://github.com/imAsparky/cookiecutter-py3-package/commit/cc63fa996a00e52c4c91ffcc55eb3056fe1c678f)) ([#63](https://github.com/imAsparky/cookiecutter-py3-package/pull/63))
+  - Change to python-semantic-release #60  (#62) ([83d8d06](https://github.com/imAsparky/cookiecutter-py3-package/commit/83d8d06ef0f0bee22dc90e4abd32e26ba21bcba6)) ([#62](https://github.com/imAsparky/cookiecutter-py3-package/pull/62))
+  - Change to python-semantic-release #60 (#61) ([88c55f3](https://github.com/imAsparky/cookiecutter-py3-package/commit/88c55f3755993a9a2a459d9ae367fa39b81fea50)) ([#61](https://github.com/imAsparky/cookiecutter-py3-package/pull/61))
+
+- pre-com:
+  - Fix pre-commit errors #50  (#51) ([9360c7f](https://github.com/imAsparky/cookiecutter-py3-package/commit/9360c7fe47a3e79ae421c5e43ce330414203b2b1)) ([#51](https://github.com/imAsparky/cookiecutter-py3-package/pull/51))
+
+- CHANGELOG:
+  - Fix tox.ini and conf.py #43 (#47) ([c7ead74](https://github.com/imAsparky/cookiecutter-py3-package/commit/c7ead747409c6b1997e2524fefd261f7259d0274)) ([#47](https://github.com/imAsparky/cookiecutter-py3-package/pull/47))
+
+- git:
+  - Comment out on:push:main  #44 (#45) ([3631126](https://github.com/imAsparky/cookiecutter-py3-package/commit/3631126832b3724859a2cfb58a834205c5948567)) ([#45](https://github.com/imAsparky/cookiecutter-py3-package/pull/45))
+  - Remove test for py3.10 #26 ([e5fdef2](https://github.com/imAsparky/cookiecutter-py3-package/commit/e5fdef216b7adf4c0759d85fc2b90a733d2f4426))
+
+- docs:
+  - Add readthedocs.yaml config file #40 (#42) ([bc14391](https://github.com/imAsparky/cookiecutter-py3-package/commit/bc14391f508c585aa8a29f00150c75e4823bc4a0)) ([#42](https://github.com/imAsparky/cookiecutter-py3-package/pull/42))
 
 \* *This CHANGELOG was automatically generated by [auto-generate-changelog](https://github.com/BobAnkh/auto-generate-changelog)*
