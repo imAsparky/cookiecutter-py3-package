@@ -10,7 +10,6 @@ on:
 
     concurrency:
         group: Semantic Release
-
 jobs:
     release_auto:
         if: github.event.pull_request.merged == true
