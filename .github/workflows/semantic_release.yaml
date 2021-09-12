@@ -8,18 +8,33 @@ on:
 
     workflow_dispatch:
 
+    concurrency:
+        group: Semantic Release
 jobs:
-    release:
+    release_auto:
         if: github.event.pull_request.merged == true
         runs-on: ubuntu-latest
-        concurrency: release
 
         steps:
             - uses: actions/checkout@v2
               with:
                   fetch-depth: 0
 
-            - name: Python Semantic Release
+            - name: Python Semantic Release Automatic
+              uses: relekang/python-semantic-release@master
+              with:
+                  github_token: ${{ secrets.CHANGELOG_UPDATE }}
+                  pypi_token: ${{ secrets.PYPI_TOKEN }}
+
+    release_manual:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+
+            - name: Python Semantic Release Manual
               uses: relekang/python-semantic-release@master
               with:
                   github_token: ${{ secrets.CHANGELOG_UPDATE }}
