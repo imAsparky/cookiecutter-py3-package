@@ -22,4 +22,15 @@ jobs:
                   ACCESS_TOKEN: ${{secrets.CHANGELOG_UPDATE}}
                   PATH: "/CHANGELOG.md"
                   COMMIT_MESSAGE: "docs(CHANGELOG): update release notes:repo"
-                  TYPE: "chore:Chore,feat:Feature,fix:Bug Fixes,docs:Documentation,perf:Performance Improvements,refactor:Refactor,style:Styling,test:Tests, WIP:In Progress"
+                  TYPE: "build:Build,\
+                      ci:CI, \
+                      chore:Chore,\
+                      docs:Documentation,\
+                      feat:Feature,\
+                      fix:Bug Fixes,\
+                      perf:Performance Improvements,\
+                      refactor:Refactor,\
+                      revert:Revert, \
+                      style:Styling,\
+                      test:Tests,\
+                      WIP:In Progress"
