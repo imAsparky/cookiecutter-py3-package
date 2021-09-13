@@ -1,0 +1,36 @@
+name: Auto-generate CHANGELOG
+on:
+    # release:
+    #   types: [created, edited]
+
+    # cron job is set for daily update at utc time
+    schedule:
+        - cron: "0 23 * * *"
+    # push:
+    #     branches:
+    #         - main
+    workflow_dispatch:
+
+jobs:
+    generate-changelog:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+            - uses: BobAnkh/auto-generate-changelog@master
+              with:
+                  REPO_NAME: "{{cookiecutter.github_username}}/\
+                      {{cookiecutter.git_project_name}}"
+                  ACCESS_TOKEN: ${{cookiecutter.github_access_token}}
+                  PATH: "/CHANGELOG.md"
+                  COMMIT_MESSAGE: "docs(CHANGELOG): update release notes:docs"
+                  TYPE: "chore:Chore,\
+                      feat:Feature,\
+                      fix:Bug Fixes,\
+                      docs:Documentation,\
+                      perf:Performance Improvements,\
+                      refactor:Refactor,\
+                      style:Styling,\
+                      test:Tests,\
+                      WIP:In Progress"

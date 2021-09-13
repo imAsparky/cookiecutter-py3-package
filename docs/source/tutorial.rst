@@ -15,12 +15,53 @@ top of the page at `GitHub Help`_.
 .. _`GitHub account`: https://github.com/
 .. _`GitHub Help`: https://help.github.com/
 
+Step 1: Create a GitHub Repo
+----------------------------
 
-Step 1: Install Cookiecutter
+We do this step first to make sure that your new package name is available.
+
+Your GitHub package name can use a hyphen -, however, the module name must use
+an underscore _.
+
+Don't worry; we have your back; go right ahead if you would like to use hyphens
+in your package name.  We generate your module names correctly using
+underscores from the information gathered when you cookiecutter your new
+project.
+
+.. todo::
+
+    #. Fix the git repo bash commands in Step 1 of the tutorial.
+    #. The git bash commands may be better lower down the list as well.
+
+    See `Issue 69 <https://github.com/imAsparky/cookiecutter-py3-package/issues/69>`_.
+
+.. code-block:: bash
+
+    cd mypackage
+    git init .
+    git add .
+    git config --local commit.template .github/.git-commit-template.txt
+    git commit -m "Initial skeleton."
+    git remote add origin git@github.com:myusername/mypackage.git
+    git push -u origin main
+
+Where ``myusername`` and ``mypackage`` are adjusted for your username and
+package name.
+
+You will need an ssh key to push local changes to your repository.
+
+You can `Generate`_ a new key or `Add`_ an existing one.
+
+.. _`Generate`: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+.. _`Add`: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+
+Step 2: Install Cookiecutter
 ----------------------------
 
 First, you need to create and activate a virtualenv for the package project.
-Use your favorite method, or create a virtualenv for your new package like this:
+Use your favourite method, or create a virtualenv for your new package
+like this:
 
 .. code-block:: bash
 
@@ -34,8 +75,14 @@ Activate your environment:
 
     source bin/activate
 
+or use the . source shortcut like this
+
+.. code-block:: bash
+
+    . bin/activate
+
 On Windows, activate it like this. You may find that using a Command Prompt
-window works better than gitbash.
+Terminal works better than gitbash.
 
 .. code-block:: powershell
 
@@ -49,59 +96,29 @@ Install cookiecutter:
     pip install cookiecutter
 
 
-Step 2: Generate Your Package
+Step 3 : Generate Your Package
 -----------------------------
 
 Now it's time to generate your Python package.
 
-Use cookiecutter, pointing it at the cookiecutter-py3-package repo:
+Use cookiecutter, pointing it to the cookiecutter-py3-package repository:
 
 .. code-block:: bash
 
     cookiecutter https://github.com/imAsparky/cookiecutter-py3-package.git
 
-You'll be asked to enter a bunch of values to set the package up.
-If you don't know what to enter, stick with the defaults.
+Cookiecutter will ask questions to set your package up.
+If you're unsure or don't know what to enter, stick with the defaults.
 
-
-Step 3: Create a GitHub Repo
-----------------------------
-
-Go to your GitHub account and create a new repo named ``mypackage``, where
-``mypackage`` matches the ``[project_slug]`` from your answers to running
-cookiecutter. This is so that Travis CI and pyup.io can find it when we get
-to Step 5.
-
-``If your virtualenv folder is within your project folder, be sure to add the
-virtualenv folder name to your .gitignore file.``
-
-You will find one folder named after the ``[project_slug]``. Move into this
-folder, and then setup git to use your GitHub repo and upload the code:
-
-.. code-block:: bash
-
-    cd mypackage
-    git init .
-    git add .
-    git config --local commit.template .github/.git-commit-template.txt
-    git commit -m "Initial skeleton."
-    git remote add origin git@github.com:myusername/mypackage.git
-    git push -u origin main
-
-Where ``myusername`` and ``mypackage`` are adjusted for your username and package name.
-
-You'll need a ssh key to push the repo. You can `Generate`_ a key or `Add`_ an existing one.
-
-.. _`Generate`: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
-.. _`Add`: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
 
 Step 4: Install Dev Requirements
 --------------------------------
 
-You should still be in the folder containing the ``requirements_dev.txt`` file.
+You should still be in the root folder, the one containing the
+``requirements_dev.txt`` file.
 
-Your virtualenv should still be activated. If it isn't, activate it now.
+Check your virtualenv is still activated. If it isn't, activate it now.
 Install the new project's local development requirements:
 
 .. code-block:: bash
@@ -149,7 +166,7 @@ Install the new project's local development requirements:
 Step 5: Set Up Read the Docs
 ----------------------------
 
-`Read the Docs`_ hosts documentation for the open source community. Think of it
+`Read the Docs`_ hosts documentation for the open-source community. Think of it
 as Continuous Documentation.
 
 Log into your account at `Read the Docs`_ . If you don't have one, create one
@@ -161,6 +178,7 @@ repository and follow the directions.
 
 Now your documentation will get rebuilt when you make documentation changes to
 your package.
+
 
 .. _`Read the Docs`: https://readthedocs.org/
 
@@ -177,10 +195,18 @@ Click on the green ``Add Repo`` button in the top left corner and select the
 repo you created in Step 3. A popup will ask you whether you want to pin your
 dependencies. Click on ``Pin`` to add the repo.
 
-Once your repo is set up correctly, the pyup.io badge will show your current
+When your repository is correctly set up, the pyup.io badge will show your current
 update status.
 
+
 .. _`pyup.io`: https://pyup.io/
+
+
+.. todo::
+
+    Add a tutorial to describe using Test Pypi.
+
+    See `Issue 13 <https://github.com/imAsparky/cookiecutter-py3-package/issues/13>`_.
 
 Step 7: Release on PyPI
 -----------------------

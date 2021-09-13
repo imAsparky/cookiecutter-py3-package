@@ -1,6 +1,12 @@
 {% if cookiecutter.create_author_file == 'y' -%}
 include AUTHORS.rst
 {% endif -%}
+
+{% if cookiecutter.create_auto_CHANGELOG == 'y' -%}
+include CHANGELOG.md
+{% endif -%}
+
+
 include CONTRIBUTING.rst
 include HISTORY.rst
 include LICENSE

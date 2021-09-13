@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""cookiecutter-p3-package post package generation jobs."""
+"""cookiecutter-py3-package post package generation jobs."""
 import os
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
@@ -25,3 +25,10 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.create_conventional_commits_edit_message }}" != "y":
         remove_file(".github/.git-commit-template.txt")
+
+    if "{{ cookiecutter.create_auto_CHANGELOG }}" != "y":
+        remove_file("CHANGELOG.md")
+        remove_file(".github/workflows/update-changelog.yaml")
+
+    if "{{ cookiecutter.create_auto_CHANGELOG }}" == "y":
+        remove_file("HISTORY.rst")
