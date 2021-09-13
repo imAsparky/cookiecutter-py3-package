@@ -1,10 +1,11 @@
 {
-  "full_name": "Audrey Roy Greenfeld",
-  "email": "audreyr@example.com",
-  "github_username": "audreyr",
-  "project_name": "Python Boilerplate",
+  "full_name": "Mark Sevelj",
+  "email": "mark@example.com",
+  "github_username": "imAsparky",
+  "project_name": "Python 3 Package Boilerplate",
+  "git_project_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "project_short_description": "Python 3 Package Boilerplate contains all the boilerplate you need to create a Python package.",
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.1.0",
   "use_pytest": "n",
@@ -13,5 +14,7 @@
   "command_line_interface": ["Click", "Argparse", "No command-line interface"],
   "create_author_file": "y",
   "create_conventional_commits_edit_message": "y",
+  "create_auto_CHANGELOG": "y",
+  "github_access_token": ["secrets.GITHUB_TOKEN", "secrets.CHANGELOG_UPDATE"],
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 }
