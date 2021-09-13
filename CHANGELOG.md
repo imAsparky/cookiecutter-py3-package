@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## [v0.1.1](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.1.1) - 2021-09-13 04:36:05
+
+### Fix
+* **version:** Update commit_subject #60 ([#68](https://github.com/imAsparky/cookiecutter-py3-package/issues/68)) ([`977acd1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/977acd12519ddf6c03800fd0d78edf93e7c54cb7))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`9d33ebc`](https://github.com/imAsparky/cookiecutter-py3-package/commit/9d33ebc94a18177db6f00b003b4a05dfa3573190))
+* **CHANGELOG:** Update release notes:repo ([`7c5630e`](https://github.com/imAsparky/cookiecutter-py3-package/commit/7c5630e982ab2482867e9a7777da624c55ecf576))
+
+### Build
+
+- version:
+  - Bump to version - 0.1.1. ([23b10d1](https://github.com/imAsparky/cookiecutter-py3-package/commit/23b10d12f12cf462c2b949166b4b96b77247164f))
+
+### Bug Fixes
+
+- version:
+  - Update commit_subject #60 (#68) ([977acd1](https://github.com/imAsparky/cookiecutter-py3-package/commit/977acd12519ddf6c03800fd0d78edf93e7c54cb7)) ([#68](https://github.com/imAsparky/cookiecutter-py3-package/pull/68))
+
 ## [v0.1.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.1.0) - 2021-09-13 03:58:08
 
 ### Feature
