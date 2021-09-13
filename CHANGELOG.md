@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## [v0.2.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.2.0) - 2021-09-13 09:17:34
+
+### Feature
+* **CHANGELOG:** Add auto update opt to pkge #12 ([#70](https://github.com/imAsparky/cookiecutter-py3-package/issues/70)) ([`5e24e40`](https://github.com/imAsparky/cookiecutter-py3-package/commit/5e24e403ecc39b64bbb963570bac7d1d2426a8d0))
+
+### Documentation
+* **CHANGELOG:** Update release notes:repo ([`2fba5e5`](https://github.com/imAsparky/cookiecutter-py3-package/commit/2fba5e5a840efd90ba8a443b529398481a461b13))
+
+### Build
+
+- version:
+  - Bump to version - 0.2.0. ([5eda4ea](https://github.com/imAsparky/cookiecutter-py3-package/commit/5eda4eabedb87b78fb188a9db6db40de912891b2))
+
+### Feature
+
+- CHANGELOG:
+  - Add auto update opt to pkge #12 (#70) ([5e24e40](https://github.com/imAsparky/cookiecutter-py3-package/commit/5e24e403ecc39b64bbb963570bac7d1d2426a8d0)) ([#70](https://github.com/imAsparky/cookiecutter-py3-package/pull/70))
+
 ## [v0.1.1](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.1.1) - 2021-09-13 04:36:05
 
 ### Fix
