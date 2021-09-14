@@ -377,6 +377,34 @@ def test_bake_without_conventional_commits_message(cookies):
         assert ".git-commit-template.txt" not in git_without_files
 
 
+def test_bake_with_repo_automatic_testing_suite(cookies):
+    """
+    Test cookiecutter created the package with repo automatic testing.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"create_repo_auto_test_workflow": "y"}
+    ) as result:
+
+        test_workflow_with_files = [
+            f.basename for f in result.project.join(".github/workflows").listdir()
+        ]
+        assert "test_contribution.yaml" in test_workflow_with_files
+
+
+def test_bake_without_repo_automatic_testing_suite(cookies):
+    """
+    Test cookiecutter created the package without repo automatic testing.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"create_repo_auto_test_workflow": "n"}
+    ) as result:
+
+        test_workflow_without_files = [
+            f.basename for f in result.project.join(".github/workflows").listdir()
+        ]
+        assert "test_contribution.yaml" not in test_workflow_without_files
+
+
 def test_bake_with_automatic_CHANGELOG(cookies):
     """
     Test cookiecutter created the package with a auto changelog generation.
@@ -396,6 +424,9 @@ def test_bake_with_automatic_CHANGELOG(cookies):
 
 
 def test_bake_without_automatic_CHANGELOG(cookies):
+    """
+    Test cookiecutter created the package without auto changelog generation.
+    """
     with bake_in_temp_dir(
         cookies, extra_context={"create_auto_CHANGELOG": "n"}
     ) as result:

@@ -52,17 +52,21 @@ Cookiecutter_ template for a Python package.
 
 #. Links from the original fork have been updated to point to this repository.
 #. Support for Travis has been removed.
-#. Stale Similar Cookiecutter Templates have been removed.
+#. Stale "Similar Cookiecutter Templates" have been removed.
 #. `Conventional Commits <https://www.conventionalcommits.org/en/v1.0.0/>`_
    specification custom commit message are now built into the
    cookiecutter-p3-package project.
 #. Choose to use a `Conventional Commits <https://www.conventionalcommits.org/en/v1.0.0/>`_
    specification custom commits message in your built package.
+#. Added an optional GitHub action to generate a package CHANGELOG automatically.
+#. Added an optional GitHub action to run your tox package test suite when a
+   pull request to the main branch starts.
+#. Tox configuration for your package now includes an OS and Python test matrix.
+   OS includes Linux, macOS and Windows. Python 3.6 - 3.9.
 
 Features
 --------
 
-* Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``.
 * Tox_ testing: Setup to easily test for Python 3.6, 3.7, 3.8 and 3.9.
 * Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
 * bump2version_: Pre-configured version bumping with a single command.
