@@ -16,9 +16,12 @@
   "create_conventional_commits_edit_message": "y",
   "create_repo_auto_test_workflow": "y",
   "create_auto_CHANGELOG": "y",
-  "github_access_token": ["secrets.GITHUB_TOKEN", "secrets.CHANGELOG_UPDATE"],
+  "github_CHANGELOG_access_token": ["secrets.GITHUB_TOKEN", "secrets.CHANGELOG_UPDATE"],
+  "use_GH_action_semantic_version": "y",
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
   "_copy_without_render": [
-        ".github/workflows/test_contribution.yaml"
+        ".github/workflows/test_contribution.yaml",
+        ".github/workflows/semantic_release.yaml"
+
     ]
 }

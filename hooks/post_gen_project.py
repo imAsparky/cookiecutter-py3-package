@@ -35,3 +35,7 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.create_repo_auto_test_workflow }}" != "y":
         remove_file(".github/workflows/test_contribution.yaml")
+
+    if "{{ cookiecutter.use_GH_action_semantic_version }}" != "y":
+        remove_file(".github/workflows/semantic_release.yaml")
+        remove_file(".github/semantic.yaml")

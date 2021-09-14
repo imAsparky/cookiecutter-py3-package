@@ -17,8 +17,8 @@
 
 **Checkout the** Projects_ **page to see what is planned.**
 
-**We are aiming for Continuous Delivery, also,
-Keeping it automated and straightforward.**
+**We are aiming for your new package to use a Continuous Delivery workflow,
+keeping it automated and straightforward.**
 
 .. .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
 ..     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
@@ -63,14 +63,17 @@ Cookiecutter_ template for a Python package.
    pull request to the main branch starts.
 #. Tox configuration for your package now includes an OS and Python test matrix.
    OS includes Linux, macOS and Windows. Python 3.6 - 3.9.
+#. Added an optional GitHub action to automatically update semantic version and
+   publish assets to your package repository when a pull request merge is
+   closed or manually.
+#. Semantic versioning and publishing are also available locally, bypassing
+   the need for a GitHub action if that is your preferred workflow.
 
 Features
 --------
 
-* Tox_ testing: Setup to easily test for Python 3.6, 3.7, 3.8 and 3.9.
 * Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
-* bump2version_: Pre-configured version bumping with a single command.
-* Auto-release to PyPI_ when you push a new tag to master (optional).
+* Auto-release to PyPI_ when you push a new tag to main (optional). Coming soon.
 * Use commit tags to release to Test-PyPi_. Coming soon.
 * Command line interface using Click (optional).
 
@@ -84,7 +87,7 @@ Features
 .. Build Status
 .. -------------
 
-Linux:
+.. Linux:
 
 .. .. image:: https://img.shields.io/travis/audreyfeldroy/cookiecutter-pypackage.svg
 ..     :target: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage
