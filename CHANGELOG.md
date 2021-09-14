@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## [v0.4.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.4.0) - 2021-09-14 04:21:25
+
+### Feature
+* **version:** Add pkg GH action sem-ver opt #14 ([#74](https://github.com/imAsparky/cookiecutter-py3-package/issues/74)) ([`f619ab6`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f619ab6e78e5a4b393d7c2098def683eeb368266))
+
+### Documentation
+* **CHANGELOG:** Update release notes:repo ([`6796ac9`](https://github.com/imAsparky/cookiecutter-py3-package/commit/6796ac974538acdc9fb868d58f67186a11d2f71d))
+
+### Build
+
+- version:
+  - Bump to version - 0.4.0. ([6e86af3](https://github.com/imAsparky/cookiecutter-py3-package/commit/6e86af35036c12f093ee63d3906be87c3d7d275d))
+
+### Feature
+
+- version:
+  - Add pkg GH action sem-ver opt #14 (#74) ([f619ab6](https://github.com/imAsparky/cookiecutter-py3-package/commit/f619ab6e78e5a4b393d7c2098def683eeb368266)) ([#74](https://github.com/imAsparky/cookiecutter-py3-package/pull/74))
+
 ## [v0.3.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.3.0) - 2021-09-14 00:56:09
 
 ### Feature
