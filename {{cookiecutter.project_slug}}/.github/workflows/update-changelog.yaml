@@ -9,6 +9,8 @@ on:
     # push:
     #     branches:
     #         - main
+
+    # Run workflow manually.
     workflow_dispatch:
 
 jobs:
@@ -22,9 +24,9 @@ jobs:
               with:
                   REPO_NAME: "{{cookiecutter.github_username}}/\
                       {{cookiecutter.git_project_name}}"
-                  ACCESS_TOKEN: ${{cookiecutter.github_access_token}}
+                  ACCESS_TOKEN: ${{cookiecutter.github_CHANGELOG_access_token}}
                   PATH: "/CHANGELOG.md"
-                  COMMIT_MESSAGE: "docs(CHANGELOG): update release notes:docs"
+                  COMMIT_MESSAGE: "docs(CHANGELOG): update release notes"
                   TYPE: "chore:Chore,\
                       feat:Feature,\
                       fix:Bug Fixes,\

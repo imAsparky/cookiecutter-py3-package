@@ -438,3 +438,41 @@ def test_bake_without_automatic_CHANGELOG(cookies):
             f.basename for f in result.project.join(".github/workflows").listdir()
         ]
         assert "update-changelog.yaml" not in auto_workflow_without_files
+
+
+def test_bake_with_auto_semantic_version(cookies):
+    """
+    Test cookiecutter created the package with auto semantic versioning.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"use_GH_action_semantic_version": "y"}
+    ) as result:
+
+        sem_ver_with_files = [
+            f.basename for f in result.project.join(".github").listdir()
+        ]
+        assert "semantic.yaml" in sem_ver_with_files
+
+        sem_ver_workflow_with_files = [
+            f.basename for f in result.project.join(".github/workflows").listdir()
+        ]
+        assert "semantic_release.yaml" in sem_ver_workflow_with_files
+
+
+def test_bake_without_auto_semantic_version(cookies):
+    """
+    Test cookiecutter created the package without auto semantic versioning.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"use_GH_action_semantic_version": "n"}
+    ) as result:
+
+        sem_ver_without_files = [
+            f.basename for f in result.project.join(".github").listdir()
+        ]
+        assert "semantic.yaml" not in sem_ver_without_files
+
+        sem_ver_workflow_without_files = [
+            f.basename for f in result.project.join(".github/workflows").listdir()
+        ]
+        assert "semantic_release.yaml" not in sem_ver_workflow_without_files

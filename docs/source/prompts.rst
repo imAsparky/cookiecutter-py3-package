@@ -112,14 +112,13 @@ project.
     See `Issue 72 <https://github.com/imAsparky/cookiecutter-py3-package/issues/72>`_.
 
 
-
 **create_auto_CHANGELOG**
   *default = y*
 
   create_auto_CHANGELOG will use GitHub actions to generate a changelog using
   a cron job, scheduled daily.
 
-**github_access_token**
+**github_CHANGELOG_access_token**
   *default = secrets.GITHUB_TOKEN*
 
   For new or small repositories, select `secrets.GITHUB_TOKEN`.
@@ -135,6 +134,15 @@ project.
 
   See `Encrypted Secrets <https://docs.github.com/en/actions/reference/encrypted-secrets>`_
   for more information on generating secrets and repository security.
+
+**use_GH_action_semantic-version**
+  *default = y*
+
+  A GitHub action workflow will check your git commit message's information,
+  update the semantic version, and publish assets to your package repository.
+
+  A GitHub PAT is required, and the repository secret is named `SEM_VER`
+  for this feature to work.
 
 **open_source_license**
     *default = MIT*
