@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## [v0.3.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.3.0) - 2021-09-14 00:56:09
+
+### Feature
+* **tests:** Add GH action for autotesting #16 ([#73](https://github.com/imAsparky/cookiecutter-py3-package/issues/73)) ([`a49b767`](https://github.com/imAsparky/cookiecutter-py3-package/commit/a49b767f9baba25f091f5e948458dd995fe83bef))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`c12e2f5`](https://github.com/imAsparky/cookiecutter-py3-package/commit/c12e2f53c2360d5b2eaf15666896a40578df1aca))
+* **CHANGELOG:** Update release notes:repo ([`19dedf4`](https://github.com/imAsparky/cookiecutter-py3-package/commit/19dedf443bf662efd407e7b47902ab8afaea96e5))
+
+### Build
+
+- version:
+  - Bump to version - 0.3.0. ([adbf1bb](https://github.com/imAsparky/cookiecutter-py3-package/commit/adbf1bb69e62e08d998b016c40ba387b7fc008a1))
+
+### Feature
+
+- tests:
+  - Add GH action for autotesting #16 (#73) ([a49b767](https://github.com/imAsparky/cookiecutter-py3-package/commit/a49b767f9baba25f091f5e948458dd995fe83bef)) ([#73](https://github.com/imAsparky/cookiecutter-py3-package/pull/73))
+
 ## [v0.2.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.2.0) - 2021-09-13 09:17:34
 
 ### Feature
