@@ -32,3 +32,6 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.create_auto_CHANGELOG }}" == "y":
         remove_file("HISTORY.rst")
+
+    if "{{ cookiecutter.create_repo_auto_test_workflow }}" != "y":
+        remove_file(".github/workflows/test_contribution.yaml")
