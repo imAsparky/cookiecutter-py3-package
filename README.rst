@@ -28,6 +28,10 @@ keeping it automated and straightforward.**
 ..     :target: https://travis-ci.org/github/audreyfeldroy/cookiecutter-pypackage
 ..     :alt: Build Status
 
+.. image:: https://www.repostatus.org/badges/latest/wip.svg
+   :alt: Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.
+   :target: https://www.repostatus.org/#wip
+
 .. image:: https://app.codacy.com/project/badge/Grade/4c115acc2b3d4d13b998cdcbdb3cea64
     :target: https://www.codacy.com/gh/imAsparky/cookiecutter-py3-package/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imAsparky/cookiecutter-py3-package&amp;utm_campaign=Badge_Grade
     :alt: Code Quality
@@ -68,6 +72,9 @@ Cookiecutter_ template for a Python package.
    closed or manually.
 #. Semantic versioning and publishing are also available locally, bypassing
    the need for a GitHub action if that is your preferred workflow.
+#. Added optional GitHub custom issue templates. The four custom issue templates
+   prompt users to help provide enough information in a templated format for
+   each issue type.
 
 Features
 --------
@@ -82,22 +89,6 @@ Features
 .. _Projects: https://github.com/imAsparky/cookiecutter-py3-package/projects
 .. _CHANGELOG: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/CHANGELOG.md
 .. _Test-PyPi: https://test.pypi.org/
-
-
-.. Build Status
-.. -------------
-
-.. Linux:
-
-.. .. image:: https://img.shields.io/travis/audreyfeldroy/cookiecutter-pypackage.svg
-..     :target: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage
-..     :alt: Linux build status on Travis CI
-
-.. Windows:
-
-.. .. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true
-..     :target: https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master
-..     :alt: Windows build status on Appveyor
 
 Quickstart
 ----------
@@ -170,7 +161,6 @@ make my own packaging experience better.
 .. _Sphinx: http://sphinx-doc.org/
 .. _Read the Docs: https://readthedocs.io/
 .. _`pyup.io`: https://pyup.io/
-.. _bump2version: https://github.com/c4urself/bump2version
 .. _Punch: https://github.com/lgiordani/punch
 .. _Poetry: https://python-poetry.org/
 .. _PyPi: https://pypi.python.org/pypi

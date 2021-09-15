@@ -87,8 +87,8 @@ Ready to contribute? Here's how to set up `{{ cookiecutter.project_slug }}` for 
 
 6. Commit your changes and push your branch to GitHub::
 
-    $ git add .
-    $ git commit -m "Your detailed description of your changes."
+    $ git add <please enter each new/modified/deleted file name  here>
+    $ git commit <please fill in the commit message template as per the built in guide>
     $ git push origin name-of-your-bugfix-or-feature
 
 7. Submit a pull request through the GitHub website.
@@ -119,9 +119,8 @@ Deploying
 ---------
 
 A reminder for the maintainers on how to deploy.
-Make sure all your changes are committed (including an entry in HISTORY.rst).
+Make sure all your changes are committed.
 Then run::
 
-$ bump2version patch # possible: major / minor / patch
 $ git push
-$ git push --tags
+
