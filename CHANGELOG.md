@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2021-09-15)
+### Feature
+* **issues:** Add four custom issue templates #75 ([#77](https://github.com/imAsparky/cookiecutter-py3-package/issues/77)) ([`03bf9c3`](https://github.com/imAsparky/cookiecutter-py3-package/commit/03bf9c3c15dc8a3cd82f3f350bd678c4d0c8fb97))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`472984a`](https://github.com/imAsparky/cookiecutter-py3-package/commit/472984aa5d01057af213fe97d8d6657041684c1e))
+* **CHANGELOG:** Update release notes:repo ([`34fc9b9`](https://github.com/imAsparky/cookiecutter-py3-package/commit/34fc9b9e1b9032af736c2fded5e470a8f627ce66))
+
 ## [v0.4.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.4.0) - 2021-09-14 04:21:25
 
 ### Feature
