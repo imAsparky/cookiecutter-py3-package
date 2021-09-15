@@ -18,6 +18,7 @@
   "create_auto_CHANGELOG": "y",
   "github_CHANGELOG_access_token": ["secrets.GITHUB_TOKEN", "secrets.CHANGELOG_UPDATE"],
   "use_GH_action_semantic_version": "y",
+  "use_GH_custom_issue_templates": "y",
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
   "_copy_without_render": [
         ".github/workflows/test_contribution.yaml",

@@ -476,3 +476,49 @@ def test_bake_without_auto_semantic_version(cookies):
             f.basename for f in result.project.join(".github/workflows").listdir()
         ]
         assert "semantic_release.yaml" not in sem_ver_workflow_without_files
+
+
+def test_bake_with_custom_issue_templates(cookies):
+    """
+    Test cookiecutter created the package with custom issue templates.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"use_GH_custom_issue_templates": "y"}
+    ) as result:
+
+        templates_with_files = [
+            f.basename for f in result.project.join(".github/ISSUE_TEMPLATE").listdir()
+        ]
+        assert "bug-report.md" in templates_with_files
+        assert "chore.md" in templates_with_files
+        assert "documentation-request.md" in templates_with_files
+        assert "feature-request.md" in templates_with_files
+
+        # Test the standard template has been removed.
+        standard_issue_template = [
+            f.basename for f in result.project.join(".github/").listdir()
+        ]
+        assert "ISSUE_TEMPLATE.md" not in standard_issue_template
+
+
+def test_bake_without_custom_issue_templates(cookies):
+    """
+    Test cookiecutter created the package without custom issue templates.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"use_GH_custom_issue_templates": "n"}
+    ) as result:
+
+        templates_without_files = [
+            f.basename for f in result.project.join(".github/ISSUE_TEMPLATE").listdir()
+        ]
+        assert "bug-report.md" not in templates_without_files
+        assert "chore.md" not in templates_without_files
+        assert "documentation-request.md" not in templates_without_files
+        assert "feature-request.md" not in templates_without_files
+
+        # Test the standard template has been removed.
+        standard_issue_template = [
+            f.basename for f in result.project.join(".github/").listdir()
+        ]
+        assert "ISSUE_TEMPLATE.md" in standard_issue_template

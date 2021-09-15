@@ -144,6 +144,38 @@ project.
   A GitHub PAT is required, and the repository secret is named `SEM_VER`
   for this feature to work.
 
+**use_GH_custom_issue_templates**
+  *default = y*
+
+  Four custom GitHub issue templates for your package:
+
+  #. bug-report.md
+  #. chore.md
+  #. documentation-request.md
+  #. feature-request.md
+
+  The custom issue templates prompt users to help provide enough information
+  in a templated format.
+
+  The default assignee is you; however, re-assign if required at creation
+  time or any time after.
+
+  See the critical template markdown file settings below for a feature request.
+
+.. code-block:: yaml
+
+    ---
+    name: Feature request
+    about: Suggest an idea for this project
+    title: "[FEAT]:"
+    labels: enhancement
+    assignees: { { cookiecutter.github_username } }
+    ---
+
+| If you prefer, a simple issue template is available for use with all
+  issues if you choose `no` for this feature.
+
+
 **open_source_license**
     *default = MIT*
 

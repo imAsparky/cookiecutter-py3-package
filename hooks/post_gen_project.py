@@ -7,7 +7,8 @@ PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
 def remove_file(filepath):
     """Remove files not required for this generated python package."""
-    os.remove(os.path.join(PROJECT_DIRECTORY, filepath))
+    if os.path.exists(os.path.join(PROJECT_DIRECTORY, filepath)):
+        os.remove(os.path.join(PROJECT_DIRECTORY, filepath))
 
 
 if __name__ == "__main__":
@@ -39,3 +40,12 @@ if __name__ == "__main__":
     if "{{ cookiecutter.use_GH_action_semantic_version }}" != "y":
         remove_file(".github/workflows/semantic_release.yaml")
         remove_file(".github/semantic.yaml")
+
+    if "{{ cookiecutter.use_GH_custom_issue_templates }}" != "y":
+        remove_file(".github/ISSUE_TEMPLATE/bug-report.md")
+        remove_file(".github/ISSUE_TEMPLATE/chore.md")
+        remove_file(".github/ISSUE_TEMPLATE/documentation-request.md")
+        remove_file(".github/ISSUE_TEMPLATE/feature-request.md")
+
+    if "{{ cookiecutter.use_GH_custom_issue_templates }}" == "y":
+        remove_file(".github/ISSUE_TEMPLATE.md")
