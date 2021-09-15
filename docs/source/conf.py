@@ -1,4 +1,4 @@
-"""{{ cookiecutter.project_slug }} documentation Sphinx build configuration file."""
+"""cookiecutter-py3-package documentation Sphinx build configuration file."""
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -43,6 +43,9 @@ release = __version__
 extensions = [
     "myst_parser",
     "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx_copybutton",
+    "sphinx_inline_tabs",
     "sphinx.ext.doctest",
     "sphinx.ext.todo",
     "sphinx.ext.coverage",
@@ -57,6 +60,9 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "build", "Thumbs.db", ".DS_Store"]
 
+pygments_style = "monokai"
+pygments_dark_style = "monokai"
+
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -66,9 +72,26 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "alabaster"
+# html_theme = "alabaster"
+html_theme = "furo"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+# sphinx-copybutton is a lightweight code-block copy button
+# config options are here https://sphinx-copybutton.readthedocs.io/en/latest/
+# This config removes Python Repl + continuation, Bash line prefixes,
+# ipython and qtconsole + continuation, jupyter-console + continuation and preceding line numbers
+copybutton_prompt_text = (
+    r"^\d|^.\d|^\d\d|^\d\d\d|>>> |\.\.\. |\$ |In \[\d*\]: | {2,5}\.\.\.: | {5,8}: "
+)
+copybutton_prompt_is_regexp = True
+
+# datalad download-url http://www.tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf \
+# --dataset . \
+# -m "add beginners guide on bash" \
+# -O books/bash_guide.pdf
+# is correctly pasted with the following setting
+copybutton_line_continuation_character = "\\"
