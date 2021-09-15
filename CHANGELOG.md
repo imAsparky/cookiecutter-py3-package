@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.0 (2021-09-15)
+### Feature
+* **docs:** Add sphinx theme and tools #79 ([#80](https://github.com/imAsparky/cookiecutter-py3-package/issues/80)) ([`60a9388`](https://github.com/imAsparky/cookiecutter-py3-package/commit/60a9388ce54da097b1576850c1345e1fb78e67d1))
+
+### Documentation
+* **bump:** Remove bump2version references #71 ([#78](https://github.com/imAsparky/cookiecutter-py3-package/issues/78)) ([`78e61a0`](https://github.com/imAsparky/cookiecutter-py3-package/commit/78e61a0f968046f9da8ad18d10fdc8cb9b995136))
+
 ## v0.5.0 (2021-09-15)
 ### Feature
 * **issues:** Add four custom issue templates #75 ([#77](https://github.com/imAsparky/cookiecutter-py3-package/issues/77)) ([`03bf9c3`](https://github.com/imAsparky/cookiecutter-py3-package/commit/03bf9c3c15dc8a3cd82f3f350bd678c4d0c8fb97))
