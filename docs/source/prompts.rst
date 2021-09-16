@@ -1,6 +1,10 @@
+.. include:: /extras.rst.txt
+
 =======
 Prompts
 =======
+
+*Copyright 2015, Audrey Roy Greenfeld*
 
 When you create a package, you are prompted to enter these values.
 

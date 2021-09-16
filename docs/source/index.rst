@@ -1,32 +1,48 @@
+.. include:: /extras.rst.txt
+.. highlight:: rst
+.. index:: main ; Index
+
+
+.. _main-index:
+
 ====================================================
 Welcome to cookiecutter-py3-package's documentation!
 ====================================================
 
-Getting Started
----------------
+|
+
+See a list of the Original and new In Progress Documents below.
+
+|
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
+   :caption: Original Documentation:
 
    readme
    tutorial
-   pypi_release_checklist
-
-Basics
-------
-
-.. toctree::
-   :maxdepth: 2
-
    prompts
+   pypi_release_checklist
+   console_script_setup
+   troubleshooting
 
-Advanced Features
------------------
+|
+|
+.. toctree::
+   :titlesonly:
+   :caption: In Progress Documentation:
+
+   tutorials/index-tutorials
+
+|
+|
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
+   :caption: How-To's Placeholder:
 
-   console_script_setup
+   how-to/index-how-to
+
 
 
 Changelog
@@ -34,18 +50,18 @@ Changelog
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    CHANGELOG-docs.md
 
 
+To Do List
+----------
 
+.. toctree::
+   :maxdepth: 2
+   :caption: ToDo:
 
-Todo List to improve cookiecutter-py3-package docs.
----------------------------------------------------
-
-.. todolist::
-
+   todo
 
 Indices and tables
 ==================

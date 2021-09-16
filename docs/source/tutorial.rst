@@ -2,6 +2,8 @@
 Tutorial
 ========
 
+*Copyright 2015, Audrey Roy Greenfeld*
+
 .. note:: Did you find any of these instructions confusing? `Edit this file`_
           and submit a pull request with your improvements!
 

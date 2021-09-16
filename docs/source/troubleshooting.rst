@@ -2,6 +2,8 @@
 Trouble Shooting
 ================
 
+*Copyright 2015, Audrey Roy Greenfeld*
+
 .. note:: Can you help improve this file? `Edit this file`_
           and submit a pull request with your improvements!
 

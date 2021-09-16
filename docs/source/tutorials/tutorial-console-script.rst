@@ -1,8 +1,26 @@
-====================
-Console Script Setup
-====================
+.. include:: /extras.rst.txt
+.. highlight:: rst
+.. index:: console-script ; Index
 
-*Copyright 2015, Audrey Roy Greenfeld*
+
+.. _console-script-index:
+
+==============
+Console Script
+==============
+
+|
+
+See a list of the steps below to get started with the console script.
+
+|
+
+.. todo::
+
+    Write a console script guide.
+
+    See `Issue-89 <https://github.com/imAsparky/cookiecutter-py3-package/issues/89>`_.
+
 
 Optionally, your package can include a console script using Click or argparse
 (Python 3.2+).
