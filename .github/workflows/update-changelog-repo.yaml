@@ -2,8 +2,8 @@ name: Auto-generate CHANGELOG-repo
 on:
     # release:
     #   types: [created, edited]
-    schedule:
-        - cron: "0 14 * * *"
+    # schedule:
+    #     - cron: "0 14 * * *"
     # push:
     #     branches:
     #         - main
