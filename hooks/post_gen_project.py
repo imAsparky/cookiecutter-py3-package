@@ -28,7 +28,6 @@ if __name__ == "__main__":
         remove_file(".github/.git-commit-template.txt")
 
     if "{{ cookiecutter.create_auto_CHANGELOG }}" != "y":
-        remove_file("CHANGELOG.md")
         remove_file(".github/workflows/update-changelog.yaml")
 
     if "{{ cookiecutter.create_auto_CHANGELOG }}" == "y":
@@ -41,6 +40,15 @@ if __name__ == "__main__":
         remove_file(".github/workflows/semantic_release.yaml")
         remove_file(".github/semantic.yaml")
 
+    if "{{ cookiecutter.use_GH_action_semantic_version }}" == "y":
+        remove_file("HISTORY.rst")
+
+    if (
+        "{{ cookiecutter.use_GH_action_semantic_version }}" != "y"
+        and "{{ cookiecutter.create_auto_CHANGELOG }}" != "y"
+    ):
+        remove_file("CHANGELOG.md")
+
     if "{{ cookiecutter.use_GH_custom_issue_templates }}" != "y":
         remove_file(".github/ISSUE_TEMPLATE/bug-report.md")
         remove_file(".github/ISSUE_TEMPLATE/chore.md")
@@ -49,3 +57,6 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.use_GH_custom_issue_templates }}" == "y":
         remove_file(".github/ISSUE_TEMPLATE.md")
+
+    if "{{ cookiecutter.use_pre_commit }}" != "y":
+        remove_file(".pre-commit-config.yaml")
