@@ -17,8 +17,8 @@
 
 **Checkout the** Projects_ **page to see what is planned.**
 
-**We are aiming for your new package to use a Continuous Delivery workflow,
-keeping it automated and straightforward.**
+**We are aiming for your new package to be an automated Continuous Delivery
+workflow experience.**
 
 .. .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
 ..     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
@@ -31,6 +31,14 @@ keeping it automated and straightforward.**
 .. image:: https://www.repostatus.org/badges/latest/wip.svg
    :alt: Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.
    :target: https://www.repostatus.org/#wip
+
+.. image:: http://isitmaintained.com/badge/resolution/imAsparky/cookiecutter-py3-package.svg
+   :alt: Project is Maintained
+   :target: https://isitmaintained.com/project/imAsparky/cookiecutter-py3-package
+
+.. image:: http://isitmaintained.com/badge/open/imAsparky/cookiecutter-py3-package.svg
+   :alt: Project Open Issues
+   :target: https://isitmaintained.com/project/imAsparky/cookiecutter-py3-package
 
 .. image:: https://app.codacy.com/project/badge/Grade/4c115acc2b3d4d13b998cdcbdb3cea64
     :target: https://www.codacy.com/gh/imAsparky/cookiecutter-py3-package/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=imAsparky/cookiecutter-py3-package&amp;utm_campaign=Badge_Grade
@@ -45,50 +53,46 @@ keeping it automated and straightforward.**
     :target: https://cookiecutter-py3-package.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-Cookiecutter_ template for a Python package.
+A Cookiecutter_ template for a Python package.
 
 * GitHub repo: https://github.com/imAsparky/cookiecutter-py3-package/
 * Documentation: https://cookiecutter-py3-package.readthedocs.io/
 * Free software: BSD license
 
 
-**Notable changes from the Original project so far.**
-
-#. Links from the original fork have been updated to point to this repository.
-#. Support for Travis has been removed.
-#. Stale "Similar Cookiecutter Templates" have been removed.
-#. `Conventional Commits <https://www.conventionalcommits.org/en/v1.0.0/>`_
-   specification custom commit message are now built into the
-   cookiecutter-p3-package project.
-#. Choose to use a `Conventional Commits <https://www.conventionalcommits.org/en/v1.0.0/>`_
-   specification custom commits message in your built package.
-#. Added an optional GitHub action to generate a package CHANGELOG automatically.
-#. Added an optional GitHub action to run your tox package test suite when a
-   pull request to the main branch starts.
-#. Tox configuration for your package now includes an OS and Python test matrix.
-   OS includes Linux, macOS and Windows. Python 3.6 - 3.9.
-#. Added an optional GitHub action to automatically update semantic version and
-   publish assets to your package repository when a pull request merge is
-   closed or manually.
-#. Semantic versioning and publishing are also available locally, bypassing
-   the need for a GitHub action if that is your preferred workflow.
-#. Added optional GitHub custom issue templates. The four custom issue templates
-   prompt users to help provide enough information in a templated format for
-   each issue type.
-
 Features
 --------
 
-* Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
-* Auto-release to PyPI_ when you push a new tag to main (optional). Coming soon.
-* Use commit tags to release to Test-PyPi_. Coming soon.
-* Command line interface using Click (optional).
+#. Choose to use a Conventional-Commits_ specification custom commits message
+   in your built package.
+#. An optional GitHub action to automatically update semantic version and
+   publish assets to your package repository when a pull request merge is
+   closed or manually.
+#. Manual semantic versioning and publishing are also available locally,
+   bypassing the need for a GitHub action if that is your preferred workflow.
+#. An optional GitHub action to generate a package CHANGELOG automatically if
+   you choose to version and publish your package manually.
+#. An optional GitHub action to run your Tox_ package test suite when a
+   pull request to the main branch starts.
+#. Tox_ configuration for your package includes an OS and Python test matrix.
+   OS includes Linux, macOS and Windows. Python 3.6 - 3.9.
+#. An optional suite of custom GitHub issue templates. The four custom issue
+   templates prompt users to help provide enough information in a templated
+   format for each issue type.
+#. Documentation is in the process of being refreshed and organised into the
+   Diataxis_ documentation framework.
+#. Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
+#. Auto-release to PyPI_ when you push a new tag to main (optional). Coming soon.
+#. Use commit tags to release to Test-PyPi_. Coming soon.
+#. An optional Command line interface using Click or Argparse.
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
 .. _Projects: https://github.com/imAsparky/cookiecutter-py3-package/projects
 .. _CHANGELOG: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/CHANGELOG.md
 .. _Test-PyPi: https://test.pypi.org/
+.. _Conventional-Commits:  https://www.conventionalcommits.org/en/v1.0.0/
+.. _Diataxis: https://diataxis.fr/
 
 Quickstart
 ----------

@@ -2,6 +2,9 @@
 PyPI Release Checklist
 ======================
 
+*Copyright 2015, Audrey Roy Greenfeld*
+
+
 Before Your First Release
 -------------------------
 

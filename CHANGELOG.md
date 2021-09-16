@@ -3,8 +3,22 @@
 <!--next-version-placeholder-->
 
 ## v0.6.3 (2021-09-16)
+
 ### Fix
-* **CHANGELOG:** Auto-generate for repo disabled #94 ([#97](https://github.com/imAsparky/cookiecutter-py3-package/issues/97)) ([`f3f6f9c`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f3f6f9cfcce2375f580a089fa3319ace9108dbeb))
+
+-   **CHANGELOG:** Auto-generate for repo disabled #94 ([#97](https://github.com/imAsparky/cookiecutter-py3-package/issues/97)) ([`f3f6f9c`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f3f6f9cfcce2375f580a089fa3319ace9108dbeb))
+
+## v0.6.2 (2021-09-16)
+
+### Fix
+
+-   **git** Package git url source updated #95 ([#95](https://github.com/imAsparky/cookiecutter-py3-package/issues/95)) ([`1aa3010`](https://github.com/imAsparky/cookiecutter-py3-package/commit/1aa3010a6765ac5f385d23bd464723ae357fa15e))
+
+## v0.6.1 (2021-09-16)
+
+### Fix
+
+-   **deps** Update pkge requirements_dev.txt #91 ([#91](https://github.com/imAsparky/cookiecutter-py3-package/issues/91)) ([`c7f2eeb`](https://github.com/imAsparky/cookiecutter-py3-package/commit/c7f2eebaec21bd3fc1ea6e52dedb05738748a350))
 
 ## [v0.6.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.6.0) - 2021-09-15 07:10:13
 
