@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.0 (2021-09-16)
+### Feature
+* **pre-commit:** Add pre-commit to package #93 ([#99](https://github.com/imAsparky/cookiecutter-py3-package/issues/99)) ([`5ec4067`](https://github.com/imAsparky/cookiecutter-py3-package/commit/5ec40679497df75dd04bec045d00124287a271cf))
+
+### Documentation
+* **Diataxis:** Add tutes & how-to framework #81 ([#98](https://github.com/imAsparky/cookiecutter-py3-package/issues/98)) ([`322ac5b`](https://github.com/imAsparky/cookiecutter-py3-package/commit/322ac5b1067cf8cad493f08675643cf409daceb0))
+
 ## v0.6.3 (2021-09-16)
 
 ### Fix
