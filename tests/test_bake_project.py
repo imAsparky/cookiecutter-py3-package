@@ -95,6 +95,33 @@ def test_bake_with_defaults(cookies):
         assert "python_3_package_boilerplate" in found_toplevel_files
         assert "tox.ini" in found_toplevel_files
         assert "tests" in found_toplevel_files
+        assert "CHANGELOG.md" in found_toplevel_files
+        assert "LICENSE" in found_toplevel_files
+        assert "AUTHORS.rst" in found_toplevel_files
+        assert "History.rst" not in found_toplevel_files
+        # assert ".pre-commit-config.yaml" in found_toplevel_files
+
+        found_git_workflows = [
+            f.basename for f in result.project.join(".github/workflows").listdir()
+        ]
+        assert "semantic_release.yaml" in found_git_workflows
+        assert "test_contribution.yaml" in found_git_workflows
+        assert "update-changelog.yaml" not in found_git_workflows
+
+        found_git_templates = [
+            f.basename for f in result.project.join(".github/ISSUE_TEMPLATE").listdir()
+        ]
+
+        assert "bug-report.md" in found_git_templates
+        assert "chore.md" in found_git_templates
+        assert "documentation-request.md" in found_git_templates
+        assert "feature-request.md" in found_git_templates
+
+        found_git_files = [f.basename for f in result.project.join(".github").listdir()]
+
+        assert ".git-commit-template.txt" in found_git_files
+        assert "semantic.yaml" in found_git_files
+        assert "ISSUE_TEMPLATE.md" not in found_git_files
 
 
 def test_bake_and_run_tests(cookies):
@@ -431,9 +458,6 @@ def test_bake_without_automatic_CHANGELOG(cookies):
         cookies, extra_context={"create_auto_CHANGELOG": "n"}
     ) as result:
 
-        change_log_without_files = [f.basename for f in result.project.listdir()]
-        assert "CHANGELOG.md" not in change_log_without_files
-
         auto_workflow_without_files = [
             f.basename for f in result.project.join(".github/workflows").listdir()
         ]
@@ -476,6 +500,24 @@ def test_bake_without_auto_semantic_version(cookies):
             f.basename for f in result.project.join(".github/workflows").listdir()
         ]
         assert "semantic_release.yaml" not in sem_ver_workflow_without_files
+
+
+def test_bake_without_automatic_CHANGELOG_and_semantic_version(cookies):
+    """
+    Test cookiecutter created the package without Changelog & Semantic Version.
+    """
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={
+            "create_auto_CHANGELOG": "n",
+            "use_GH_action_semantic_version": "n",
+        },
+    ) as result:
+
+        auto_changelog_semantic_without_files = [
+            f.basename for f in result.project.listdir()
+        ]
+        assert "CHANGELOG.md" not in auto_changelog_semantic_without_files
 
 
 def test_bake_with_custom_issue_templates(cookies):
@@ -522,3 +564,23 @@ def test_bake_without_custom_issue_templates(cookies):
             f.basename for f in result.project.join(".github/").listdir()
         ]
         assert "ISSUE_TEMPLATE.md" in standard_issue_template
+
+
+def test_bake_with_pre_commit(cookies):
+    """
+    Test cookiecutter created the package with pre-commit.
+    """
+    with bake_in_temp_dir(cookies, extra_context={"use_pre_commit": "y"}) as result:
+
+        pre_commit_with_files = [f.basename for f in result.project.listdir()]
+        assert ".pre-commit-config.yaml" in pre_commit_with_files
+
+
+# def test_bake_without_pre_commit(cookies):
+#     """
+#     Test cookiecutter created the package without pre-commit.
+#     """
+#     with bake_in_temp_dir(cookies, extra_context={"use_pre_commit": "n"}) as result:
+
+#         pre_commit_without_files = [f.basename for f in result.project.listdir()]
+#         assert ".pre-commit-config.yaml" in pre_commit_without_files
