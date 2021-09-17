@@ -3,7 +3,7 @@ name: Documentation request
 about: Suggest documentaton for this project
 title: "[DOCS]:"
 labels: documentation
-assignees: { { cookiecutter.github_username } }
+assignees: "{{ cookiecutter.github_username }}"
 ---
 
 **Describe alternatives you've considered**
