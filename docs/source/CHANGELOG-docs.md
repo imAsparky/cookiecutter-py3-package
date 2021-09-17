@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## [v0.7.1](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.7.1) - 2021-09-17 00:26:19
+
+### Fix
+* **ISSUE:** Templates asignees added "" #100 ([#101](https://github.com/imAsparky/cookiecutter-py3-package/issues/101)) ([`aa1d5c7`](https://github.com/imAsparky/cookiecutter-py3-package/commit/aa1d5c763c8ec1b8a119de691b79743ec9e21bcf))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`e3ac506`](https://github.com/imAsparky/cookiecutter-py3-package/commit/e3ac506c431922daddd6b57396eb798e1c6157ef))
+
+### Build
+
+- version:
+  - Bump to version - 0.7.1. ([8591d38](https://github.com/imAsparky/cookiecutter-py3-package/commit/8591d38caebc72e19b4980fe38ea16684706f7b3))
+
+### Bug Fixes
+
+- ISSUE:
+  - Templates asignees added "" #100 (#101) ([aa1d5c7](https://github.com/imAsparky/cookiecutter-py3-package/commit/aa1d5c763c8ec1b8a119de691b79743ec9e21bcf)) ([#101](https://github.com/imAsparky/cookiecutter-py3-package/pull/101))
+
 ## [v0.7.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.7.0) - 2021-09-16 09:54:30
 
 ### Feature
