@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## Unreleased
+
+Changes unreleased.
+
+### Chore
+
+- pre-commit:
+  - Add additional checks #105 (#107) ([9ae8906](https://github.com/imAsparky/cookiecutter-py3-package/commit/9ae890697ce0b49e0f837ac1f426b087260477cc)) ([#107](https://github.com/imAsparky/cookiecutter-py3-package/pull/107))
+  - Add additional checks #105 (#106) ([2f96b6e](https://github.com/imAsparky/cookiecutter-py3-package/commit/2f96b6e4e0b1719e499c4679c53d365af73a763b)) ([#106](https://github.com/imAsparky/cookiecutter-py3-package/pull/106))
+
 ## [v0.7.1](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.7.1) - 2021-09-17 00:26:19
 
 ### Fix
