@@ -1,7 +1,10 @@
 # Local Files and Folders
+.coveragerc
+hooks/snippets.txt
 
 # vscode
 workspace.code-*
+*code-workspace
 .vscode/
 
 
