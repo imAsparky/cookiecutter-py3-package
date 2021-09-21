@@ -179,29 +179,6 @@ project.
 | If you prefer, a simple issue template is available for use with all
   issues if you choose `no` for this feature.
 
-**automatic_set_up_git_and_initial_commit**
-   *default = y*
-
-   pre-requisites:
-
-   #. git_project_name
-   #. github_username
-   #. email
-
-   Initiation of your local git repository is automatic; all files are added
-   and committed with a conventional commits style message.
-
-   You can run a git reflog and check all is ok before pushing to the
-   repository.
-
-.. code-block:: bash
-
-  git reflog
-
-.. note::
-
-  Selecting this option also includes automatically adding the conventional
-  commits message template to git config if you have chosen that option.
 
 **open_source_license**
     *default = MIT*
