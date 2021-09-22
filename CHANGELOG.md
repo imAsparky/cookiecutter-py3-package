@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.8.0 (2021-09-22)
+### Feature
+* **git:** Add auto git init-add-commit #102 ([#110](https://github.com/imAsparky/cookiecutter-py3-package/issues/110)) ([`42a531a`](https://github.com/imAsparky/cookiecutter-py3-package/commit/42a531a3c1a5054c99a39eda94a7a9789f9583ec))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`3990c03`](https://github.com/imAsparky/cookiecutter-py3-package/commit/3990c0322ea12f5f2bde7e34256f7d3289f88838))
+* **CHANGELOG:** Update release notes:docs ([`43f4900`](https://github.com/imAsparky/cookiecutter-py3-package/commit/43f4900e71c4cb73eccbb6db6aacd3d1e3f74e0b))
+
 ## v0.7.1 (2021-09-17)
 ### Fix
 * **ISSUE:** Templates asignees added "" #100 ([#101](https://github.com/imAsparky/cookiecutter-py3-package/issues/101)) ([`aa1d5c7`](https://github.com/imAsparky/cookiecutter-py3-package/commit/aa1d5c763c8ec1b8a119de691b79743ec9e21bcf))
