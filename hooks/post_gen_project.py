@@ -14,7 +14,7 @@ GIT_EMAIL = "{{cookiecutter.email}}"
 
 
 def post_gen_setup(*args, supress_exception=False, cwd=None):
-    """Helper to set up the package with the chosen options"""
+    """Helper to set up the package with the chosen options."""
     cur_dir = os.getcwd()
 
     try:
@@ -39,7 +39,7 @@ def post_gen_setup(*args, supress_exception=False, cwd=None):
 
 
 def init_git():
-    """Initialise git repository and set the remote"""
+    """Initialise git repository and set the remote."""
     if not os.path.exists(os.path.join(PROJECT_DIRECTORY, ".git")):
         post_gen_setup(
             "git",
