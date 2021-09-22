@@ -1,8 +1,106 @@
 #!/usr/bin/env python
 """cookiecutter-py3-package post package generation jobs."""
 import os
+import subprocess  # nosec
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
+
+REMOTE_REPO = "git@github.com:{{cookiecutter.github_username}}/\
+{{cookiecutter.git_project_name}}.git"
+
+
+GIT_USER = "{{cookiecutter.full_name}}"
+GIT_EMAIL = "{{cookiecutter.email}}"
+
+
+def post_gen_setup(*args, supress_exception=False, cwd=None):
+    """Helper to set up the package with the chosen options."""
+    cur_dir = os.getcwd()
+
+    try:
+        if cwd:
+            os.chdir(cwd)
+
+        with subprocess.Popen(  # nosec
+            args, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        ) as proc:
+
+            out, err = proc.communicate()
+            out = out.decode("utf-8")
+            err = err.decode("utf-8")
+            if err and not supress_exception:
+                raise Exception(err)
+            if err and supress_exception:
+                return out
+            return None  # This return fixes pylint R1710 see
+            # https://pycodequ.al/docs/pylint-messages/r1710-inconsistent-return-statements.html
+    finally:
+        os.chdir(cur_dir)
+
+
+def init_git():
+    """Initialise git repository and set the remote."""
+    if not os.path.exists(os.path.join(PROJECT_DIRECTORY, ".git")):
+        post_gen_setup(
+            "git",
+            "init",
+            "--initial-branch=main",
+            cwd=PROJECT_DIRECTORY,
+        )
+
+        post_gen_setup(
+            "git",
+            "remote",
+            "add",
+            "origin",
+            REMOTE_REPO,
+            cwd=PROJECT_DIRECTORY,
+        )
+        post_gen_setup(
+            "git",
+            "config",
+            "user.name",
+            GIT_USER,
+            cwd=PROJECT_DIRECTORY,
+        )
+        post_gen_setup(
+            "git",
+            "config",
+            "user.email",
+            GIT_EMAIL,
+            cwd=PROJECT_DIRECTORY,
+        )
+
+
+def git_add_and_commit_initial():
+    """Add the local files and commit to the git repository."""
+    post_gen_setup(
+        "git",
+        "add",
+        "-A",
+        cwd=PROJECT_DIRECTORY,
+    )
+
+    post_gen_setup(
+        "git",
+        "commit",
+        "-m",
+        '"chore(git): Initial Commit"',
+        cwd=PROJECT_DIRECTORY,
+    )
+
+
+def git_configure_custom_commit_message():
+    """Configure git to use the custom commit message template."""
+    if os.path.exists(os.path.join(PROJECT_DIRECTORY, ".git")):
+        post_gen_setup(
+            "git",
+            "config",
+            "--local",
+            "commit.template",
+            ".github/.git-commit-template.txt",
+            cwd=PROJECT_DIRECTORY,
+        )
 
 
 def remove_file(filepath):
@@ -60,3 +158,10 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.use_pre_commit }}" != "y":
         remove_file(".pre-commit-config.yaml")
+
+    if "{{ cookiecutter.automatic_set_up_git_and_initial_commit }}" == "y":
+        init_git()
+        git_add_and_commit_initial()
+
+        if "{{ cookiecutter.create_conventional_commits_edit_message}}" == "y":
+            git_configure_custom_commit_message()

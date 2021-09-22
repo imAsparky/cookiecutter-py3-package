@@ -4,12 +4,39 @@ import datetime
 import importlib
 import os
 import shlex
-import subprocess
+import subprocess  # nosec
 import sys
 from contextlib import contextmanager
 import pytest
 from click.testing import CliRunner
 from cookiecutter.utils import rmtree
+
+
+def post_gen_setup(*args, supress_exception=False, cwd=None):
+    """Helper to set up the package with the chosen options"""
+    cur_dir = os.getcwd()
+
+    try:
+        if cwd:
+            os.chdir(cwd)
+
+        with subprocess.Popen(  # nosec
+            args, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        ) as proc:
+
+            out, err = proc.communicate()
+            out = out.decode("utf-8")
+            err = err.decode("utf-8")
+            if err and not supress_exception:
+                raise Exception(err)
+            if err and supress_exception:
+                return out
+
+            return out
+            # return None  # This return fixes pylint R1710 see
+            # https://pycodequ.al/docs/pylint-messages/r1710-inconsistent-return-statements.html
+    finally:
+        os.chdir(cur_dir)
 
 
 @contextmanager
@@ -99,7 +126,7 @@ def test_bake_with_defaults(cookies):
         assert "LICENSE" in found_toplevel_files
         assert "AUTHORS.rst" in found_toplevel_files
         assert "History.rst" not in found_toplevel_files
-        # assert ".pre-commit-config.yaml" in found_toplevel_files
+        assert ".pre-commit-config.yaml" in found_toplevel_files
 
         found_git_workflows = [
             f.basename for f in result.project.join(".github/workflows").listdir()
@@ -140,23 +167,6 @@ def test_bake_and_run_tests(cookies):
         # print("test_bake_and_run_tests path", str(result.project))
 
 
-def test_bake_withspecialchars_and_run_tests(cookies):
-    """
-    Ensure that a `full_name` with double quotes does not break setup.py.
-
-    .. note::
-     A reminder if anything stops working. This line is commented out due to
-     W0106: Expression "run_inside_dir('python setup.py test',
-     str(result.project)) == 0" is assigned to nothing
-     (expression-not-assigned) pre-commit pylint error.
-    """
-    with bake_in_temp_dir(
-        cookies, extra_context={"full_name": 'name "quote" name'}
-    ) as result:
-        assert result.project.isdir()
-        # run_inside_dir('python setup.py test', str(result.project)) == 0
-
-
 def test_bake_with_apostrophe_and_run_tests(cookies):
     """
     Ensure that a `full_name` with apostrophes does not break setup.py.
@@ -167,16 +177,22 @@ def test_bake_with_apostrophe_and_run_tests(cookies):
      str(result.project)) == 0" is assigned to nothing
      (expression-not-assigned) pre-commit pylint error.
     """
-    with bake_in_temp_dir(cookies, extra_context={"full_name": "O'connor"}) as result:
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"full_name": "O'connor"},
+    ) as result:
         assert result.project.isdir()
-        # run_inside_dir('python setup.py test', str(result.project)) == 0
+        # run_inside_dir("python setup.py test", str(result.project)) == 0
 
 
 def test_bake_without_author_file(cookies):
     """
     Test cookiecutter created the package without an author file.
     """
-    with bake_in_temp_dir(cookies, extra_context={"create_author_file": "n"}) as result:
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"create_author_file": "n"},
+    ) as result:
         found_toplevel_files = [f.basename for f in result.project.listdir()]
         assert "AUTHORS.rst" not in found_toplevel_files
         doc_files = [f.basename for f in result.project.join("docs").listdir()]
@@ -247,7 +263,10 @@ def test_using_pytest(cookies):
      str(result.project)) == 0" is assigned to nothing
      (expression-not-assigned) pre-commit pylint error.
     """
-    with bake_in_temp_dir(cookies, extra_context={"use_pytest": "y"}) as result:
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"use_pytest": "y"},
+    ) as result:
         assert result.project.isdir()
         test_file_path = result.project.join(
             "tests/test_python_3_package_boilerplate.py"
@@ -370,7 +389,10 @@ def test_black(cookies, use_black, expected):
     """
     Test cookiecutter created the package with black configured.
     """
-    with bake_in_temp_dir(cookies, extra_context={"use_black": use_black}) as result:
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"use_black": use_black},
+    ) as result:
         assert result.project.isdir()
         requirements_path = result.project.join("requirements_dev.txt")
         assert ("black" in requirements_path.read()) is expected
@@ -383,11 +405,26 @@ def test_bake_with_conventional_commits_message(cookies):
     Test cookiecutter created the package with a conventional commits message.
     """
     with bake_in_temp_dir(
-        cookies, extra_context={"create_conventional_commits_edit_message": "y"}
+        cookies,
+        extra_context={"create_conventional_commits_edit_message": "y"},
     ) as result:
 
         git_with_files = [f.basename for f in result.project.join(".github").listdir()]
         assert ".git-commit-template.txt" in git_with_files
+
+
+def test_bake_with_git_config_use_conventional_commits_message(cookies):
+    """
+    Test cookiecutter created the package with git config conventional commits.
+    """
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"create_conventional_commits_edit_message": "y"},
+    ) as result:
+
+        assert "commit.template=.github/.git-commit-template.txt" in post_gen_setup(
+            "git", "config", "--local", "--list", cwd=str(result.project)
+        )
 
 
 def test_bake_without_conventional_commits_message(cookies):
@@ -576,11 +613,67 @@ def test_bake_with_pre_commit(cookies):
         assert ".pre-commit-config.yaml" in pre_commit_with_files
 
 
-# def test_bake_without_pre_commit(cookies):
-#     """
-#     Test cookiecutter created the package without pre-commit.
-#     """
-#     with bake_in_temp_dir(cookies, extra_context={"use_pre_commit": "n"}) as result:
+def test_bake_without_pre_commit(cookies):
+    """
+    Test cookiecutter created the package without pre-commit.
+    """
+    with bake_in_temp_dir(cookies, extra_context={"use_pre_commit": "n"}) as result:
 
-#         pre_commit_without_files = [f.basename for f in result.project.listdir()]
-#         assert ".pre-commit-config.yaml" in pre_commit_without_files
+        pre_commit_without_files = [f.basename for f in result.project.listdir()]
+        assert ".pre-commit-config.yaml" not in pre_commit_without_files
+
+
+def test_bake_with_git_init_success(cookies):
+    """
+    Test cookiecutter created the package with git init successfull.
+    """
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"automatic_set_up_git_and_initial_commit": "y"},
+    ) as result:
+
+        found_toplevel_files = [f.basename for f in result.project.listdir()]
+        assert ".git" in found_toplevel_files
+
+        assert "origin" in post_gen_setup(
+            "git", "remote", "-v", cwd=str(result.project)
+        )
+        assert "git@github.com:" in post_gen_setup(
+            "git", "remote", "-v", cwd=str(result.project)
+        )
+        assert "(fetch)" in post_gen_setup(
+            "git", "remote", "-v", cwd=str(result.project)
+        )
+        assert "(push)" in post_gen_setup(
+            "git", "remote", "-v", cwd=str(result.project)
+        )
+
+
+def test_bake_without_git_init_success(cookies):
+    """
+    Test cookiecutter created the package without git init.
+    """
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"automatic_set_up_git_and_initial_commit": "n"},
+    ) as result:
+
+        found_toplevel_files = [f.basename for f in result.project.listdir()]
+        assert ".git" not in found_toplevel_files
+
+
+def test_bake_with_git_add_commit_success(cookies):
+    """
+    Test cookiecutter created the package with git add and commit successfull.
+    """
+    with bake_in_temp_dir(
+        cookies,
+        extra_context={"automatic_set_up_git_and_initial_commit": "y"},
+    ) as result:
+
+        assert "chore(git): Initial Commit" in post_gen_setup(
+            "git", "reflog", cwd=str(result.project)
+        )
+        assert "HEAD@{0}: commit (initial):" in post_gen_setup(
+            "git", "reflog", cwd=str(result.project)
+        )
