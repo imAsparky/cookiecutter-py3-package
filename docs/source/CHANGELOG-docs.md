@@ -7,8 +7,32 @@ Changes unreleased.
 ### Chore
 
 - pre-commit:
+  - Add additional checks #105 (#111) ([2b57db7](https://github.com/imAsparky/cookiecutter-py3-package/commit/2b57db700be2f5bc0e52d1c8ea4f579e3fd8706d)) ([#111](https://github.com/imAsparky/cookiecutter-py3-package/pull/111))
+
+## [v0.8.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.8.0) - 2021-09-22 03:02:17
+
+### Feature
+* **git:** Add auto git init-add-commit #102 ([#110](https://github.com/imAsparky/cookiecutter-py3-package/issues/110)) ([`42a531a`](https://github.com/imAsparky/cookiecutter-py3-package/commit/42a531a3c1a5054c99a39eda94a7a9789f9583ec))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`3990c03`](https://github.com/imAsparky/cookiecutter-py3-package/commit/3990c0322ea12f5f2bde7e34256f7d3289f88838))
+* **CHANGELOG:** Update release notes:docs ([`43f4900`](https://github.com/imAsparky/cookiecutter-py3-package/commit/43f4900e71c4cb73eccbb6db6aacd3d1e3f74e0b))
+
+### Build
+
+- version:
+  - Bump to version - 0.8.0. ([27d9a5f](https://github.com/imAsparky/cookiecutter-py3-package/commit/27d9a5f2e930005726fa286283468ac6f9665154))
+
+### Chore
+
+- pre-commit:
   - Add additional checks #105 (#107) ([9ae8906](https://github.com/imAsparky/cookiecutter-py3-package/commit/9ae890697ce0b49e0f837ac1f426b087260477cc)) ([#107](https://github.com/imAsparky/cookiecutter-py3-package/pull/107))
   - Add additional checks #105 (#106) ([2f96b6e](https://github.com/imAsparky/cookiecutter-py3-package/commit/2f96b6e4e0b1719e499c4679c53d365af73a763b)) ([#106](https://github.com/imAsparky/cookiecutter-py3-package/pull/106))
+
+### Feature
+
+- git:
+  - Add auto git init-add-commit #102 (#110) ([42a531a](https://github.com/imAsparky/cookiecutter-py3-package/commit/42a531a3c1a5054c99a39eda94a7a9789f9583ec)) ([#110](https://github.com/imAsparky/cookiecutter-py3-package/pull/110))
 
 ## [v0.7.1](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.7.1) - 2021-09-17 00:26:19
 
