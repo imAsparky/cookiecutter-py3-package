@@ -75,7 +75,7 @@ Features
 #. An optional GitHub action to run your Tox_ package test suite when a
    pull request to the main branch starts.
 #. Tox_ configuration for your package includes an OS and Python test matrix.
-   OS includes Linux, macOS and Windows. Python 3.6 - 3.9.
+   OS includes Linux, macOS and Windows. Python 3.6 - 3.9. (Uses GitHub actions.)
 #. An optional suite of custom GitHub issue templates. The four custom issue
    templates prompt users to help provide enough information in a templated
    format for each issue type.
@@ -85,6 +85,10 @@ Features
 #. Auto-release to PyPI_ when you push a new tag to main (optional). Coming soon.
 #. Use commit tags to release to Test-PyPi_. Coming soon.
 #. An optional Command line interface using Click or Argparse.
+#. An option to initialise your local git repository, add files and create the
+   first commit automatically. Also if you have opted to use the
+   Conventional-Commits_ style git commit message template, cookiecutter
+   will simultaneously add it to your local git config file.
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
@@ -96,20 +100,27 @@ Features
 
 Quickstart
 ----------
+* Create a GitHub repository.
+    This project will be aimed towards Github with use of Github Actions.
+
 
 Install the latest Cookiecutter if you haven't installed it yet (this requires
-Cookiecutter 1.4.0 or higher)::
+Cookiecutter 1.4.0 or higher):
 
-    pip install -U cookiecutter
+.. code-block:: bash
 
-Generate a Python package project::
+   pip install -U cookiecutter
 
-    cookiecutter https://github.com/imAsparky/cookiecutter-py3-package.git
+Generate a Python package project:
+
+.. code-block:: bash
+
+   cookiecutter https://github.com/imAsparky/cookiecutter-py3-package.git
+
+Follow the prompts.
 
 Then:
 
-* Create a repo and put it there.
-    This project will be aimed towards Github with use of Github Actions.
 * Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``).
 * Register_ your project with PyPI.
 * Add the repo to your `Read the Docs`_ account + turn on the Read the Docs service hook.
