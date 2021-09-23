@@ -6,8 +6,49 @@ Changes unreleased.
 
 ### Chore
 
+- options:
+  - Remove pytest and black #103 (#122) ([85a729f](https://github.com/imAsparky/cookiecutter-py3-package/commit/85a729f8dd4d68b674d6f5baa5c40ef34c96567b)) ([#122](https://github.com/imAsparky/cookiecutter-py3-package/pull/122))
+
+- root:
+  - Folder name now git_project_name #116 ([2e5457d](https://github.com/imAsparky/cookiecutter-py3-package/commit/2e5457d8c3679e0aee9d35fce12272077bbf045a)) ([#121](https://github.com/imAsparky/cookiecutter-py3-package/pull/121))
+  - Folder name now git_project_name #116 ([2fec02a](https://github.com/imAsparky/cookiecutter-py3-package/commit/2fec02a327c0d1bf058f21f31e623dfae23adb20)) ([#119](https://github.com/imAsparky/cookiecutter-py3-package/pull/119))
+
+### Documentation
+
+- README:
+  - Fix merge conflict #116 ([b8c7dc9](https://github.com/imAsparky/cookiecutter-py3-package/commit/b8c7dc9e854c4407814c634ca1c9c14136de7e84)) ([#119](https://github.com/imAsparky/cookiecutter-py3-package/pull/119))
+
+- Package:
+  - Update README to correct info #114 (#117) ([33384e1](https://github.com/imAsparky/cookiecutter-py3-package/commit/33384e1e436ac32ffcc9f10aaaf7975ec450c519)) ([#117](https://github.com/imAsparky/cookiecutter-py3-package/pull/117))
+
+## [v0.9.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.9.0) - 2021-09-23 02:21:39
+
+### Feature
+* **PyPi:** Deploy to Test PyPi with Tags  #13 ([#115](https://github.com/imAsparky/cookiecutter-py3-package/issues/115)) ([`f0fe67f`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f0fe67f105b7c05160f77b42b8d3f149d8e7f62e))
+
+### Documentation
+* **git:** Notes to alert of a git version bug #112 ([#113](https://github.com/imAsparky/cookiecutter-py3-package/issues/113)) ([`6050722`](https://github.com/imAsparky/cookiecutter-py3-package/commit/6050722858478d2f776f1e3108cf61e4885607bb))
+* **CHANGELOG:** Update release notes:docs ([`522d5a1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/522d5a19f3d9f4886db641863443cc90e1c385f7))
+
+### Build
+
+- version:
+  - Bump to version - 0.9.0. ([1680a06](https://github.com/imAsparky/cookiecutter-py3-package/commit/1680a066afdea9482414da573474db829703b045))
+
+### Chore
+
 - pre-commit:
   - Add additional checks #105 (#111) ([2b57db7](https://github.com/imAsparky/cookiecutter-py3-package/commit/2b57db700be2f5bc0e52d1c8ea4f579e3fd8706d)) ([#111](https://github.com/imAsparky/cookiecutter-py3-package/pull/111))
+
+### Documentation
+
+- git:
+  - Notes to alert of a git version bug #112 (#113) ([6050722](https://github.com/imAsparky/cookiecutter-py3-package/commit/6050722858478d2f776f1e3108cf61e4885607bb)) ([#113](https://github.com/imAsparky/cookiecutter-py3-package/pull/113))
+
+### Feature
+
+- PyPi:
+  - Deploy to Test PyPi with Tags  #13 (#115) ([f0fe67f](https://github.com/imAsparky/cookiecutter-py3-package/commit/f0fe67f105b7c05160f77b42b8d3f149d8e7f62e)) ([#115](https://github.com/imAsparky/cookiecutter-py3-package/pull/115))
 
 ## [v0.8.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.8.0) - 2021-09-22 03:02:17
 
