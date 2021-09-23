@@ -32,8 +32,9 @@ def post_gen_setup(*args, supress_exception=False, cwd=None):
                 raise Exception(err)
             if err and supress_exception:
                 return out
-            return None  # This return fixes pylint R1710 see
-            # https://pycodequ.al/docs/pylint-messages/r1710-inconsistent-return-statements.html
+
+            return out
+
     finally:
         os.chdir(cur_dir)
 
