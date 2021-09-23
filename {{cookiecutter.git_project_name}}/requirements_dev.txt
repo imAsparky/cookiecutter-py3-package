@@ -14,7 +14,3 @@ watchdog==2.1.5
 
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 Click==8.0.1{% endif %}
-{% if cookiecutter.use_pytest == 'y' -%}
-pytest==6.2.4{% endif %}
-{% if cookiecutter.use_black == 'y' -%}
-black==21.7b0{% endif %}
