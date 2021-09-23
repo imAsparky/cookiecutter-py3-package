@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.9.1 (2021-09-23)
+### Fix
+* **Hook:** Add missing post_gen_setup return var #125 ([#126](https://github.com/imAsparky/cookiecutter-py3-package/issues/126)) ([`870a107`](https://github.com/imAsparky/cookiecutter-py3-package/commit/870a107243a74fb988bda25f699a83dd25692b5e))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`2a2e430`](https://github.com/imAsparky/cookiecutter-py3-package/commit/2a2e4309ef70f0dad76b28d6b1be36bc1dedc89d))
+* **README:** Fix merge conflict #116 ([`b8c7dc9`](https://github.com/imAsparky/cookiecutter-py3-package/commit/b8c7dc9e854c4407814c634ca1c9c14136de7e84))
+* **Package:** Update README to correct info #114 ([#117](https://github.com/imAsparky/cookiecutter-py3-package/issues/117)) ([`33384e1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/33384e1e436ac32ffcc9f10aaaf7975ec450c519))
+
 ## v0.9.0 (2021-09-23)
 ### Feature
 * **PyPi:** Deploy to Test PyPi with Tags  #13 ([#115](https://github.com/imAsparky/cookiecutter-py3-package/issues/115)) ([`f0fe67f`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f0fe67f105b7c05160f77b42b8d3f149d8e7f62e))
