@@ -89,6 +89,8 @@ Features
    first commit automatically. Also if you have opted to use the
    Conventional-Commits_ style git commit message template, cookiecutter
    will simultaneously add it to your local git config file.
+#. Optional to use Test PyPi.  Create a git `dev`  tag before you push
+   to the repository.
 
 .. note::
 

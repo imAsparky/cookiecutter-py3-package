@@ -1,0 +1,62 @@
+name: Semantic Release Test Pypi
+
+on:
+   tags:
+        - dev*
+
+    workflow_dispatch:
+
+concurrency:
+    group: Semantic Release
+
+jobs:
+    test_contribs:
+        strategy:
+            matrix:
+                python-version: ["3.6", "3.7", "3.8", "3.9"]
+                os: [macos-latest, ubuntu-latest, windows-latest]
+
+        runs-on: ${{ matrix.os }}
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+
+            - name: Set up Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v2
+              with:
+                  python-version: ${{ matrix.python-version }}
+
+            - name: Install dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install tox tox-gh-actions
+
+            - name: Test with tox
+              run: tox
+
+    release:
+        needs: test_contribs
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            with:
+                token: ${{ secrets.SEM_VER }}
+                fetch-depth: 0
+
+            - name: Python Semantic Release
+            uses: relekang/python-semantic-release@master
+            with:
+                github_token: ${{ secrets.SEM_VER }}
+
+
+    publish:
+        name: Publish to Test PyPi
+        needs: release
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+            user: __token__
+            password: ${{ secrets.TEST_PYPI_TOKEN}}
+            repository_url: https://test.pypi.org/legacy/
+            skip_existing: true
