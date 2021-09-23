@@ -1,7 +1,7 @@
 name: Semantic Release Test Pypi
 
 on:
-    tags:
+   tags:
         - dev*
 
     workflow_dispatch:
@@ -41,14 +41,15 @@ jobs:
 
         steps:
             - uses: actions/checkout@v2
-              with:
-                  token: ${{ secrets.SEM_VER }}
-                  fetch-depth: 0
+            with:
+                token: ${{ secrets.SEM_VER }}
+                fetch-depth: 0
 
             - name: Python Semantic Release
-              uses: relekang/python-semantic-release@master
-              with:
-                  github_token: ${{ secrets.SEM_VER }}
+            uses: relekang/python-semantic-release@master
+            with:
+                github_token: ${{ secrets.SEM_VER }}
+
 
     publish:
         name: Publish to Test PyPi
