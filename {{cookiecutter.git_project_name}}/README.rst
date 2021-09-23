@@ -33,3 +33,8 @@ Features
 
 Credits
 -------
+
+This package was created with Cookiecutter_ and the `imAsparky/cookiecutter-py3-package`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`imAsparky/cookiecutter-py3-package`: https://github.com/imAsparky/cookiecutter-py3-package
