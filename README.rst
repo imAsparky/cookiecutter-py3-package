@@ -90,6 +90,11 @@ Features
    Conventional-Commits_ style git commit message template, cookiecutter
    will simultaneously add it to your local git config file.
 
+.. note::
+
+   Initialise your local git requires Git v2.33.0 or above. A bug report has
+   been raised and a fix is coming.
+
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
 .. _Projects: https://github.com/imAsparky/cookiecutter-py3-package/projects
