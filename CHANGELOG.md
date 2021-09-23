@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.9.0 (2021-09-23)
+### Feature
+* **PyPi:** Deploy to Test PyPi with Tags  #13 ([#115](https://github.com/imAsparky/cookiecutter-py3-package/issues/115)) ([`f0fe67f`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f0fe67f105b7c05160f77b42b8d3f149d8e7f62e))
+
+### Documentation
+* **git:** Notes to alert of a git version bug #112 ([#113](https://github.com/imAsparky/cookiecutter-py3-package/issues/113)) ([`6050722`](https://github.com/imAsparky/cookiecutter-py3-package/commit/6050722858478d2f776f1e3108cf61e4885607bb))
+* **CHANGELOG:** Update release notes:docs ([`522d5a1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/522d5a19f3d9f4886db641863443cc90e1c385f7))
+
 ## v0.8.0 (2021-09-22)
 ### Feature
 * **git:** Add auto git init-add-commit #102 ([#110](https://github.com/imAsparky/cookiecutter-py3-package/issues/110)) ([`42a531a`](https://github.com/imAsparky/cookiecutter-py3-package/commit/42a531a3c1a5054c99a39eda94a7a9789f9583ec))
