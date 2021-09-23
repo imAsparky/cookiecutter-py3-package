@@ -165,3 +165,6 @@ if __name__ == "__main__":
 
         if "{{ cookiecutter.create_conventional_commits_edit_message}}" == "y":
             git_configure_custom_commit_message()
+
+    if "{{ cookiecutter.use_release_to_test_pypi_with_tags }}" != "y":
+        remove_file(".github/workflows/semantic_release_test_pypi.yaml")

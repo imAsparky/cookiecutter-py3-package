@@ -677,3 +677,31 @@ def test_bake_with_git_add_commit_success(cookies):
         assert "HEAD@{0}: commit (initial):" in post_gen_setup(
             "git", "reflog", cwd=str(result.project)
         )
+
+
+def test_bake_with_release_test_pypi(cookies):
+    """
+    Test cookiecutter created the package with release to test pypi.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"use_release_to_test_pypi_with_tags": "y"}
+    ) as result:
+
+        test_pypi_with_files = [
+            f.basename for f in result.project.join(".github/workflows").listdir()
+        ]
+        assert "semantic_release_test_pypi.yaml" in test_pypi_with_files
+
+
+def test_bake_without_release_test_pypi(cookies):
+    """
+    Test cookiecutter created the package without release to test pypi.
+    """
+    with bake_in_temp_dir(
+        cookies, extra_context={"use_release_to_test_pypi_with_tags": "n"}
+    ) as result:
+
+        test_pypi_without_files = [
+            f.basename for f in result.project.join(".github/workflows").listdir()
+        ]
+        assert "semantic_release_test_pypi.yaml" not in test_pypi_without_files
