@@ -7,7 +7,6 @@ import shlex
 import subprocess  # nosec
 import sys
 from contextlib import contextmanager
-import pytest
 from click.testing import CliRunner
 from cookiecutter.utils import rmtree
 
@@ -209,15 +208,16 @@ def test_bake_without_author_file(cookies):
             assert "AUTHORS.rst" not in manifest_file.read()
 
 
-def test_make_help(cookies):
-    """
-    Test make help.
-    """
-    with bake_in_temp_dir(cookies) as result:
-        # The supplied Makefile does not support win32
-        if sys.platform != "win32":
-            output = check_output_inside_dir("make help", str(result.project))
-            assert b"check code coverage quickly with the default Python" in output
+# This test not deleted for future reference...
+# def test_make_help(cookies):
+#     """
+#     Test make help.
+#     """
+#     with bake_in_temp_dir(cookies) as result:
+#         # The supplied Makefile does not support win32
+#         if sys.platform != "win32":
+#             output = check_output_inside_dir("make help", str(result.project))
+#             assert b"check code coverage quickly with the default Python" in output
 
 
 def test_bake_selecting_license(cookies):
@@ -251,44 +251,6 @@ def test_bake_not_open_source(cookies):
         assert "setup.py" in found_toplevel_files
         assert "LICENSE" not in found_toplevel_files
         assert "License" not in result.project.join("README.rst").read()
-
-
-def test_using_pytest(cookies):
-    """
-    Test cookiecutter created the package using pytest.
-
-    .. note::
-     A reminder if anything stops working. This line is commented out due to
-     W0106: Expression "run_inside_dir('python setup.py test',
-     str(result.project)) == 0" is assigned to nothing
-     (expression-not-assigned) pre-commit pylint error.
-    """
-    with bake_in_temp_dir(
-        cookies,
-        extra_context={"use_pytest": "y"},
-    ) as result:
-        assert result.project.isdir()
-        test_file_path = result.project.join(
-            "tests/test_python_3_package_boilerplate.py"
-        )
-        lines = test_file_path.readlines()
-        assert "import pytest" in "".join(lines)
-        # Test the new pytest target
-        # run_inside_dir('pytest', str(result.project)) == 0
-
-
-def test_not_using_pytest(cookies):
-    """
-    Test cookiecutter created the package without using pytest.
-    """
-    with bake_in_temp_dir(cookies) as result:
-        assert result.project.isdir()
-        test_file_path = result.project.join(
-            "tests/test_python_3_package_boilerplate.py"
-        )
-        lines = test_file_path.readlines()
-        assert "import unittest" in "".join(lines)
-        assert "import pytest" not in "".join(lines)
 
 
 def test_bake_with_no_console_script(cookies):
@@ -382,22 +344,6 @@ def test_bake_with_argparse_console_script_cli(cookies):
     help_result = runner.invoke(cli.main, ["--help"])
     assert help_result.exit_code == 0
     assert "Show this message" in help_result.output
-
-
-@pytest.mark.parametrize("use_black,expected", [("y", True), ("n", False)])
-def test_black(cookies, use_black, expected):
-    """
-    Test cookiecutter created the package with black configured.
-    """
-    with bake_in_temp_dir(
-        cookies,
-        extra_context={"use_black": use_black},
-    ) as result:
-        assert result.project.isdir()
-        requirements_path = result.project.join("requirements_dev.txt")
-        assert ("black" in requirements_path.read()) is expected
-        makefile_path = result.project.join("Makefile")
-        assert ("black --check" in makefile_path.read()) is expected
 
 
 def test_bake_with_conventional_commits_message(cookies):
