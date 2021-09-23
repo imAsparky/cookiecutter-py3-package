@@ -203,6 +203,34 @@ project.
   Selecting this option also includes automatically adding the conventional
   commits message template to git config if you have chosen that option.
 
+  **Initialise your local git requires Git v2.33.0 or above. A bug report has
+  been raised and a fix is coming.**
+
+
+**use_release_to_test_pypi_with_tags**
+   *default = n*
+
+   Selecting this option will configure a workflow to simulate a production
+   test and then release to PyPi; however, the release will go to the Test
+   PyPi index.
+   This feature is helpful to help iron out any bugs before releasing your
+   package into the  PyPi index.
+   To use this feature, tag with 'dev*' before pushing to the repository.
+   The `dev` tag will trigger the workflow.
+
+   See the example tags below
+
+.. code-block:: bash
+
+    git tag dev
+    git tag dev-new-feature
+    git tag dev-testing-some-update
+
+.. note::
+
+    Perhaps using semantic version below version 1.0.0 could
+    be one way to use the test PyPi releases.
+
 
 **open_source_license**
     *default = MIT*
