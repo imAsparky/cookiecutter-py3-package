@@ -4,20 +4,17 @@
 {% for _ in cookiecutter.project_name %}={% endfor %}
 
 {% if is_open_source %}
-.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg
-        :target: https://pypi.python.org/pypi/{{ cookiecutter.project_slug }}
+.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.git_project_name }}.svg
+        :target: https://pypi.python.org/pypi/{{ cookiecutter.git_project_name }}
 
-.. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}.svg
-        :target: https://travis-ci.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
-
-.. image:: https://readthedocs.org/projects/{{ cookiecutter.project_slug | replace("_", "-") }}/badge/?version=latest
-        :target: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io/en/latest/?version=latest
+.. image:: https://readthedocs.org/projects/{{ cookiecutter.git_project_name }}/badge/?version=latest
+        :target: https://{{ cookiecutter.git_project_name }}.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 {%- endif %}
 
 {% if cookiecutter.add_pyup_badge == 'y' %}
-.. image:: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/shield.svg
-     :target: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/
+.. image:: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.git_project_name }}/shield.svg
+     :target: https://pyup.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.git_project_name }}/
      :alt: Updates
 {% endif %}
 
@@ -26,7 +23,7 @@
 
 {% if is_open_source %}
 * Free software: {{ cookiecutter.open_source_license }}
-* Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
+* Documentation: https://{{ cookiecutter.git_project_name }}.readthedocs.io.
 {% endif %}
 
 Features
@@ -37,7 +34,7 @@ Features
 Credits
 -------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+This package was created with Cookiecutter_ and the `imAsparky/cookiecutter-py3-package`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`imAsparky/cookiecutter-py3-package`: https://github.com/imAsparky/cookiecutter-py3-package
