@@ -1,6 +1,8 @@
 name: Semantic Release Test Pypi
 
 on:
+    push:
+
     tags:
         - dev*
 
