@@ -1,18 +1,20 @@
 #!/usr/bin/env python
 
-"""Tests for `{{ cookiecutter.project_slug }}` package."""
+"""Tests for `{{ cookiecutter.git_project_name }}` package."""
+
+import unittest
 
 import pytest
 
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
+{%- if cookiecutter.command_line_interface | lower == 'click' %}
 
 from click.testing import CliRunner
 
 {%- endif %}
 
-from {{cookiecutter.project_slug}} import {{ cookiecutter.project_slug }}
+from {{cookiecutter.project_slug}} import {{cookiecutter.project_slug}}
 
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
+{%- if cookiecutter.command_line_interface | lower == 'click' %}
 
 from {{cookiecutter.project_slug}} import cli
 
@@ -32,7 +34,10 @@ def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
+
+    assert 000 == 000
+    assert 111 == 111
+{%- if cookiecutter.command_line_interface | lower == 'click' %}
 
 
 def test_command_line_interface():
@@ -47,8 +52,7 @@ def test_command_line_interface():
 {%- endif %}
 
 
-
-class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
+class Test{{cookiecutter.project_slug | title}}(unittest.TestCase):
     """Tests for `{{ cookiecutter.project_slug }}` package."""
 
     def setUp(self):
@@ -58,8 +62,11 @@ class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
         """Tear down test fixtures, if any."""
 
     def test_000_something(self):
-        """Test something."""
-{%- if cookiecutter.command_line_interface|lower == 'click' %}
+        """A fake test as example."""
+        assert "aaa" == "aaa"
+        assert "aaa" != "bbb"
+{%- if cookiecutter.command_line_interface | lower == 'click' %}
+
 
     def test_command_line_interface(self):
         """Test the CLI."""
