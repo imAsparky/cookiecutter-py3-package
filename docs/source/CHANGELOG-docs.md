@@ -6,6 +6,37 @@ Changes unreleased.
 
 ### Chore
 
+- sphinx:
+  - Update package docs structure #128 (#130) ([a50283f](https://github.com/imAsparky/cookiecutter-py3-package/commit/a50283f445fe0c40d1f5d102b0500c091ab5f01f)) ([#130](https://github.com/imAsparky/cookiecutter-py3-package/pull/130))
+
+- sem_ver:
+  - Add settings to setup.cfg #127 (#128) ([a9abe78](https://github.com/imAsparky/cookiecutter-py3-package/commit/a9abe7843cb578a9b7dbb7f3680a37a193d40faa)) ([#128](https://github.com/imAsparky/cookiecutter-py3-package/pull/128))
+
+### Refactor
+
+- setup:
+  - Add encodings and test_req #131 (#132) ([5b2b014](https://github.com/imAsparky/cookiecutter-py3-package/commit/5b2b0144219b37db2c8524e559af60ea2c1a5418)) ([#132](https://github.com/imAsparky/cookiecutter-py3-package/pull/132))
+
+## [v0.9.1](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.9.1) - 2021-09-23 22:51:36
+
+### Fix
+* **Hook:** Add missing post_gen_setup return var #125 ([#126](https://github.com/imAsparky/cookiecutter-py3-package/issues/126)) ([`870a107`](https://github.com/imAsparky/cookiecutter-py3-package/commit/870a107243a74fb988bda25f699a83dd25692b5e))
+
+### Documentation
+* **CHANGELOG:** Update release notes:docs ([`2a2e430`](https://github.com/imAsparky/cookiecutter-py3-package/commit/2a2e4309ef70f0dad76b28d6b1be36bc1dedc89d))
+* **README:** Fix merge conflict #116 ([`b8c7dc9`](https://github.com/imAsparky/cookiecutter-py3-package/commit/b8c7dc9e854c4407814c634ca1c9c14136de7e84))
+* **Package:** Update README to correct info #114 ([#117](https://github.com/imAsparky/cookiecutter-py3-package/issues/117)) ([`33384e1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/33384e1e436ac32ffcc9f10aaaf7975ec450c519))
+
+### Build
+
+- version:
+  - Bump to version - 0.9.1. ([ada8ac3](https://github.com/imAsparky/cookiecutter-py3-package/commit/ada8ac338249564a36170bc5936a3731f0664156))
+
+### Chore
+
+- git:
+  - Fix typo missing "push" in on: #123 (#124) ([ede69f3](https://github.com/imAsparky/cookiecutter-py3-package/commit/ede69f336e2ee0de2e36b7e96e84b8a03e6efe38)) ([#124](https://github.com/imAsparky/cookiecutter-py3-package/pull/124))
+
 - options:
   - Remove pytest and black #103 (#122) ([85a729f](https://github.com/imAsparky/cookiecutter-py3-package/commit/85a729f8dd4d68b674d6f5baa5c40ef34c96567b)) ([#122](https://github.com/imAsparky/cookiecutter-py3-package/pull/122))
 
@@ -20,6 +51,11 @@ Changes unreleased.
 
 - Package:
   - Update README to correct info #114 (#117) ([33384e1](https://github.com/imAsparky/cookiecutter-py3-package/commit/33384e1e436ac32ffcc9f10aaaf7975ec450c519)) ([#117](https://github.com/imAsparky/cookiecutter-py3-package/pull/117))
+
+### Bug Fixes
+
+- Hook:
+  - Add missing post_gen_setup return var #125 (#126) ([870a107](https://github.com/imAsparky/cookiecutter-py3-package/commit/870a107243a74fb988bda25f699a83dd25692b5e)) ([#126](https://github.com/imAsparky/cookiecutter-py3-package/pull/126))
 
 ## [v0.9.0](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.9.0) - 2021-09-23 02:21:39
 
