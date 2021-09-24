@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 
-"""The setup script."""
+"""{{cookiecutter.git_project_name}} setup script."""
 
 from setuptools import find_packages, setup
 
-with open('README.rst') as readme_file:
+# https://github.com/PyCQA/pylint/issues/3826
+with open("README.rst", encoding="utf8") as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
+with open("HISTORY.rst", encoding="utf8") as history_file:
     history = history_file.read()
 
-requirements = [{%- if cookiecutter.command_line_interface|lower == 'click' %}'Click>=7.0',{%- endif %} ]
+requirements = ["Click>=7.0"]
+test_requirements = ["pytest>=6.0"]
 
 {%- set license_classifiers = {
     'MIT license': 'License :: OSI Approved :: MIT License',
