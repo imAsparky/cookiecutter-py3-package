@@ -6,6 +6,9 @@ Changes unreleased.
 
 ### Chore
 
+- test:
+  - Add pytest.ini to package #133 (#135) ([a07a43b](https://github.com/imAsparky/cookiecutter-py3-package/commit/a07a43bfc32d3b9aa48cf91f4e12537250dcf895)) ([#135](https://github.com/imAsparky/cookiecutter-py3-package/pull/135))
+
 - sphinx:
   - Update package docs structure #128 (#130) ([a50283f](https://github.com/imAsparky/cookiecutter-py3-package/commit/a50283f445fe0c40d1f5d102b0500c091ab5f01f)) ([#130](https://github.com/imAsparky/cookiecutter-py3-package/pull/130))
 
@@ -16,6 +19,11 @@ Changes unreleased.
 
 - setup:
   - Add encodings and test_req #131 (#132) ([5b2b014](https://github.com/imAsparky/cookiecutter-py3-package/commit/5b2b0144219b37db2c8524e559af60ea2c1a5418)) ([#132](https://github.com/imAsparky/cookiecutter-py3-package/pull/132))
+
+### Tests
+
+- pkge:
+  - Add unitest import and refactor #134 (#136) ([70cfc56](https://github.com/imAsparky/cookiecutter-py3-package/commit/70cfc56a313907c6b5de53147b8edee3e37d9fd9)) ([#136](https://github.com/imAsparky/cookiecutter-py3-package/pull/136))
 
 ## [v0.9.1](https://github.com/imAsparky/cookiecutter-py3-package/releases/tag/v0.9.1) - 2021-09-23 22:51:36
 
