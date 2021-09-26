@@ -1,5 +1,8 @@
 .. include:: /extras.rst.txt
+.. highlight:: rst
+.. index:: cookie-prom-pkg ; Index
 
+.. _cookie_prompts:
 =======
 Prompts
 =======
