@@ -14,6 +14,7 @@ Tutorials
 
    tutorial-create-GH-repo
    tutorial-cookiecutter-create
+   tutorial-git-first-push
 
 
 |
