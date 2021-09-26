@@ -349,6 +349,43 @@ An Example Package
     git_project_name [my-new-package]:
     project_slug [my_new_package]:
 
+
+.. new-folder-structure::
+Folder Structure
+----------------
+
+If you have been following along the Tutorial order, your directory structure
+will look something like this.
+
+.. code-block:: cmd
+
+  packages
+    ├── my-new-package
+    │   ├── .git
+    │   ├── .github
+    │   ├── AUTHORS.rst
+    │   ├── CHANGELOG.md
+    │   ├── CONTRIBUTING.rst
+    │   ├── LICENSE
+    │   ├── MANIFEST.in
+    │   ├── Makefile
+    │   ├── README.rst
+    │   ├── docs
+    │   ├── my_new_package
+    │   ├── pytest.ini
+    │   ├── requirements_dev.txt
+    │   ├── setup.cfg
+    │   ├── setup.py
+    │   ├── tests
+    │   └── tox.ini
+    └── my_env
+        ├── bin
+        ├── include
+        ├── lib
+        ├── lib64 -> lib
+        └── pyvenv.cfg
+
+
 Whats next?
 -----------
 
