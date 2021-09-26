@@ -15,6 +15,14 @@ Changes unreleased.
 - sem_ver:
   - Add settings to setup.cfg #127 (#128) ([a9abe78](https://github.com/imAsparky/cookiecutter-py3-package/commit/a9abe7843cb578a9b7dbb7f3680a37a193d40faa)) ([#128](https://github.com/imAsparky/cookiecutter-py3-package/pull/128))
 
+### Documentation
+
+- tutorial:
+  - Add git first push with CLI #139 (#142) ([ec6cbd6](https://github.com/imAsparky/cookiecutter-py3-package/commit/ec6cbd666fcfb5a39c65764af5df9617eec6a877)) ([#142](https://github.com/imAsparky/cookiecutter-py3-package/pull/142))
+  - Add cookie-create sample info #140 (#141) ([8ede3de](https://github.com/imAsparky/cookiecutter-py3-package/commit/8ede3de51b77b6e1328912d1bc9a08687bfb2705)) ([#141](https://github.com/imAsparky/cookiecutter-py3-package/pull/141))
+  - Add Create a Github Repo #83 (#138) ([84aeffa](https://github.com/imAsparky/cookiecutter-py3-package/commit/84aeffa8aad54a2083870be63a9c4351c9ba446d)) ([#138](https://github.com/imAsparky/cookiecutter-py3-package/pull/138))
+  - Add create a package. #84 (#137) ([8d8f41b](https://github.com/imAsparky/cookiecutter-py3-package/commit/8d8f41b05fd2296076b161c540f624ce5a1b05f4)) ([#137](https://github.com/imAsparky/cookiecutter-py3-package/pull/137))
+
 ### Refactor
 
 - setup:
