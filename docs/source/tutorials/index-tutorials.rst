@@ -9,6 +9,14 @@
 Tutorials
 =========
 
+.. toctree::
+   :titlesonly:
+
+   tutorial-create-GH-repo
+   tutorial-cookiecutter-create
+
+
+|
 |
 
 See a list of the Tutorials we have in progress below.
@@ -16,13 +24,10 @@ See a list of the Tutorials we have in progress below.
 |
 
 .. toctree::
-
    :titlesonly:
 
    quickstart
-   tutorial-create-GH-repo
    tutorial-GH-protected-branches
-   tutorial-cookiecutter-create
    tutorial-sem-ver
    tutorial-auto-changelog
    tutorial-pre-commit

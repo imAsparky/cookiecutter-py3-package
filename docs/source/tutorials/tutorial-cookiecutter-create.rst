@@ -4,9 +4,9 @@
 
 
 .. _cookie-create-pkg:
-======================================
-Creating Your cookiecutter-py3-package
-======================================
+=================================
+Create a cookiecutter-py3-package
+=================================
 
 
 |
@@ -32,7 +32,7 @@ Pre-requisites
 `Python 3.6 <https://www.python.org/downloads/>`_ or greater installed on
 your computer.
 
-:ref:`Create a GitHub repository.<create-GH-repo-index>`
+:ref:`Create a GitHub repository.<create-GH-repo>`
 
 
 .. _create-cookiecutter-tutorial:
