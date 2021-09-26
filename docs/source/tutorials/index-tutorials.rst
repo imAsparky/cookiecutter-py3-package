@@ -1,9 +1,9 @@
 .. include:: /extras.rst.txt
 .. highlight:: rst
-.. index:: main ; Index
+.. index:: tutorial ; Index
 
 
-.. _main-index:
+.. _tutorial-index:
 
 =========
 Tutorials
