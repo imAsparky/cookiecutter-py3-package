@@ -26,7 +26,7 @@ Tutorial
 Navigate to your GitHub account Repositories page and click New.
 
 .. image:: ../_static/imgs/tutorials/github-repo-page.png
-    :alt: GitHub Repsoitories page
+    :alt: GitHub Repositories page
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
