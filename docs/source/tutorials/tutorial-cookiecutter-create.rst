@@ -290,10 +290,71 @@ If you're unsure or don't know what to enter, stick with the defaults.
 
 See :ref:`Prompts<cookie_prompts>` for more details about the prompt options.
 
+.. _an-example-package:
+An Example Package
+------------------
 
+.. code-block:: cmd
+    :caption: **An example package created with some non default selections**
+
+      (my_env) dev@aps1:~/projects/packages$ cookiecutter
+      https://github.com/imAsparky/cookiecutter-py3-package
+        full_name [Mark Sevelj]:
+        email [mark@example.com]:
+        github_username [imAsparky]:
+        project_name [Python 3 Package Boilerplate]: My New Package   (NON DEFAULT)
+        git_project_name [my-new-package]:
+        project_slug [my_new_package]:
+        project_short_description [Python 3 Package Boilerplate contains all the boilerplate you need to create a Python package.]: An example package for cookiecutter-py3-package.   (NON DEFAULT)
+        pypi_username [imAsparky]:
+        version [0.1.0]:
+        add_pyup_badge [n]: y   (NON DEFAULT)
+        Select command_line_interface:
+        1 - Click
+        2 - Argparse
+        3 - No command-line interface
+        Choose from 1, 2, 3 [1]:
+        create_author_file [y]:
+        create_conventional_commits_edit_message [y]:
+        create_repo_auto_test_workflow [y]:
+        create_auto_CHANGELOG [n]:
+        Select github_CHANGELOG_access_token:
+        1 - secrets.GITHUB_TOKEN
+        2 - secrets.CHANGELOG_UPDATE
+        Choose from 1, 2 [1]:
+        use_GH_action_semantic_version [y]:
+        use_pre_commit [y]:
+        use_GH_custom_issue_templates [y]:
+        automatic_set_up_git_and_initial_commit [y]:
+        use_release_to_test_pypi_with_tags [n]: y  (NON DEFAULT)
+        Select open_source_license:
+        1 - MIT license
+        2 - BSD license
+        3 - ISC license
+        4 - Apache Software License 2.0
+        5 - GNU General Public License v3
+        6 - Not open source
+        Choose from 1, 2, 3, 4, 5, 6 [1]:
+      (my_env) dev@aps1:~/projects/packages$
+
+.. hint::
+
+  See below, notice the project_name format and how cookiecutter-py3-package
+  automatically formats the name for your GitHub repository and python module
+  as default inputs.
+
+  .. code-block:: cmd
+
+    project_name [Python 3 Package Boilerplate]: My New Package
+    git_project_name [my-new-package]:
+    project_slug [my_new_package]:
 
 Whats next?
 -----------
+
+:ref:`Create your first git push<create-first-git-push>`.
+
+or you can
 
 Check out our other :ref:`Tutorials<tutorial-index>` for more information on
 how to get the most out of your cookiecutter package.
