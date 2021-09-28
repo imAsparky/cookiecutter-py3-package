@@ -18,6 +18,7 @@ Changes unreleased.
 ### Documentation
 
 - tutorial:
+  - Add Codacy GitHub integration #22 (#145) ([1d86da3](https://github.com/imAsparky/cookiecutter-py3-package/commit/1d86da3d5d3f17365214bdd5b400c4f866fd4a7c)) ([#145](https://github.com/imAsparky/cookiecutter-py3-package/pull/145))
   - Add context to various tutes #143 (#144) ([4b7940a](https://github.com/imAsparky/cookiecutter-py3-package/commit/4b7940a7a2a195015920173081b524b677bec8c6)) ([#144](https://github.com/imAsparky/cookiecutter-py3-package/pull/144))
   - Add git first push with CLI #139 (#142) ([ec6cbd6](https://github.com/imAsparky/cookiecutter-py3-package/commit/ec6cbd666fcfb5a39c65764af5df9617eec6a877)) ([#142](https://github.com/imAsparky/cookiecutter-py3-package/pull/142))
   - Add cookie-create sample info #140 (#141) ([8ede3de](https://github.com/imAsparky/cookiecutter-py3-package/commit/8ede3de51b77b6e1328912d1bc9a08687bfb2705)) ([#141](https://github.com/imAsparky/cookiecutter-py3-package/pull/141))
