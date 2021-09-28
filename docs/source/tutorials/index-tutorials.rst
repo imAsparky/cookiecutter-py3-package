@@ -15,6 +15,7 @@ Tutorials
    tutorial-create-GH-repo
    tutorial-cookiecutter-create
    tutorial-git-first-push
+   tutorial-codacy-setup
 
 
 |
@@ -33,7 +34,6 @@ See a list of the Tutorials we have in progress below.
    tutorial-auto-changelog
    tutorial-pre-commit
    tutorial-console-script
-   tutorial-codacy-setup
    tutorial-PyPi
    tutorial-release-packagage
    tutorial-workflow

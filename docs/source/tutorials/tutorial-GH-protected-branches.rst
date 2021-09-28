@@ -3,7 +3,7 @@
 .. index:: GH-protected-branches ; Index
 
 
-.. _GH-protected-branches-index:
+.. _GH-protected-branches:
 
 =========================
 Github Protected Branches
