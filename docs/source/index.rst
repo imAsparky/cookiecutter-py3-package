@@ -30,7 +30,6 @@ See a list of the Original and new In Progress Documents below.
 |
 .. toctree::
    :titlesonly:
-   :caption: In Progress Documentation:
 
    tutorials/index-tutorials
 
