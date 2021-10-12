@@ -20,7 +20,6 @@ See a list of the Original and new In Progress Documents below.
    :caption: Original Documentation:
 
    readme
-   tutorial
    pypi_release_checklist
    console_script_setup
    troubleshooting
@@ -47,6 +46,14 @@ See a list of the Original and new In Progress Documents below.
    :titlesonly:
 
    reference/index-reference
+
+|
+|
+
+.. toctree::
+   :titlesonly:
+
+   doc-templates/index-templates
 
 
 Changelog
