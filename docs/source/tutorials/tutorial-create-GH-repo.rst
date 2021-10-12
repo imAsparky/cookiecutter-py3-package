@@ -65,7 +65,7 @@ Click `Create Repository`.
 New Repository Command Line Options
 -----------------------------------
 
-After clicking `Create Repsotory` you will be presented with these options.
+After clicking `Create Repository` you will be presented with these options.
 
 .. image:: ../_static/imgs/tutorials/new-repo-cli-options.png
     :alt: New Repository Command Line Options
