@@ -1,13 +1,14 @@
 .. include:: /extras.rst.txt
 .. highlight:: rst
-.. index:: cookie-prom-pkg ; Index
+.. index:: py3-project-inputs ; Index
 
-.. _cookie_prompts:
-=======
-Prompts
-=======
+.. _project-inputs:
+==================
+New Project Inputs
+==================
 
-*Copyright 2015, Audrey Roy Greenfeld*
+
+*Portions are Copyright 2015, Audrey Roy Greenfeld*
 
 When you create a package, you are prompted to enter these values.
 
