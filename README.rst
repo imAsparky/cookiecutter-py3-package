@@ -107,41 +107,26 @@ Features
 
 Quickstart
 ----------
-* Create a GitHub repository.
-    This project will be aimed towards Github with use of Github Actions.
 
+See the cookiecutter-py3-package `quickstart`_.
 
-Install the latest Cookiecutter if you haven't installed it yet (this requires
-Cookiecutter 1.4.0 or higher):
+For more details on getting started, see the `cookiecutter-py3-pypackage tutorial`_.
 
-.. code-block:: bash
+Contributing
+------------
 
-   pip install -U cookiecutter
+Contributions are very welcome and appreciated!
 
-Generate a Python package project:
+You can contribute in many ways.
 
-.. code-block:: bash
+See `How-To Contribute
+<https://cookiecutter-py3-package.readthedocs.io/en/latest/how-tos/
+how-to-contribute.html>`_ to help you get started.
 
-   cookiecutter https://github.com/imAsparky/cookiecutter-py3-package.git
+Please take a moment to read our `Code of Conduct
+<https://cookiecutter-py3-package.readthedocs.io/en/latest/
+code-of-conduct.html#code-of-conduct>`_.
 
-Follow the prompts.
-
-Then:
-
-* Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``).
-* Register_ your project with PyPI.
-* Add the repo to your `Read the Docs`_ account + turn on the Read the Docs service hook.
-* Release your package by pushing a new tag to main.
-* Add a ``requirements.txt`` file that specifies the packages you will need for
-  your project and their versions. For more info see the `pip docs for requirements files`_.
-* Activate your project on `pyup.io`_.
-
-.. _`pip docs for requirements files`: https://pip.pypa.io/en/stable/user_guide/#requirements-files
-.. _Register: https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives
-
-For more details, see the `cookiecutter-pypackage tutorial`_.
-
-.. _`cookiecutter-pypackage tutorial`: https://cookiecutter-py3-package.readthedocs.io/en/latest/tutorial.html
 
 Not Exactly What You Want?
 --------------------------
@@ -151,14 +136,19 @@ Don't worry, you have options:
 Similar Cookiecutter Templates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `ardydedase/cookiecutter-pypackage`_: A fork with separate requirements files rather than a requirements list in the ``setup.py`` file.
+* `ardydedase/cookiecutter-pypackage`_: A fork with separate requirements
+   files rather than a requirements list in the ``setup.py`` file.
 
-* `briggySmalls/cookiecutter-pypackage`_: A fork using Poetry_ for neat package management and deployment, with linting, formatting, no makefiles and more.
+* `briggySmalls/cookiecutter-pypackage`_: A fork using Poetry_ for neat package
+   management and deployment, with linting, formatting, no makefiles and more.
 
-* `zillionare/cookiecutter-pypackage`_: A template containing Poetry_, Mkdocs_, Github CI and many more. It's a template and a package also (can be installed with `pip`)
+* `zillionare/cookiecutter-pypackage`_: A template containing Poetry_, Mkdocs_,
+   Github CI and many more. It's a template and a package also
+   (can be installed with `pip`)
 
-* Also see the `network`_ and `family tree`_ for the original repo. (If you find
-  anything that should be listed here, please add it and send a pull request!)
+* Also see the `network`_ and `family tree`_ for the original repo. (If you
+  find anything that should be listed here, please add it and send a
+  pull request!)
 
 Fork This / Create Your Own
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,6 +177,9 @@ make my own packaging experience better.
 .. _Poetry: https://python-poetry.org/
 .. _PyPi: https://pypi.python.org/pypi
 .. _Mkdocs: https://pypi.org/project/mkdocs/
+.. _Quickstart: https://cookiecutter-py3-package.readthedocs.io/en/latest/how-to/how-to-quickstart.html
+.. _cookiecutter-py3-pypackage tutorial: https://cookiecutter-py3-package.readthedocs.io/en/latest/tutorial.html
+
 
 .. _`ardydedase/cookiecutter-pypackage`: https://github.com/ardydedase/cookiecutter-pypackage
 .. _`briggySmalls/cookiecutter-pypackage`: https://github.com/briggySmalls/cookiecutter-pypackage
