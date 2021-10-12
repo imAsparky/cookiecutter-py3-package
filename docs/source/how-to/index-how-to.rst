@@ -20,3 +20,4 @@ This index is a document framework placeholder for new How To's.
    :titlesonly:
 
    how-to-how-to
+   how-to-quickstart
