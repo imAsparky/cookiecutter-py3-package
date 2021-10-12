@@ -17,6 +17,13 @@ Changes unreleased.
 
 ### Documentation
 
+- how-to:
+  - Add several how-tos #82 #149 (#152) ([40e2bab](https://github.com/imAsparky/cookiecutter-py3-package/commit/40e2bab76540561bc907974ba3ea461230026370)) ([#152](https://github.com/imAsparky/cookiecutter-py3-package/pull/152))
+
+- cookie:
+  - Fix typo in create-github-repo tutorial #147 (#150) ([8754ee8](https://github.com/imAsparky/cookiecutter-py3-package/commit/8754ee875ba252a0276ddc561f0362f1c6388fd5)) ([#150](https://github.com/imAsparky/cookiecutter-py3-package/pull/150))
+  - Fix typo in create-github-repo tutorial #147 (#148) ([a9e8092](https://github.com/imAsparky/cookiecutter-py3-package/commit/a9e809238fad6b1a6dc79c3dacaa03c023481073)) ([#148](https://github.com/imAsparky/cookiecutter-py3-package/pull/148))
+
 - tutorial:
   - Add Codacy GitHub integration #22 (#145) ([1d86da3](https://github.com/imAsparky/cookiecutter-py3-package/commit/1d86da3d5d3f17365214bdd5b400c4f866fd4a7c)) ([#145](https://github.com/imAsparky/cookiecutter-py3-package/pull/145))
   - Add context to various tutes #143 (#144) ([4b7940a](https://github.com/imAsparky/cookiecutter-py3-package/commit/4b7940a7a2a195015920173081b524b677bec8c6)) ([#144](https://github.com/imAsparky/cookiecutter-py3-package/pull/144))
