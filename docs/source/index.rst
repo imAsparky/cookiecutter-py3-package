@@ -62,7 +62,7 @@ Changelog
 .. toctree::
    :maxdepth: 2
 
-   CHANGELOG-docs.md
+   CHANGELOG.md
 
 
 To Do List
