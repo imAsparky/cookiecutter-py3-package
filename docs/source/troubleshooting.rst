@@ -2,8 +2,6 @@
 Trouble Shooting
 ================
 
-*Copyright 2015, Audrey Roy Greenfeld*
-
 .. note:: Can you help improve this file? `Edit this file`_
           and submit a pull request with your improvements!
 
@@ -11,26 +9,23 @@ Trouble Shooting
 .. _`Edit this file`: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/docs/troubleshooting.rst
 
 
-Windows Issues
---------------
+GIT Issues
+----------
 
-* Some people have reported issues using git bash; try using the Command
-  Terminal instead.
+After generating your cookiecutter-py3-package, you get this error message
+in the command line.
 
-* Virtual environments can sometimes be tricky on Windows. If you have Python
-  3.6 or above installed (recommended), this should get you a virtualenv named
-  ``myenv`` created inside the current folder:
+.. code-block::
 
-.. code-block:: powershell
+  error: refname refs/heads/master not found
+  fatal: Branch rename failed
 
-    > c:\Python36\python -m venv myenv
 
-Or:
+This error message is caused by using older versions of git.
 
-.. code-block:: powershell
 
-    > c:\Python36\python c:\Python35\Tools\Scripts\pyvenv.py myenv
+You have several options.
 
-* Some people have reported that they have to re-activate their virtualenv
-  whenever they change directory, so you should remember the path to the
-  virtualenv in case you need it.
+#. Follow the git manual instructions :ref:`here<git-CLI-push-GIT-options>`
+   substituting the example with your repository and project.
+#. Upgrade git and re-run the cookie-cutter.
