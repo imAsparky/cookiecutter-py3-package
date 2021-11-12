@@ -69,6 +69,13 @@ Options
 The following package configuration options set up different features for your
 project.
 
+**use_repo_status_badge**
+  *default = no*
+
+  Whether to include a `Repo Status <https://www.repostatus.org/>`_ badge.
+
+  Options: ['no', 'concept', 'wip', 'active']
+
 **add_pyup_badge**
   *default = n*
 
