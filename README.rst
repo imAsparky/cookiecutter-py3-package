@@ -20,13 +20,7 @@
 **We are aiming for your new package to be an automated Continuous Delivery
 workflow experience.**
 
-.. .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
-..     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
-..     :alt: Updates
-
-.. .. image:: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage.svg?branch=master
-..     :target: https://travis-ci.org/github/audreyfeldroy/cookiecutter-pypackage
-..     :alt: Build Status
+|
 
 .. image:: https://www.repostatus.org/badges/latest/wip.svg
    :alt: Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.
@@ -63,7 +57,7 @@ A Cookiecutter_ template for a Python package.
 Features
 --------
 
-#. Choose to use a Conventional-Commits_ specification custom commits message
+#. Choose to use a `Conventional-Commits`_ specification custom commits message
    in your built package.
 #. An optional GitHub action to automatically update semantic version and
    publish assets to your package repository when a pull request merge is
@@ -72,38 +66,37 @@ Features
    bypassing the need for a GitHub action if that is your preferred workflow.
 #. An optional GitHub action to generate a package CHANGELOG automatically if
    you choose to version and publish your package manually.
-#. An optional GitHub action to run your Tox_ package test suite when a
+#. An optional GitHub action to run your `Tox`_ package test suite when a
    pull request to the main branch starts.
-#. Tox_ configuration for your package includes an OS and Python test matrix.
+#. `Tox`_ configuration for your package includes an OS and Python test matrix.
    OS includes Linux, macOS and Windows. Python 3.6 - 3.9. (Uses GitHub actions.)
 #. An optional suite of custom GitHub issue templates. The four custom issue
    templates prompt users to help provide enough information in a templated
    format for each issue type.
 #. Documentation is in the process of being refreshed and organised into the
-   Diataxis_ documentation framework.
-#. Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
-#. Auto-release to PyPI_ when you push a new tag to main (optional). Coming soon.
-#. Use commit tags to release to Test-PyPi_. Coming soon.
+   `Diataxis`_ documentation framework.
+#. `Sphinx`_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
+#. Auto-release to `PyPI`_ when you push a new tag to main (optional). Coming soon.
+#. Use commit tags to release to `Test-PyPi`_. Coming soon.
 #. An optional Command line interface using Click or Argparse.
 #. An option to initialise your local git repository, add files and create the
    first commit automatically. Also if you have opted to use the
-   Conventional-Commits_ style git commit message template, cookiecutter
+   `Conventional-Commits`_ style git commit message template, cookiecutter
    will simultaneously add it to your local git config file.
-#. Optional to use Test PyPi.  Create a git `dev`  tag before you push
-   to the repository.
+#. Optional to use to use a `Repo Status`_ badge to communicate quickly.
 
 .. note::
 
-   Initialise your local git requires Git v2.33.0 or above. A bug report has
-   been raised and a fix is coming.
+   Initialise your local git requires Git v2.33.0 or above.
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 .. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
 .. _Projects: https://github.com/imAsparky/cookiecutter-py3-package/projects
-.. _CHANGELOG: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/CHANGELOG.md
+.. _CHANGELOG: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/docs/source/CHANGELOG.md
 .. _Test-PyPi: https://test.pypi.org/
 .. _Conventional-Commits:  https://www.conventionalcommits.org/en/v1.0.0/
 .. _Diataxis: https://diataxis.fr/
+.. _Repo Status: https://www.repostatus.org/
 
 Quickstart
 ----------
@@ -177,7 +170,7 @@ make my own packaging experience better.
 .. _Poetry: https://python-poetry.org/
 .. _PyPi: https://pypi.python.org/pypi
 .. _Mkdocs: https://pypi.org/project/mkdocs/
-.. _Quickstart: https://cookiecutter-py3-package.readthedocs.io/en/latest/how-to/how-to-quickstart.html
+.. _quickstart: https://cookiecutter-py3-package.readthedocs.io/en/latest/how-to/how-to-quickstart.html
 .. _cookiecutter-py3-pypackage tutorial: https://cookiecutter-py3-package.readthedocs.io/en/latest/tutorial.html
 
 

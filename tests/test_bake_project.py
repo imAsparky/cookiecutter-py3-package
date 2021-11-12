@@ -121,6 +121,7 @@ def test_bake_with_defaults(cookies):
         assert "tox.ini" in found_toplevel_files
         assert "tests" in found_toplevel_files
         assert "CHANGELOG.md" in found_toplevel_files
+        assert "README.rst" in found_toplevel_files
         assert "LICENSE" in found_toplevel_files
         assert "AUTHORS.rst" in found_toplevel_files
         assert "History.rst" not in found_toplevel_files
@@ -400,18 +401,22 @@ def test_bake_with_repo_automatic_testing_suite(cookies):
         assert "test_contribution.yaml" in test_workflow_with_files
 
 
-def test_bake_without_repo_automatic_testing_suite(cookies):
-    """
-    Test cookiecutter created the package without repo automatic testing.
-    """
+def test_baked_readme_with_repo_status_badge(cookies):
+    """Test README file has a repo status badge generated."""
     with bake_in_temp_dir(
-        cookies, extra_context={"create_repo_auto_test_workflow": "n"}
+        cookies, extra_context={"use_repo_status_badge": "concept"}
     ) as result:
 
-        test_workflow_without_files = [
-            f.basename for f in result.project.join(".github/workflows").listdir()
-        ]
-        assert "test_contribution.yaml" not in test_workflow_without_files
+        assert "concept" in result.project.join("README.rst").read()
+
+
+def test_baked_readme_without_repo_status_badge(cookies):
+    """Test README file has no repo status badge generated."""
+    with bake_in_temp_dir(
+        cookies, extra_context={"use_repo_status_badge": "no"}
+    ) as result:
+
+        assert "concept" not in result.project.join("README.rst").read()
 
 
 def test_bake_with_automatic_CHANGELOG(cookies):
