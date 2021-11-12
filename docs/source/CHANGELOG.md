@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.10.0 (2021-11-12)
+### Feature
+* **pkge:** Added Repo Status option to README #159 ([#160](https://github.com/imAsparky/cookiecutter-py3-package/issues/160)) ([`d1cf76e`](https://github.com/imAsparky/cookiecutter-py3-package/commit/d1cf76e70a7a9518aa2d684e13be400f7ba7a2cc))
+
 ## v0.9.2 (2021-11-11)
 ### Fix
 * **git:** Added git to troubleshooting guide #112 ([#158](https://github.com/imAsparky/cookiecutter-py3-package/issues/158)) ([`76aa274`](https://github.com/imAsparky/cookiecutter-py3-package/commit/76aa2744f42593e328ab03c00f095085adba59ab))
