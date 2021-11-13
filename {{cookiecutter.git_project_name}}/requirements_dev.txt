@@ -1,5 +1,5 @@
 cookiecutter==1.7.3
-flake8==3.7.8
+flake8==4.0.1
 furo==2021.11.12.1
 myst-parser==0.15.2
 pytest==6.2.5
