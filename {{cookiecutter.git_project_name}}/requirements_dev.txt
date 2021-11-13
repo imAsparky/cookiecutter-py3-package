@@ -1,6 +1,6 @@
 cookiecutter==1.4.0
 flake8==3.7.8
-furo==2021.8.11b42
+furo==2021.11.12.1
 myst-parser==0.15.2
 pytest==6.2.4
 python-semantic-release==7.19.2
