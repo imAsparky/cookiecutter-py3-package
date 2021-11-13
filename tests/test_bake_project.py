@@ -577,6 +577,8 @@ def test_bake_with_pre_commit(cookies):
 
         pre_commit_with_files = [f.basename for f in result.project.listdir()]
         assert ".pre-commit-config.yaml" in pre_commit_with_files
+        assert "pre--commit-enabled" in result.project.join("README.rst").read()
+        assert "pre-commit==" in result.project.join("requirements_dev.txt").read()
 
 
 def test_bake_without_pre_commit(cookies):
@@ -587,6 +589,8 @@ def test_bake_without_pre_commit(cookies):
 
         pre_commit_without_files = [f.basename for f in result.project.listdir()]
         assert ".pre-commit-config.yaml" not in pre_commit_without_files
+        assert "pre--commit-enabled" not in result.project.join("README.rst").read()
+        assert "pre-commit==" not in result.project.join("requirements_dev.txt").read()
 
 
 def test_bake_with_git_init_success(cookies):

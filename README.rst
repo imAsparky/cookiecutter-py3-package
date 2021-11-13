@@ -68,6 +68,8 @@ Features
    you choose to version and publish your package manually.
 #. An optional GitHub action to run your `Tox`_ package test suite when a
    pull request to the main branch starts.
+#. Optional to use to use `pre-commit`_ to identuify simple coding issues
+   before submission, with a badge to communicate quickly.
 #. `Tox`_ configuration for your package includes an OS and Python test matrix.
    OS includes Linux, macOS and Windows. Python 3.6 - 3.9. (Uses GitHub actions.)
 #. An optional suite of custom GitHub issue templates. The four custom issue
@@ -165,6 +167,7 @@ make my own packaging experience better.
 .. _Diataxis: https://diataxis.fr/
 .. _Mkdocs: https://pypi.org/project/mkdocs/
 .. _Poetry: https://python-poetry.org/
+.. _pre-commit: https://pre-commit.com/
 .. _Projects: https://github.com/imAsparky/cookiecutter-py3-package/projects
 .. _PyPi: https://pypi.python.org/pypi
 .. _pyup.io: https://pyup.io/
