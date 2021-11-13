@@ -94,6 +94,12 @@ project.
 
   Requires a free Read the Docs account.
 
+**use_pre_commit**
+  *default = y*
+
+  Pre-commit  is useful for identifying simple issues before submission
+  to code review.
+
 
 **command_line_interface**
   *default = Click*

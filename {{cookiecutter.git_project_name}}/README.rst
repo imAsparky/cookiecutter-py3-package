@@ -15,6 +15,12 @@
    :alt: Updates
 {%- endif %}
 
+{%- if cookiecutter.use_pre_commit == "y" %}
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+{%- endif %}
+
 {%- if cookiecutter.use_readthedocs == "y" %}
 .. image:: https://readthedocs.org/projects/{{cookiecutter.git_project_name}}/badge/?version=latest
    :target: https://{{cookiecutter.git_project_name}}.readthedocs.io/en/latest/?badge=latest
