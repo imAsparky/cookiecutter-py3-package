@@ -16,7 +16,7 @@ import os
 import sys
 
 # Updated with python-semantic-release
-__version__ = "0.12.0"
+__version__ = "0.13.1"
 
 
 sys.path.insert(0, os.path.abspath("."))

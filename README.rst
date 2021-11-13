@@ -26,6 +26,9 @@ workflow experience.**
    :alt: Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.
    :target: https://www.repostatus.org/#wip
 
+.. image:: https://pyup.io/repos/github/imAsparky/cookiecutter-py3-pacakge/shield.svg
+   :target: https://pyup.io/repos/github/imAsparky/cookiecutter-py3-pacakge/
+
 .. image:: http://isitmaintained.com/badge/resolution/imAsparky/cookiecutter-py3-package.svg
    :alt: Project is Maintained
    :target: https://isitmaintained.com/project/imAsparky/cookiecutter-py3-package
