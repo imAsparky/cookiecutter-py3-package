@@ -79,7 +79,21 @@ project.
 **add_pyup_badge**
   *default = n*
 
-  Whether to include a `pyup <https://github.com/pyupio/pyup>`_ badge.
+  Keep your open source package Python dependencies secure, up-to-date &
+  compliant for free with `Pyup <https://github.com/pyupio/pyup>`_.
+  This badge will advertise your security level.
+
+  Requires a free Pyup account.
+
+**use_readthedocs**
+  *default = y*
+
+  Host your open source package documentation for free with
+  `Read the Docs <https://readthedocs.org/>`_ and this badge will provide a
+  link to your documentation.
+
+  Requires a free Read the Docs account.
+
 
 **command_line_interface**
   *default = Click*

@@ -76,6 +76,7 @@ Features
 #. Documentation is in the process of being refreshed and organised into the
    `Diataxis`_ documentation framework.
 #. `Sphinx`_ docs: Documentation ready for generation with, for example, `Read the Docs`_.
+#. Optional to use to use a `Read the Docs`_ badge to communicate quickly.
 #. Auto-release to `PyPI`_ when you push a new tag to main (optional). Coming soon.
 #. Use commit tags to release to `Test-PyPi`_. Coming soon.
 #. An optional Command line interface using Click or Argparse.
@@ -85,18 +86,11 @@ Features
    will simultaneously add it to your local git config file.
 #. Optional to use to use a `Repo Status`_ badge to communicate quickly.
 
+
 .. note::
 
    Initialise your local git requires Git v2.33.0 or above.
 
-.. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
-.. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
-.. _Projects: https://github.com/imAsparky/cookiecutter-py3-package/projects
-.. _CHANGELOG: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/docs/source/CHANGELOG.md
-.. _Test-PyPi: https://test.pypi.org/
-.. _Conventional-Commits:  https://www.conventionalcommits.org/en/v1.0.0/
-.. _Diataxis: https://diataxis.fr/
-.. _Repo Status: https://www.repostatus.org/
 
 Quickstart
 ----------
@@ -162,16 +156,24 @@ Or Submit a Pull Request
 I also accept pull requests on this, if they're small, atomic, and if they
 make my own packaging experience better.
 
-.. _Tox: http://testrun.org/tox/
-.. _Sphinx: http://sphinx-doc.org/
-.. _Read the Docs: https://readthedocs.io/
-.. _`pyup.io`: https://pyup.io/
-.. _Punch: https://github.com/lgiordani/punch
-.. _Poetry: https://python-poetry.org/
-.. _PyPi: https://pypi.python.org/pypi
-.. _Mkdocs: https://pypi.org/project/mkdocs/
-.. _quickstart: https://cookiecutter-py3-package.readthedocs.io/en/latest/how-to/how-to-quickstart.html
+
+.. _CHANGELOG: https://github.com/imAsparky/cookiecutter-py3-package/blob/main/docs/source/CHANGELOG.md
 .. _cookiecutter-py3-pypackage tutorial: https://cookiecutter-py3-package.readthedocs.io/en/latest/tutorial.html
+.. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
+.. _cookiecutter-pypackage: https://github.com/audreyfeldroy/cookiecutter-pypackage
+.. _Conventional-Commits:  https://www.conventionalcommits.org/en/v1.0.0/
+.. _Diataxis: https://diataxis.fr/
+.. _Mkdocs: https://pypi.org/project/mkdocs/
+.. _Poetry: https://python-poetry.org/
+.. _Projects: https://github.com/imAsparky/cookiecutter-py3-package/projects
+.. _PyPi: https://pypi.python.org/pypi
+.. _pyup.io: https://pyup.io/
+.. _quickstart: https://cookiecutter-py3-package.readthedocs.io/en/latest/how-to/how-to-quickstart.html
+.. _Read the Docs: https://readthedocs.io/
+.. _Repo Status: https://www.repostatus.org/
+.. _Sphinx: http://sphinx-doc.org/
+.. _Test-PyPi: https://test.pypi.org/
+.. _Tox: http://testrun.org/tox/
 
 
 .. _`ardydedase/cookiecutter-pypackage`: https://github.com/ardydedase/cookiecutter-pypackage
