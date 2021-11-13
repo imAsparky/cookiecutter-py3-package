@@ -15,6 +15,13 @@
    :alt: Updates
 {%- endif %}
 
+{%- if cookiecutter.use_readthedocs == "y" %}
+.. image:: https://readthedocs.org/projects/{{cookiecutter.git_project_name}}/badge/?version=latest
+   :target: https://{{cookiecutter.git_project_name}}.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+{%- endif %}
+
+
 
 
 {{ cookiecutter.project_short_description }}

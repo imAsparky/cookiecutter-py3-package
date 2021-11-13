@@ -5,7 +5,6 @@ import importlib
 import os
 import shlex
 import subprocess  # nosec
-import sys
 from contextlib import contextmanager
 from click.testing import CliRunner
 from cookiecutter.utils import rmtree
@@ -399,6 +398,23 @@ def test_bake_with_repo_automatic_testing_suite(cookies):
             f.basename for f in result.project.join(".github/workflows").listdir()
         ]
         assert "test_contribution.yaml" in test_workflow_with_files
+
+
+def test_baked_readme_with_readthedocs_badge(cookies):
+    """Test README file has a readthedocs badge generated."""
+    with bake_in_temp_dir(cookies, extra_context={"use_readthedocs": "y"}) as result:
+
+        assert " :alt: Documentation Status" in result.project.join("README.rst").read()
+
+
+def test_baked_readme_without_readthedocs_badge(cookies):
+    """Test README file has no readthedocs badge generated."""
+    with bake_in_temp_dir(cookies, extra_context={"use_readthedocs": "n"}) as result:
+
+        assert (
+            " :alt: Documentation Status"
+            not in result.project.join("README.rst").read()
+        )
 
 
 def test_baked_readme_with_repo_status_badge(cookies):
