@@ -9,4 +9,4 @@ pytest-cov==3.0.0
 python-semantic-release==7.19.2
 Sphinx==4.3.0
 tox==3.24.4
-watchdog==2.1.5
+watchdog==2.1.6
