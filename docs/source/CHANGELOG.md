@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.12.0 (2021-11-13)
+### Feature
+* **pkge:** Add pre-commit badge to README #163 ([#164](https://github.com/imAsparky/cookiecutter-py3-package/issues/164)) ([`a8f6bd7`](https://github.com/imAsparky/cookiecutter-py3-package/commit/a8f6bd71fd33d0697e74b93717c5961c8f5bf0a4))
+
 ## v0.11.0 (2021-11-13)
 ### Feature
 * **pckge:** Add Read the Docs option to README #161 ([#162](https://github.com/imAsparky/cookiecutter-py3-package/issues/162)) ([`f524d88`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f524d887012eecea26f8dc00563c5047dd9e2a16))
