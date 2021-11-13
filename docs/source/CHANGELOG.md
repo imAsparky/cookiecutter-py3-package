@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.13.1 (2021-11-13)
+### Fix
+* **pyup:**  Initial Update ([#170](https://github.com/imAsparky/cookiecutter-py3-package/issues/170)) ([`2c90650`](https://github.com/imAsparky/cookiecutter-py3-package/commit/2c90650ab643ef3d7ef7d760182b0ccc3533352a))
+
 ## v0.13.0 (2021-11-13)
 ### Feature
 * **proj:** Add pyup.io scanning and badge #165 ([#169](https://github.com/imAsparky/cookiecutter-py3-package/issues/169)) ([`02677d5`](https://github.com/imAsparky/cookiecutter-py3-package/commit/02677d54f4bc13ad166fb6ae60118b83d4a1e291))
