@@ -1,6 +1,6 @@
 alabaster==0.7.12
 cookiecutter==1.7.3
-furo==2021.8.11b42
+furo==2021.11.12.1
 myst-parser==0.15.2
 pre-commit==2.14.1
 pytest==5.3.1
