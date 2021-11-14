@@ -10,7 +10,12 @@ pin: True
 
 # set the default branch
 # default: empty, the default branch on GitHub
-Default Branch: main
+branch: main
+
+# update schedule
+# default: empty
+# allowed: "every day", "every week", ..
+schedule: "every day"
 
 # assign users to pull requests, default is not set
 # requires private repo permissions, even on public repos
@@ -32,7 +37,7 @@ pr_prefix: "fix(pyup): "
 close_prs: False
 
 requirements:
-    - "requirements_dev.txt"
+    - "requirements.txt"
     - "docs/requirements.txt"
     - "{{cookiecutter.git_project_name}}/requirements_dev.txt"
     - "{{cookiecutter.git_project_name}}/docs/requirements.txt"
