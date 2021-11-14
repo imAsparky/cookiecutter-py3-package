@@ -9,7 +9,7 @@
    :alt: Project Status: {{cookiecutter.use_repo_status_badge}}
 {%- endif %}
 
-{%- if cookiecutter.add_pyup_badge == "y" %}
+{%- if cookiecutter.use_pyup_io == "y" %}
 .. image:: https://pyup.io/repos/github/{{cookiecutter.github_username}}/{{cookiecutter.git_project_name}}/shield.svg
    :target: https://pyup.io/repos/github/{{cookiecutter.github_username}}/{{cookiecutter.git_project_name}}/
    :alt: Updates
