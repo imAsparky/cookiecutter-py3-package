@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.15.0 (2021-11-14)
+### Feature
+* **pkge:** Add pyup to package #165 ([#172](https://github.com/imAsparky/cookiecutter-py3-package/issues/172)) ([`e4dc8b4`](https://github.com/imAsparky/cookiecutter-py3-package/commit/e4dc8b427a12bad24e2adfc00ae2fd7cee3996d3))
+
 ## v0.14.0 (2021-11-14)
 ### Feature
 * **proj:** Add pyup to cookiecutter project #166 ([#171](https://github.com/imAsparky/cookiecutter-py3-package/issues/171)) ([`d913bc1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/d913bc193c182bd585ddb5e8ff4ff29e74b447a9))
