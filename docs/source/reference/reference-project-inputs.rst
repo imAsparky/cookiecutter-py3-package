@@ -76,7 +76,7 @@ project.
 
   Options: ['no', 'concept', 'wip', 'active']
 
-**add_pyup_badge**
+**use_pyup_io**
   *default = n*
 
   Keep your open source package Python dependencies secure, up-to-date &

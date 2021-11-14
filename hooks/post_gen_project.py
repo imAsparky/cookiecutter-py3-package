@@ -169,3 +169,6 @@ if __name__ == "__main__":
 
     if "{{ cookiecutter.use_release_to_test_pypi_with_tags }}" != "y":
         remove_file(".github/workflows/semantic_release_test_pypi.yaml")
+
+    if "{{ cookiecutter.use_pyup_io }}" != "y":
+        remove_file(".pyup.yml")
