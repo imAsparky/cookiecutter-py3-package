@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.15.1 (2021-11-14)
+### Fix
+* **proj:** Fix typo in pyup url #173 ([#174](https://github.com/imAsparky/cookiecutter-py3-package/issues/174)) ([`28baae8`](https://github.com/imAsparky/cookiecutter-py3-package/commit/28baae86a6b10cd6de565fdf2006da7a3b2001f1))
+
 ## v0.15.0 (2021-11-14)
 ### Feature
 * **pkge:** Add pyup to package #165 ([#172](https://github.com/imAsparky/cookiecutter-py3-package/issues/172)) ([`e4dc8b4`](https://github.com/imAsparky/cookiecutter-py3-package/commit/e4dc8b427a12bad24e2adfc00ae2fd7cee3996d3))
