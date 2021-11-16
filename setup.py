@@ -3,7 +3,7 @@
 
 from setuptools import find_packages, setup
 
-__version__ = "0.15.1"
+__version__ = "0.15.2"
 
 setup(
     name="cookiecutter-py3-package",
