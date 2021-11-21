@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.15.3 (2021-11-21)
+### Fix
+* **pyup:**  Update furo from 2021.11.15 to 2021.11.16 ([#176](https://github.com/imAsparky/cookiecutter-py3-package/issues/176)) ([`d110f97`](https://github.com/imAsparky/cookiecutter-py3-package/commit/d110f97bacfdb3f9a12d9545fae9ae02de3dccad))
+
 ## v0.15.2 (2021-11-16)
 ### Fix
 * **pyup:**  Scheduled daily dependency update on Monday ([#175](https://github.com/imAsparky/cookiecutter-py3-package/issues/175)) ([`f944fe8`](https://github.com/imAsparky/cookiecutter-py3-package/commit/f944fe861c2f4f8ce499653eaf692e85897cace7))
