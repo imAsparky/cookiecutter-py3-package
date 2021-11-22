@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.15.4 (2021-11-22)
+### Fix
+* **pyup:**  Update python-semantic-release from 7.19.2 to 7.22.0 ([#182](https://github.com/imAsparky/cookiecutter-py3-package/issues/182)) ([`e0b6be1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/e0b6be174767202bcfa9010f5bf2c9837d6b26b1))
+
 ## v0.15.3 (2021-11-21)
 ### Fix
 * **pyup:**  Update furo from 2021.11.15 to 2021.11.16 ([#176](https://github.com/imAsparky/cookiecutter-py3-package/issues/176)) ([`d110f97`](https://github.com/imAsparky/cookiecutter-py3-package/commit/d110f97bacfdb3f9a12d9545fae9ae02de3dccad))
