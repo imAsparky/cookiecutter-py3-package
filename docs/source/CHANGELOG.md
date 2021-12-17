@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.15.5 (2021-12-17)
+### Fix
+* **pyup:**  Scheduled daily dependency update on Thursday ([#185](https://github.com/imAsparky/cookiecutter-py3-package/issues/185)) ([`dc5c917`](https://github.com/imAsparky/cookiecutter-py3-package/commit/dc5c91750538252972e21cd9e96a0bdd91b38139))
+* **pyup:**  Scheduled daily dependency update on Wednesday ([#184](https://github.com/imAsparky/cookiecutter-py3-package/issues/184)) ([`829d946`](https://github.com/imAsparky/cookiecutter-py3-package/commit/829d9465e774ca299b3383061a47fa0012818899))
+* **pyup:**  Scheduled daily dependency update on Tuesday ([#183](https://github.com/imAsparky/cookiecutter-py3-package/issues/183)) ([`da9e85d`](https://github.com/imAsparky/cookiecutter-py3-package/commit/da9e85d57f05d7696e2f3b34fd5b63213a8c994b))
+
 ## v0.15.4 (2021-11-22)
 ### Fix
 * **pyup:**  Update python-semantic-release from 7.19.2 to 7.22.0 ([#182](https://github.com/imAsparky/cookiecutter-py3-package/issues/182)) ([`e0b6be1`](https://github.com/imAsparky/cookiecutter-py3-package/commit/e0b6be174767202bcfa9010f5bf2c9837d6b26b1))
