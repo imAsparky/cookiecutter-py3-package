@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.15.6 (2021-12-17)
+### Fix
+* **pyup:**  Scheduled daily dependency update on Sunday ([#188](https://github.com/imAsparky/cookiecutter-py3-package/issues/188)) ([`7a6575b`](https://github.com/imAsparky/cookiecutter-py3-package/commit/7a6575bb29159e50e786cea64fa849ab5149fc24))
+
 ## v0.15.5 (2021-12-17)
 ### Fix
 * **pyup:**  Scheduled daily dependency update on Thursday ([#185](https://github.com/imAsparky/cookiecutter-py3-package/issues/185)) ([`dc5c917`](https://github.com/imAsparky/cookiecutter-py3-package/commit/dc5c91750538252972e21cd9e96a0bdd91b38139))
