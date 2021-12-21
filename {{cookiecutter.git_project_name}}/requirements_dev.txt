@@ -3,7 +3,7 @@ flake8==4.0.1
 furo==2021.11.23
 myst-parser==0.16.1
 pytest==6.2.5
-python-semantic-release==7.22.0
+python-semantic-release==7.23.0
 Sphinx==4.3.2
 tox==3.24.4
 twine==3.6.0
