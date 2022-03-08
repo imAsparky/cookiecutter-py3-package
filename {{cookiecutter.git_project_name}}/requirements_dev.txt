@@ -2,7 +2,7 @@ cookiecutter==1.7.3
 flake8==4.0.1
 furo==2022.3.4
 myst-parser==0.17.0
-pytest==6.2.5
+pytest==7.0.1
 python-semantic-release==7.24.0
 Sphinx==4.4.0
 tox==3.24.5
