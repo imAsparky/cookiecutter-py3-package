@@ -6,7 +6,7 @@ pre-commit==2.19.0
 pytest==7.1.2
 pytest-cookies==0.6.1
 pytest-cov==3.0.0
-python-semantic-release==7.24.0
+python-semantic-release==7.29.1
 Sphinx==5.0.1
 tox==3.24.5
 watchdog==2.1.6
