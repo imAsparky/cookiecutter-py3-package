@@ -8,7 +8,7 @@ Sphinx==5.0.1
 tox==3.25.0
 twine==3.7.1
 wheel==0.37.1
-watchdog==2.1.6
+watchdog==2.1.9
 
 
 {% if cookiecutter.use_pre_commit == 'y' -%}
