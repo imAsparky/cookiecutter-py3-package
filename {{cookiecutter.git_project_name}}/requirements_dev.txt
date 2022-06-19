@@ -6,7 +6,7 @@ pytest==7.1.2
 python-semantic-release==7.29.1
 Sphinx==5.0.2
 tox==3.25.0
-twine==3.7.1
+twine==4.0.1
 wheel==0.37.1
 watchdog==2.1.9
 
