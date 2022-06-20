@@ -8,5 +8,5 @@ pytest-cookies==0.6.1
 pytest-cov==3.0.0
 python-semantic-release==7.29.2
 Sphinx==5.0.2
-tox==3.24.5
+tox==3.25.0
 watchdog==2.1.6
