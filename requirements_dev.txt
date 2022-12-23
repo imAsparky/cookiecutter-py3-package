@@ -10,3 +10,5 @@ python-semantic-release==7.24.0
 Sphinx==4.4.0
 tox==3.24.5
 watchdog==2.1.6
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
